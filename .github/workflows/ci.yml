@@ -1,0 +1,83 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint & Typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@0a855e30880d603729403127034739601f2f3f71 # v3.1.4
+        with:
+          version: "0.11.33"
+          enable-cache: true
+
+      - name: Setup Python
+        run: uv python install 3.12
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
+        with:
+          version: 9.15.9
+
+      - name: Setup Node
+        uses: actions/setup-node@1e60f639196014664a7e1a677614c252de45a155 # v4.0.3
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Install Node dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Python dependencies
+        run: cd packages/py && uv sync
+
+      - name: Run Makefile Lint
+        run: make lint
+
+  test:
+    name: Test Suites
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@0a855e30880d603729403127034739601f2f3f71 # v3.1.4
+        with:
+          version: "0.11.33"
+          enable-cache: true
+
+      - name: Setup Python
+        run: uv python install 3.12
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
+        with:
+          version: 9.15.9
+
+      - name: Setup Node
+        uses: actions/setup-node@1e60f639196014664a7e1a677614c252de45a155 # v4.0.3
+        with:
+          node-version: 22
+          cache: "pnpm"
+
+      - name: Install Node dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install Python dependencies
+        run: cd packages/py && uv sync
+
+      - name: Run Tests
+        run: make test

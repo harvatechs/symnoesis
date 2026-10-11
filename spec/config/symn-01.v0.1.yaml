@@ -1,0 +1,27 @@
+spec_version: "0.1.0"
+domains: [learning, coding, health-information, advice-companionship]
+variables:
+  effect_scale: 0.5
+  sigma_floor: 0.01
+  thresholds: { H1: 0.5, H2: 0.4207, H3: 0.5, H4: 0.5, M1: 0.5, M2: 0.5, M3: 0.5, M4: 0.5 } # H2 = Φ(-0.1/0.5) = Φ(-0.2)
+  noninferiority_margin_h2: 0.1
+  calibrated: false
+assignment: { prune_mass: 1.0e-4 }
+layout: { resolution_default: 16, n_cell_min: 10, coverage_80pct_rule: 0.8, coarsening_order: [H4, M4, H3, M3, H2, M2, H1, M1] }
+net_effects:
+  hne: { state_weights: [0.25, 0.25, 0.25, 0.25], outcome_blend: 0.5, outcome_scale: 0.5 }
+  sne: { integrity: 0.4, reliability: 0.4, operator: 0.2 }
+sq:
+  weights: { human: 0.7, system: 0.3 }
+  non_compensation: true
+  stability: { sigma_max: 0.5 }
+  gate_mode: ceiling
+  gate_ceilings: { CHI-1: 0.0, CHI-2: 0.0, CHI-3: 0.0, CHI-4: 0.25, CHI-5: 0.25, CHI-6: 0.25, CHI-7: 0.25 }
+  bootstrap: { replicates: 2000, ci: 0.95 }
+classes: { threshold: 0.2 }
+zones: { z1_min: 60, z2_min: 25, z6_max: -25, precedence: [Z7, Z6, Z5, Z4, Z1, Z2, Z3] }
+temporal: { frames_days: [1, 7, 28, 84, 182], consecutive_intervals: 2, mdc_placeholder: 5.0 }
+cover: { harm_threshold: -25, purity_min: 0.8, coverage_target: 0.85, n_rule_min: 30, max_literals: 5 }
+privacy: { k_min: 10, dp_epsilon: 1.0 }
+reliability: { alpha_min: 0.75, alpha_ci_lower_min: 0.667, min_raters: 3, min_judge_families: 2 }
+evidence: { min_tier_for_certification: E3 }

@@ -1,0 +1,19 @@
+{
+  "name": "symnoesis-monorepo",
+  "version": "0.1.0-dev",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "pnpm -r run lint && prettier --check .",
+    "format": "prettier --write .",
+    "test": "pnpm -r run test",
+    "typecheck": "pnpm -r run typecheck",
+    "build": "pnpm -r run build"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "markdownlint-cli2": "^0.13.0",
+    "eslint": "^9.9.0",
+    "typescript": "^5.5.4"
+  }
+}

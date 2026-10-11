@@ -1,0 +1,29 @@
+extends: existence
+message: "Avoid banned superlative, marketing term, or AI tell '%s' per 06_CONTENT_RULES.md"
+level: error
+ignorecase: true
+tokens:
+  - delve
+  - tapestry
+  - revolutionary
+  - groundbreaking
+  - cutting-edge
+  - game-changing
+  - transformative
+  - seamless
+  - unlock the power
+  - supercharge
+  - empower
+  - next-generation
+  - world-class
+  - state-of-the-art
+  - gold standard
+  - in today's fast-paced world
+  - it's important to note
+  - navigate the complexities
+  - rapidly evolving
+  - ever-changing
+  - at the end of the day
+  - plays a crucial role
+  - a testament to
+  - dive into

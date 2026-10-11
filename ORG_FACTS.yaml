@@ -1,0 +1,10 @@
+organization:
+  name: { value: "HarVa Groups", verified: true }
+  legal_status: { value: null, verified: false }
+  jurisdiction: { value: null, verified: false }
+  registration_id: { value: null, verified: false }
+  contact: { general: null, security: null, ethics: null, verified: false }
+people: []
+funders: { value: null, verified: false }
+partners: []
+endorsements: []

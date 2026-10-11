@@ -1,0 +1,3 @@
+[codespell]
+skip = ./node_modules,./packages/py/.venv,./.git,./dist,./.pnpm-store,pnpm-lock.yaml,uv.lock
+ignore-words-list = nd,erf,erfc,recuse

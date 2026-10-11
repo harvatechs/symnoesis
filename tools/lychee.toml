@@ -1,0 +1,12 @@
+# Lychee link checker configuration
+
+timeout = 10
+max_retries = 2
+max_concurrency = 4
+exclude = [
+  "^http://localhost",
+  "^http://127.0.0.1",
+  "^https://github.com/harvagroups/symnoesis/commit",
+  "^https://github.com/harvagroups/symnoesis/compare",
+]
+accept = [200, 204, 206, 429]

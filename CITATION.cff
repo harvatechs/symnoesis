@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or specification, please cite it as below."
+title: "Symnoesis (SYMN-01): Measuring Long-Term Human-AI Interaction"
+abstract: "An open specification and toolkit for measuring the quality, safety, and cognitive impact of long-term human-AI interaction by treating human and machine as one unit, the Dyadic State."
+authors:
+  - name: "HarVa Groups"
+repository-code: "https://github.com/harvagroups/symnoesis"
+license: "Apache-2.0"
+version: "0.1.0-dev"
+date-released: "2026-10-11"
+keywords:
+  - "human-ai-interaction"
+  - "ai-safety"
+  - "benchmark"
+  - "dyadic-state"
+  - "cognitive-offloading"
+  - "gray-code"
