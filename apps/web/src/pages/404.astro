@@ -1,5 +1,6 @@
 ---
 import AcademicLayout from "../layouts/AcademicLayout.astro";
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <AcademicLayout title="Page Not Found" currentSection="idea">
@@ -12,8 +13,8 @@ import AcademicLayout from "../layouts/AcademicLayout.astro";
     </header>
 
     <div class="actions">
-      <a href="/" class="btn btn-primary">Return to Home</a>
-      <a href="/map" class="btn btn-secondary">Explore the Map</a>
+      <a href={`${baseUrl}/`} class="btn btn-primary">Return to Home</a>
+      <a href={`${baseUrl}/map`} class="btn btn-secondary">Explore the Map</a>
     </div>
   </div>
 </AcademicLayout>

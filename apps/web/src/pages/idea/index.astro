@@ -1,5 +1,6 @@
 ---
 import AcademicLayout from "../../layouts/AcademicLayout.astro";
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <AcademicLayout title="The Idea" currentSection="idea">
@@ -97,8 +98,8 @@ import AcademicLayout from "../../layouts/AcademicLayout.astro";
       </section>
 
       <section class="section-nav">
-        <a href="/map" class="btn btn-primary">Examine the 256-State Map</a>
-        <a href="/method" class="btn btn-secondary">Read the Mathematical Formulation</a>
+        <a href={`${baseUrl}/map`} class="btn btn-primary">Examine the 256-State Map</a>
+        <a href={`${baseUrl}/method`} class="btn btn-secondary">Read the Mathematical Formulation</a>
       </section>
     </article>
   </div>

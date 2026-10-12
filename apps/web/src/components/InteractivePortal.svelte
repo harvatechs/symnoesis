@@ -339,7 +339,7 @@
 
       <div class="actions">
         <button type="button" class="btn btn-secondary" on:click={restart}>Start Over</button>
-        <a href="/map" class="btn btn-primary">Locate {modalPixel} on the Map</a>
+        <a href={`${import.meta.env.BASE_URL.replace(/\/$/, "")}/map`} class="btn btn-primary">Locate {modalPixel} on the Map</a>
       </div>
     </div>
   {/if}

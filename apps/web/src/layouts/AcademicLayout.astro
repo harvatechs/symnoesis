@@ -8,6 +8,7 @@ interface Props {
 }
 
 const { title, description = "Symnoesis (SYMN-01): An open research initiative for the measurement of human–machine symbiosis.", currentSection } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <!doctype html>
@@ -18,7 +19,7 @@ const { title, description = "Symnoesis (SYMN-01): An open research initiative f
     <title>{title} — Symnoesis (SYMN-01)</title>
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${baseUrl}/favicon.svg`} />
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -26,7 +27,7 @@ const { title, description = "Symnoesis (SYMN-01): An open research initiative f
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
-          <a href="/" class="brand-link">
+          <a href={`${baseUrl}/`} class="brand-link">
             <span class="brand-title">Symnoesis</span>
             <span class="brand-code">SYMN-01</span>
           </a>
@@ -34,12 +35,12 @@ const { title, description = "Symnoesis (SYMN-01): An open research initiative f
 
         <nav class="primary-nav" aria-label="Main Navigation">
           <ul class="nav-list">
-            <li><a href="/idea" class:list={[{ active: currentSection === "idea" }]}>Idea</a></li>
-            <li><a href="/map" class:list={[{ active: currentSection === "map" }]}>Map</a></li>
-            <li><a href="/portal" class:list={[{ active: currentSection === "portal" }]}>Portal</a></li>
-            <li><a href="/index" class:list={[{ active: currentSection === "index" }]}>Index</a></li>
-            <li><a href="/research" class:list={[{ active: currentSection === "research" }]}>Research</a></li>
-            <li><a href="/about" class:list={[{ active: currentSection === "about" }]}>About</a></li>
+            <li><a href={`${baseUrl}/idea`} class:list={[{ active: currentSection === "idea" }]}>Idea</a></li>
+            <li><a href={`${baseUrl}/map`} class:list={[{ active: currentSection === "map" }]}>Map</a></li>
+            <li><a href={`${baseUrl}/portal`} class:list={[{ active: currentSection === "portal" }]}>Portal</a></li>
+            <li><a href={`${baseUrl}/index`} class:list={[{ active: currentSection === "index" }]}>Index</a></li>
+            <li><a href={`${baseUrl}/research`} class:list={[{ active: currentSection === "research" }]}>Research</a></li>
+            <li><a href={`${baseUrl}/about`} class:list={[{ active: currentSection === "about" }]}>About</a></li>
           </ul>
         </nav>
 
@@ -66,19 +67,19 @@ const { title, description = "Symnoesis (SYMN-01): An open research initiative f
         <div class="footer-col">
           <h2 class="footer-heading">Documentation</h2>
           <ul class="footer-links">
-            <li><a href="/method">Methodology & Spec</a></li>
-            <li><a href="/docs">Diátaxis Docs</a></li>
-            <li><a href="/research">Whitepaper & Research Log</a></li>
-            <li><a href="/cite">Citation Guide</a></li>
+            <li><a href={`${baseUrl}/method`}>Methodology & Spec</a></li>
+            <li><a href={`${baseUrl}/docs`}>Diátaxis Docs</a></li>
+            <li><a href={`${baseUrl}/research`}>Whitepaper & Research Log</a></li>
+            <li><a href={`${baseUrl}/cite`}>Citation Guide</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h2 class="footer-heading">Governance</h2>
           <ul class="footer-links">
-            <li><a href="/governance">Charter & Ethics</a></li>
-            <li><a href="/privacy">Privacy by Construction</a></li>
-            <li><a href="/accessibility">Accessibility Statement</a></li>
+            <li><a href={`${baseUrl}/governance`}>Charter & Ethics</a></li>
+            <li><a href={`${baseUrl}/privacy`}>Privacy by Construction</a></li>
+            <li><a href={`${baseUrl}/accessibility`}>Accessibility Statement</a></li>
           </ul>
         </div>
 

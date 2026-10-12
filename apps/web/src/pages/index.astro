@@ -1,6 +1,7 @@
 ---
 import AcademicLayout from "../layouts/AcademicLayout.astro";
 import InteractiveMap from "../components/InteractiveMap.svelte";
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <AcademicLayout title="Home" currentSection="idea">
@@ -18,8 +19,8 @@ import InteractiveMap from "../components/InteractiveMap.svelte";
           It measures one person and one AI system together over weeks, tracking cognitive agency, capability, and systemic safety.
         </p>
         <div class="hero-actions">
-          <a href="/map" class="btn btn-primary">Explore the Map</a>
-          <a href="/portal" class="btn btn-secondary">Find your pixel</a>
+          <a href={`${baseUrl}/map`} class="btn btn-primary">Explore the Map</a>
+          <a href={`${baseUrl}/portal`} class="btn btn-secondary">Find your pixel</a>
         </div>
       </div>
 
@@ -51,7 +52,7 @@ import InteractiveMap from "../components/InteractiveMap.svelte";
             Standard benchmarks score isolated model outputs on single prompts. In practice, humans adapt to systems: 
             forming habits, surrendering agency, or encountering subtle cognitive atrophy. SYMN-01 measures the dyadic unit.
           </p>
-          <a href="/idea">Read about the Dyadic State</a>
+          <a href={`${baseUrl}/idea`}>Read about the Dyadic State</a>
         </div>
 
         <div class="pillar-card">
@@ -60,7 +61,7 @@ import InteractiveMap from "../components/InteractiveMap.svelte";
             The 16×16 grid is arranged using a reflected binary Gray code. Adjacent cells differ by exactly one state variable, 
             ensuring smooth state trajectories and verifiable single-flip repair diagnostics.
           </p>
-          <a href="/method#gray-code">How Gray coding works</a>
+          <a href={`${baseUrl}/method#gray-code`}>How Gray coding works</a>
         </div>
 
         <div class="pillar-card">
@@ -69,7 +70,7 @@ import InteractiveMap from "../components/InteractiveMap.svelte";
             Under the non-compensation rule and safety gate ceiling, a confirmed Critical Harm Incident (CHI) caps the Symnoesis Quotient 
             at −20 or −50. High performance on other days cannot erase systemic harm.
           </p>
-          <a href="/method#safety-gate">Safety gate mechanics</a>
+          <a href={`${baseUrl}/method#safety-gate`}>Safety gate mechanics</a>
         </div>
 
         <div class="pillar-card">
@@ -78,7 +79,7 @@ import InteractiveMap from "../components/InteractiveMap.svelte";
             Every published score displays its empirical evidence tier: from formal mathematical specification (E0) to synthetic validation (E1), 
             provisional pilots (E2), and peer-audited field studies (E3).
           </p>
-          <a href="/research#evidence-tiers">Evidence tiers explained</a>
+          <a href={`${baseUrl}/research#evidence-tiers`}>Evidence tiers explained</a>
         </div>
       </div>
     </div>
@@ -100,7 +101,7 @@ import InteractiveMap from "../components/InteractiveMap.svelte";
             pointing directly to actionable counterfactual interventions.
           </p>
           <div class="feature-links">
-            <a href="/method#mfc" class="btn btn-secondary">Review the MILP Formulation</a>
+            <a href={`${baseUrl}/method#mfc`} class="btn btn-secondary">Review the MILP Formulation</a>
           </div>
         </div>
 
@@ -131,8 +132,8 @@ Rule 2: H3=0 ∧ M3=1 (Calibrated Over-Reliance)
         The complete SYMN-01 normative specification, reference algorithms, and test vectors are fully open source.
       </p>
       <div class="cta-actions">
-        <a href="/method" class="btn btn-primary">Read the Specification</a>
-        <a href="/portal" class="btn btn-secondary">Try the Interactive Portal</a>
+        <a href={`${baseUrl}/method`} class="btn btn-primary">Read the Specification</a>
+        <a href={`${baseUrl}/portal`} class="btn btn-secondary">Try the Interactive Portal</a>
       </div>
     </div>
   </section>

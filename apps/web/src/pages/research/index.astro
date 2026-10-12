@@ -1,5 +1,6 @@
 ---
 import AcademicLayout from "../../layouts/AcademicLayout.astro";
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <AcademicLayout title="Research & Evidence" currentSection="research">
@@ -25,8 +26,8 @@ import AcademicLayout from "../../layouts/AcademicLayout.astro";
             <p>HarVa Groups Research Initiative | v0.1.0 (2026)</p>
           </div>
           <div class="paper-actions">
-            <a href="/research/whitepaper" class="btn btn-secondary">Read Online</a>
-            <a href="/spec/whitepaper.pdf" class="btn btn-primary" download>Download PDF</a>
+            <a href={`${baseUrl}/method`} class="btn btn-secondary">Read Online Spec</a>
+            <a href="https://github.com/harvatechs/symnoesis/tree/main/spec" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Spec Source</a>
           </div>
         </div>
       </section>
