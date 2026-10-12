@@ -4,7 +4,7 @@ Every open question or decision that cannot be autonomously resolved by the spec
 
 | ID | Topic | Question | Options & Recommendation | Status | Resolution / Decision |
 |---|---|---|---|---|---|
-| **OQ-001** | GitHub & Domain | What is the production repository URL and custom domain? | Default to `https://github.com/harvagroups/symnoesis` and GitHub Pages until confirmed. | Open | Awaiting founder input |
+| **OQ-001** | GitHub & Domain | What is the production repository URL and custom domain? | Confirmed: `https://github.com/harvatechs/symnoesis` and GitHub Pages. | Resolved | Confirmed by founder |
 | **OQ-002** | Legal Status | What is the legal registration status and jurisdiction of HarVa Groups? | Default to unincorporated research initiative in `ORG_FACTS.yaml` with `verified: false`. | Open | Awaiting founder input |
 | **OQ-003** | Named Personnel | Who are the named maintainers and scientific advisors consenting to be listed? | Default to empty roster in `ORG_FACTS.yaml` (`people: []`). | Open | Awaiting founder input |
 | **OQ-004** | Contact Endpoints | What are the verified email endpoints for general, security, and ethics communications? | Default to `null` in `ORG_FACTS.yaml` (`verified: false`). | Open | Awaiting founder input |

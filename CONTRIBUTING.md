@@ -6,7 +6,7 @@ Thank you for your interest in contributing to Symnoesis (SYMN-01). As an open r
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/harvagroups/symnoesis.git
+git clone https://github.com/harvatechs/symnoesis.git
 cd symnoesis
 
 # 2. Setup pinned toolchains

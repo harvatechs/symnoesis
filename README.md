@@ -30,7 +30,7 @@ Side    [0001]             THE SYMNOESIS MAP (16 × 16)
 
 ```bash
 # Clone the repository
-git clone https://github.com/harvagroups/symnoesis.git
+git clone https://github.com/harvatechs/symnoesis.git
 cd symnoesis
 
 # Install pinned toolchains across Python and Node
@@ -53,7 +53,7 @@ See [`CITATION.cff`](./CITATION.cff) or use the following reference:
 @software{symnoesis2026,
   author = {{HarVa Groups}},
   title = {Symnoesis (SYMN-01): Measuring Long-Term Human-AI Interaction},
-  url = {https://github.com/harvagroups/symnoesis},
+  url = {https://github.com/harvatechs/symnoesis},
   version = {0.1.0},
   year = {2026}
 }
