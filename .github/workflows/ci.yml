@@ -32,7 +32,7 @@ jobs:
           version: 9.15.9
 
       - name: Setup Node
-        uses: actions/setup-node@1e60f639196014664a7e1a677614c252de45a155 # v4.0.3
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: "pnpm"
@@ -68,7 +68,7 @@ jobs:
           version: 9.15.9
 
       - name: Setup Node
-        uses: actions/setup-node@1e60f639196014664a7e1a677614c252de45a155 # v4.0.3
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: "pnpm"
