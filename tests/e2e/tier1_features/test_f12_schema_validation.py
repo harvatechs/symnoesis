@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from urllib.parse import urlparse
 
 import pytest
 
@@ -76,6 +77,8 @@ def test_tc1_12_05_schema_draft_consistency(all_schema_paths: list[Path]) -> Non
         with open(p, encoding="utf-8") as f:
             data = json.load(f)
         schema_uri = data.get("$schema", "")
-        assert "json-schema.org" in schema_uri, (
-            f"{p.name} does not reference json-schema.org dialect"
+        parsed = urlparse(schema_uri)
+        host = (parsed.hostname or "").lower()
+        assert parsed.scheme in {"http", "https"} and host == "json-schema.org", (
+            f"{p.name} does not reference a valid json-schema.org dialect URI"
         )
