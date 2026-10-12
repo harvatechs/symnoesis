@@ -1,0 +1,274 @@
+---
+import "../styles/tokens.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  currentSection?: "idea" | "map" | "portal" | "index" | "research" | "about" | "method" | "docs" | "governance";
+}
+
+const { title, description = "Symnoesis (SYMN-01): An open research initiative for the measurement of human–machine symbiosis.", currentSection } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} — Symnoesis (SYMN-01)</title>
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="/" class="brand-link">
+            <span class="brand-title">Symnoesis</span>
+            <span class="brand-code">SYMN-01</span>
+          </a>
+        </div>
+
+        <nav class="primary-nav" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="/idea" class:list={[{ active: currentSection === "idea" }]}>Idea</a></li>
+            <li><a href="/map" class:list={[{ active: currentSection === "map" }]}>Map</a></li>
+            <li><a href="/portal" class:list={[{ active: currentSection === "portal" }]}>Portal</a></li>
+            <li><a href="/index" class:list={[{ active: currentSection === "index" }]}>Index</a></li>
+            <li><a href="/research" class:list={[{ active: currentSection === "research" }]}>Research</a></li>
+            <li><a href="/about" class:list={[{ active: currentSection === "about" }]}>About</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="https://github.com/harvagroups/symnoesis" class="github-link" rel="noopener noreferrer" target="_blank" aria-label="GitHub Repository">
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="site-main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col brand-col">
+          <p class="footer-logo"><strong>Symnoesis (SYMN-01)</strong></p>
+          <p class="footer-desc">An open research initiative for the empirical measurement and governance of human–machine symbiosis.</p>
+          <p class="footer-credit">A HarVa Groups research initiative.</p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Documentation</h2>
+          <ul class="footer-links">
+            <li><a href="/method">Methodology & Spec</a></li>
+            <li><a href="/docs">Diátaxis Docs</a></li>
+            <li><a href="/research">Whitepaper & Research Log</a></li>
+            <li><a href="/cite">Citation Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Governance</h2>
+          <ul class="footer-links">
+            <li><a href="/governance">Charter & Ethics</a></li>
+            <li><a href="/privacy">Privacy by Construction</a></li>
+            <li><a href="/accessibility">Accessibility Statement</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-heading">Integrity</h2>
+          <ul class="footer-links">
+            <li><span class="evidence-tag">Zero Tracking</span></li>
+            <li><span class="evidence-tag">Zero Marketing Fluff</span></li>
+            <li><span class="evidence-tag">Open Apache-2.0 / CC BY 4.0</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>&copy; {new Date().getFullYear()} HarVa Groups. Released under Apache-2.0 (code) and CC BY 4.0 (spec & content).</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.75rem;
+  }
+
+  .brand-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .brand-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  .brand-code {
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--ink-3);
+    background: var(--surface);
+    padding: 0.15rem 0.4rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--line);
+  }
+
+  .primary-nav {
+    display: flex;
+  }
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: var(--ink-2);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    padding: 0.25rem 0;
+    transition: color 0.15s ease;
+  }
+
+  .nav-list a:hover {
+    color: var(--ink);
+  }
+
+  .nav-list a.active {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+  }
+
+  .github-link {
+    font-size: 0.875rem;
+    color: var(--ink-2);
+    text-decoration: none;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  .github-link:hover {
+    background: var(--surface-alt);
+    color: var(--ink);
+  }
+
+  .site-main {
+    flex: 1;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+    padding: 3rem 0 2rem 0;
+    margin-top: 4rem;
+    font-size: var(--text-small);
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .nav-list {
+      gap: 0.75rem;
+    }
+  }
+
+  .footer-logo {
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .footer-desc {
+    color: var(--ink-3);
+    margin: 0 0 0.75rem 0;
+    line-height: 1.5;
+  }
+
+  .footer-credit {
+    color: var(--ink-3);
+    font-size: var(--text-caption);
+    margin: 0;
+  }
+
+  .footer-heading {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink-2);
+    margin: 0 0 1rem 0;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-links a {
+    color: var(--ink-3);
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    color: var(--ink);
+    text-decoration: underline;
+  }
+
+  .evidence-tag {
+    display: inline-block;
+    font-size: var(--text-caption);
+    color: var(--ink-3);
+    font-family: var(--font-mono);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+    color: var(--ink-3);
+    font-size: var(--text-caption);
+  }
+</style>

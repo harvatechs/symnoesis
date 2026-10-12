@@ -1,0 +1,51 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="Accessibility Statement" currentSection="about">
+  <div class="container container-prose page-wrapper">
+    <header class="page-header">
+      <h1 class="page-title">Accessibility Statement</h1>
+      <p class="page-lead">
+        Symnoesis is committed to digital accessibility in compliance with WCAG 2.1 and 2.2 Level AA.
+      </p>
+    </header>
+
+    <article class="prose-content">
+      <section>
+        <h2>Accessible Design Standards</h2>
+        <p>
+          Scientific instruments and research literature must be fully legible to every researcher. 
+          We have implemented the following accessibility features across the web application:
+        </p>
+        <ul>
+          <li><strong>Keyboard Navigation:</strong> The 16×16 interactive map supports full keyboard operation using a roving tabindex, standard arrow-key navigation, and wrap-around movement.</li>
+          <li><strong>Accessible Table Alternative:</strong> The map includes a complete sortable and navigable table alternative rendering all 256 states with explicit labels for screen readers.</li>
+          <li><strong>Color Vision Deficiency Support:</strong> The diverging SQ palette is mapped in OKLab color space and tested for protanopia, deuteranopia, and tritanopia. Color is never the sole indicator of sign or state: glyphs (+/−) and textual zone labels accompany all cells.</li>
+          <li><strong>High Contrast & Semantic Landmarks:</strong> Body copy meets or exceeds a 4.5:1 contrast ratio against the background. Skip links allow immediate bypass of navigation headers.</li>
+          <li><strong>Motion Sensitivity:</strong> All animations honor <code>prefers-reduced-motion</code> settings. Autoplay is disabled everywhere.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Known Limitations & Feedback</h2>
+        <p>
+          We continually audit this site against automated accessibility suites and screen reader devices. 
+          If you encounter any barrier, please file an issue on our GitHub repository.
+        </p>
+      </section>
+    </article>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper { padding: 3rem 0; }
+  .page-header { margin-bottom: 2.5rem; border-bottom: 1px solid var(--line); padding-bottom: 2rem; }
+  .page-title { font-size: var(--text-h1); font-weight: 700; margin: 0.75rem 0 1rem 0; color: var(--ink); }
+  .page-lead { font-size: 1.25rem; color: var(--ink-2); line-height: 1.5; margin: 0; }
+  .prose-content { font-family: var(--font-serif); font-size: var(--text-body); line-height: 1.7; color: var(--ink); }
+  .prose-content h2 { font-family: var(--font-sans); font-size: var(--text-h2); font-weight: 600; margin: 2.5rem 0 1rem 0; color: var(--ink); }
+  .prose-content p { margin: 0 0 1.25rem 0; }
+  .prose-content ul { margin: 0 0 1.5rem 0; padding-left: 1.5rem; }
+  .prose-content li { margin-bottom: 0.5rem; }
+</style>

@@ -1,0 +1,144 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="About" currentSection="about">
+  <div class="container container-prose page-wrapper">
+    <header class="page-header">
+      <h1 class="page-title">About Symnoesis</h1>
+      <p class="page-lead">
+        An open research initiative for the transparent measurement and governance of human–machine interaction.
+      </p>
+    </header>
+
+    <article class="prose-content">
+      <section>
+        <h2>Initiative Origin</h2>
+        <p>
+          Symnoesis (SYMN-01) is an independent, not-for-profit open research initiative established by <strong>HarVa Groups</strong>.
+          It was founded to address a critical structural gap in artificial intelligence evaluation: models are universally scored in single-turn isolation, 
+          ignoring the complex cognitive adaptations, skill deskilling, and autonomy surrender that occur when humans work with systems over weeks and months.
+        </p>
+      </section>
+
+      <section>
+        <h2>Organizational Facts & Transparency</h2>
+        <p>
+          In accordance with our binding evidence and claims policy, we publish only verified organizational facts:
+        </p>
+        <div class="facts-card">
+          <table class="facts-table">
+            <tbody>
+              <tr>
+                <th scope="row">Initiative Sponsor</th>
+                <td>HarVa Groups (Verified)</td>
+              </tr>
+              <tr>
+                <th scope="row">Specification Version</th>
+                <td>SYMN-01 v0.1.0 (Draft)</td>
+              </tr>
+              <tr>
+                <th scope="row">Code License</th>
+                <td>Apache License 2.0</td>
+              </tr>
+              <tr>
+                <th scope="row">Specification License</th>
+                <td>Creative Commons Attribution 4.0 International (CC BY 4.0)</td>
+              </tr>
+              <tr>
+                <th scope="row">External Funding</th>
+                <td>None (Self-funded open science initiative)</td>
+              </tr>
+              <tr>
+                <th scope="row">Repository</th>
+                <td><a href="https://github.com/harvagroups/symnoesis" target="_blank" rel="noopener">github.com/harvagroups/symnoesis</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>Scientific Restraint & Honesty</h2>
+        <p>
+          We do not claim that Symnoesis is a "revolutionary breakthrough" or an "industry-standard solution". 
+          It is a carefully engineered, falsifiable, and mathematically rigorous research specification. 
+          We invite researchers, psychologists, systems engineers, and policy analysts to test the implementation, 
+          reproduce the worked vectors, and critique the model.
+        </p>
+      </section>
+    </article>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper {
+    padding: 3rem 0;
+  }
+
+  .page-header {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+  }
+
+  .page-title {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    margin: 0.75rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .page-lead {
+    font-size: 1.25rem;
+    color: var(--ink-2);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .prose-content {
+    font-family: var(--font-serif);
+    font-size: var(--text-body);
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  .prose-content h2 {
+    font-family: var(--font-sans);
+    font-size: var(--text-h2);
+    font-weight: 600;
+    margin: 2.5rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .facts-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    font-family: var(--font-sans);
+  }
+
+  .facts-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9375rem;
+  }
+
+  .facts-table th, .facts-table td {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .facts-table th {
+    font-weight: 600;
+    color: var(--ink-2);
+    width: 35%;
+  }
+
+  .facts-table td {
+    color: var(--ink);
+  }
+</style>

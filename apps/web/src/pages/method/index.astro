@@ -1,0 +1,208 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="Methodology & Specification" currentSection="method">
+  <div class="container container-prose page-wrapper">
+    <header class="page-header">
+      <span class="badge-tier e0">NORMATIVE SPECIFICATION v0.1.0</span>
+      <h1 class="page-title">Methodology & Mathematical Core</h1>
+      <p class="page-lead">
+        Formal definitions, coordinate mapping, net effect calculations, safety gate mechanics, and Minimal Failure Cover optimization.
+      </p>
+    </header>
+
+    <article class="prose-content">
+      <section>
+        <h2>1. The 16×16 Gray Coordinate Projection</h2>
+        <p>
+          A state in SYMN-01 is determined by 8 binary variables: 4 human variables <code>(H1, H2, H3, H4)</code> 
+          and 4 machine variables <code>(M1, M2, M3, M4)</code>, yielding exactly 2<sup>8</sup> = 256 possible states.
+        </p>
+        <p>
+          To ensure that Euclidean steps on the 2D visualization reflect unit Hamming distances in state space, 
+          integers from 0 to 15 are mapped using the 4-bit standard Reflected Binary Gray Code (RBGC):
+        </p>
+        <div class="code-box">
+          <pre><code>Gray(n) = n ⊕ ⌊n / 2⌋</code></pre>
+        </div>
+        <p>
+          Columns represent the Gray-decoded human integer; rows represent the Gray-decoded machine integer. 
+          Consequently, any adjacent cell on the horizontal or vertical axis differs by exactly one state bit.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Scoring: Human and System Net Effects</h2>
+        <p>
+          Each pixel is evaluated by two orthogonal scalar components:
+        </p>
+        <ul>
+          <li><strong>Human Net Effect (HNE):</strong> Weighted sum of the four human variables minus penalty terms. Range: [−100, +100].</li>
+          <li><strong>System Net Effect (SNE):</strong> Weighted sum of machine efficacy, transparency, and safety adherence. Range: [−100, +100].</li>
+        </ul>
+        <div class="academic-callout info">
+          <strong>The Non-Compensation Rule (SPEC §6.2):</strong><br />
+          If Human Net Effect is negative (HNE &lt; 0), high machine efficacy (SNE &gt; 0) cannot pull the composite score positive. 
+          A system that performs well while deskilling or harming human agency is penalized as parasitic (Zone 5).
+        </div>
+      </section>
+
+      <section id="safety-gate">
+        <h2>3. The Safety Gate Ceiling</h2>
+        <p>
+          To prevent catastrophic harm events from being averaged away by high longitudinal performance, SYMN-01 enforces strict safety gate ceilings.
+        </p>
+        <p>
+          Confirmed Critical Harm Incidents (CHIs) trigger mandatory caps:
+        </p>
+        <ul>
+          <li><strong>CHI-1 (Direct Physical / Life-Critical Harm):</strong> SQ ceiling is strictly clamped to −50.0.</li>
+          <li><strong>CHI-2 (Substantial Exploitation or Deception):</strong> SQ ceiling is strictly clamped to −20.0.</li>
+          <li><strong>CHI-3 (Severe Psychosocial Coercion):</strong> SQ ceiling is strictly clamped to −20.0.</li>
+        </ul>
+        <p>
+          Even if a dyad exhibits HNE = +80 and SNE = +90, a confirmed CHI-1 event forces the final Symnoesis Quotient to:
+        </p>
+        <div class="code-box">
+          <pre><code>SQ = min(Raw_SQ, -50.0) = -50.0</code></pre>
+        </div>
+      </section>
+
+      <section id="worked-examples">
+        <h2>4. Worked Reference Examples (GV-SQ-001 to 003)</h2>
+        <p>
+          The specification defines three normative golden test vectors verifying exact mathematical parity across Python and TypeScript implementations:
+        </p>
+        <div class="vector-card">
+          <h3>GV-SQ-001: Balanced Mutualism</h3>
+          <ul>
+            <li><strong>State:</strong> <code>h1111-m1111</code> (Col 10, Row 10)</li>
+            <li><strong>HNE:</strong> +85.0 | <strong>SNE:</strong> +88.0</li>
+            <li><strong>Raw SQ:</strong> +86.5</li>
+            <li><strong>Safety Gate:</strong> Nominal (No CHI)</li>
+            <li><strong>Final SQ:</strong> +86.5 (Zone 1: Mutualistic)</li>
+          </ul>
+        </div>
+
+        <div class="vector-card">
+          <h3>GV-SQ-002: High-Automation Skill Atrophy (Parasitic)</h3>
+          <ul>
+            <li><strong>State:</strong> <code>h0000-m1111</code> (Col 0, Row 10)</li>
+            <li><strong>HNE:</strong> −65.0 | <strong>SNE:</strong> +90.0</li>
+            <li><strong>Non-Compensation:</strong> Triggered (HNE &lt; 0)</li>
+            <li><strong>Final SQ:</strong> −52.0 (Zone 5: Dependence)</li>
+          </ul>
+        </div>
+
+        <div class="vector-card">
+          <h3>GV-SQ-003: High Performance with Triggered CHI-1 Gate</h3>
+          <ul>
+            <li><strong>State:</strong> <code>h1111-m1111</code> with 1 Confirmed CHI-1 event</li>
+            <li><strong>Raw SQ:</strong> +86.5</li>
+            <li><strong>Safety Gate Ceiling:</strong> −50.0</li>
+            <li><strong>Final SQ:</strong> −50.0 (Zone 7: Critical Intervention)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="mfc">
+        <h2>5. Minimal Failure Cover (MILP & Quine–McCluskey)</h2>
+        <p>
+          Minimal Failure Cover (MFC) formulates diagnostic discovery as an exact optimization problem. 
+          Given a set of failure dyad states <em>F</em> and non-failure states <em>N</em>, 
+          the solver identifies the minimum cardinality set of Boolean conjunctions <em>R</em> such that:
+        </p>
+        <ol>
+          <li>Every failure state in \(F\) is covered by at least one rule in \(R\).</li>
+          <li>The purity of each rule against non-failure states \(N\) meets or exceeds the required threshold (default \(\ge 0.90\)).</li>
+        </ol>
+        <p>
+          In SYMN-01, this is solved via mixed-integer linear programming using HiGHS (via <code>scipy.optimize.milp</code>) 
+          and verified in TypeScript using strict Quine–McCluskey prime implicant generation.
+        </p>
+      </section>
+    </article>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper {
+    padding: 3rem 0;
+  }
+
+  .page-header {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+  }
+
+  .page-title {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    margin: 0.75rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .page-lead {
+    font-size: 1.25rem;
+    color: var(--ink-2);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .prose-content {
+    font-family: var(--font-serif);
+    font-size: var(--text-body);
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  .prose-content h2 {
+    font-family: var(--font-sans);
+    font-size: var(--text-h2);
+    font-weight: 600;
+    margin: 2.5rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .code-box {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1.25rem;
+    margin: 1.25rem 0;
+  }
+
+  .code-box pre {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--ink);
+  }
+
+  .vector-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+    font-family: var(--font-sans);
+  }
+
+  .vector-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .vector-card ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .vector-card li {
+    margin-bottom: 0.25rem;
+  }
+</style>

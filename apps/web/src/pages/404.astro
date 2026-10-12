@@ -1,0 +1,30 @@
+---
+import AcademicLayout from "../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="Page Not Found" currentSection="idea">
+  <div class="container container-prose page-wrapper">
+    <header class="page-header">
+      <h1 class="page-title">404: State Unobserved</h1>
+      <p class="page-lead">
+        The requested page does not exist on this coordinate grid.
+      </p>
+    </header>
+
+    <div class="actions">
+      <a href="/" class="btn btn-primary">Return to Home</a>
+      <a href="/map" class="btn btn-secondary">Explore the Map</a>
+    </div>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper { padding: 4rem 0; text-align: center; }
+  .page-header { margin-bottom: 2rem; }
+  .page-title { font-size: var(--text-h1); font-weight: 700; margin-bottom: 1rem; color: var(--ink); }
+  .page-lead { font-size: 1.25rem; color: var(--ink-2); }
+  .actions { display: flex; justify-content: center; gap: 1rem; }
+  .btn { padding: 0.65rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.9375rem; text-decoration: none; }
+  .btn-primary { background: var(--ink); color: var(--paper); }
+  .btn-secondary { background: var(--surface); color: var(--ink); border: 1px solid var(--line-strong); }
+</style>

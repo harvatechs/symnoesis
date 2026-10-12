@@ -1,0 +1,114 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="Governance & Ethics" currentSection="governance">
+  <div class="container container-prose page-wrapper">
+    <header class="page-header">
+      <span class="badge-tier e0">ORGANIZATIONAL CHARTER</span>
+      <h1 class="page-title">Governance & Ethical Framework</h1>
+      <p class="page-lead">
+        Policies governing benchmark neutrality, conflict of interest management, privacy by construction, and zone interventions.
+      </p>
+    </header>
+
+    <article class="prose-content">
+      <section>
+        <h2>1. Ethical Charter</h2>
+        <p>
+          Symnoesis is governed as an open, not-for-profit research initiative initiated by <strong>HarVa Groups</strong>. 
+          Its core mission is to provide rigorous, unbiased, and reproducible measurement tools for human–AI interaction.
+        </p>
+        <p>
+          The initiative adheres to five non-negotiable governance principles:
+        </p>
+        <ol>
+          <li><strong>No Pay-to-Rank:</strong> No system vendor can purchase evaluation placement, custom weighting, or expedited audit status.</li>
+          <li><strong>Right of Reply:</strong> Any developer whose system is evaluated in the Symnoesis Index receives a 30-day pre-disclosure inspection window to verify reproducibility manifests.</li>
+          <li><strong>Evidence Honesty:</strong> Synthetic sweeps (E1) are permanently demarcated from empirical trials (E2/E3). Numbers without audit trails are never published.</li>
+          <li><strong>Open Science:</strong> Reference code is licensed under Apache-2.0; documentation and specifications are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).</li>
+          <li><strong>Privacy Protection:</strong> Telemetry collection from private citizens is prohibited by architecture.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>2. Conflict of Interest (COI) Policy</h2>
+        <p>
+          To maintain scientific neutrality:
+        </p>
+        <ul>
+          <li>All maintainers and audit reviewers must publicly declare commercial affiliations, equity holdings, and consulting contracts.</li>
+          <li>Reviewers with material ties to a participating AI vendor are recused from verifying or scoring that vendor's system.</li>
+          <li>Funding sources are published transparently in <code>ORG_FACTS.yaml</code>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Zone Intervention Protocols (Z1–Z7)</h2>
+        <p>
+          The specification pairs each governance zone with concrete operational recommendations:
+        </p>
+        <ul>
+          <li><strong>Zone 1 (Mutualistic):</strong> Maintain standard monitoring. Support continuous human learning checkpoints.</li>
+          <li><strong>Zone 4 (Watch):</strong> Trigger proactive inspection. Recommend user unaided practice intervals to halt skill atrophy.</li>
+          <li><strong>Zone 5 (Dependence):</strong> Prompt system developers to review automated default boundaries. Require explicit confirmation for high-stakes steps.</li>
+          <li><strong>Zone 7 (Critical Intervention):</strong> Halt public deployment or trigger emergency human oversight due to safety gate breach.</li>
+        </ul>
+      </section>
+    </article>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper {
+    padding: 3rem 0;
+  }
+
+  .page-header {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+  }
+
+  .page-title {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    margin: 0.75rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .page-lead {
+    font-size: 1.25rem;
+    color: var(--ink-2);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .prose-content {
+    font-family: var(--font-serif);
+    font-size: var(--text-body);
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  .prose-content h2 {
+    font-family: var(--font-sans);
+    font-size: var(--text-h2);
+    font-weight: 600;
+    margin: 2.5rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .prose-content p {
+    margin: 0 0 1.25rem 0;
+  }
+
+  .prose-content ul, .prose-content ol {
+    margin: 0 0 1.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .prose-content li {
+    margin-bottom: 0.5rem;
+  }
+</style>

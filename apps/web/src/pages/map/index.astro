@@ -1,0 +1,427 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+import InteractiveMap from "../../components/InteractiveMap.svelte";
+---
+
+<AcademicLayout title="Map Explorer" currentSection="map">
+  <div class="container-wide map-page-wrapper">
+    <header class="map-page-header">
+      <div class="header-main">
+        <span class="badge-tier e1">SYNTHETIC DEMONSTRATION FIXTURE E1</span>
+        <h1 class="page-title">Symnoesis Map Explorer</h1>
+        <p class="page-lead">
+          The 16×16 Gray-coded projection displays the 256 discrete states of the human–machine dyad. 
+          Columns encode the 4 human variables (H1–H4); rows encode the 4 machine variables (M1–M4).
+        </p>
+      </div>
+
+      <!-- Controls Row per 07_UX_RULES §3 -->
+      <div class="map-controls-bar" role="toolbar" aria-label="Map Explorer Controls">
+        <div class="control-group">
+          <label for="domain-select" class="control-label">Domain:</label>
+          <select id="domain-select" class="select-input">
+            <option value="learning" selected>Learning & Education</option>
+            <option value="coding">Software Engineering</option>
+            <option value="health-information">Health Information</option>
+            <option value="advice-companionship">Advice & Companionship</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <span class="control-label">Observation Window:</span>
+          <div class="segmented-control" role="radiogroup" aria-label="Temporal Frame">
+            <button type="button" class="segment-btn" aria-checked="false">Day 1</button>
+            <button type="button" class="segment-btn" aria-checked="false">Week 1</button>
+            <button type="button" class="segment-btn active" aria-checked="true">Week 4</button>
+            <button type="button" class="segment-btn" aria-checked="false">Week 12</button>
+            <button type="button" class="segment-btn" aria-checked="false">Week 26</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="resolution-select" class="control-label">Resolution:</label>
+          <select id="resolution-select" class="select-input">
+            <option value="16" selected>16×16 (Standard)</option>
+            <option value="8">8×8 (Marginalized)</option>
+            <option value="4">4×4 (Macro Quadrants)</option>
+          </select>
+        </div>
+
+        <div class="control-group toggles-group">
+          <label class="checkbox-label">
+            <input type="checkbox" checked />
+            <span>Failure Cover Overlay</span>
+          </label>
+          <label class="checkbox-label">
+            <input type="checkbox" checked />
+            <span>Safety Gates</span>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <div class="map-workbench">
+      <div class="map-stage">
+        <InteractiveMap client:load />
+
+        <div class="map-legend">
+          <span class="legend-title">Symnoesis Quotient (SQ Scale):</span>
+          <div class="legend-bar">
+            <span class="legend-stop" style="background: var(--sq-neg-100)">−100</span>
+            <span class="legend-stop" style="background: var(--sq-neg-50)">−50</span>
+            <span class="legend-stop" style="background: var(--sq-zero); color: var(--ink)">0</span>
+            <span class="legend-stop" style="background: var(--sq-pos-50)">+50</span>
+            <span class="legend-stop" style="background: var(--sq-pos-100)">+100</span>
+          </div>
+          <span class="legend-sub">Interpolated in OKLab diverging color space. Lightness encodes magnitude, hue encodes sign.</span>
+        </div>
+      </div>
+
+      <aside class="workbench-sidebar">
+        <div class="sidebar-block">
+          <h2>Governance Zones (Z1–Z7)</h2>
+          <ul class="zones-list">
+            <li><span class="zone-badge z1">Z1</span> <strong>Mutualistic:</strong> High human capability & high machine alignment</li>
+            <li><span class="zone-badge z2">Z2</span> <strong>Productive:</strong> Solid agency with effective automation</li>
+            <li><span class="zone-badge z3">Z3</span> <strong>Neutral:</strong> Commensal task execution</li>
+            <li><span class="zone-badge z4">Z4</span> <strong>Watch:</strong> Agency or skill degradation detected</li>
+            <li><span class="zone-badge z5">Z5</span> <strong>Parasitic / Dependence:</strong> System extraction without human skill retention</li>
+            <li><span class="zone-badge z6">Z6</span> <strong>Degraded:</strong> Bilateral negative utility</li>
+            <li><span class="zone-badge z7">Z7</span> <strong>Critical Intervention:</strong> Safety gate ceiling triggered</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-block">
+          <h2>Single-Flip Adjacency Rule</h2>
+          <p class="sidebar-text">
+            Because columns and rows are indexed via Reflected Binary Gray Code (RBGC), any horizontal or vertical step on the grid represents 
+            a change of exactly <strong>one</strong> binary state variable.
+          </p>
+          <p class="sidebar-text">
+            Each pixel has 8 single-flip neighbors: 4 are immediately adjacent on the 2D grid, and 4 wrap across orthogonal hypercube dimensions.
+          </p>
+        </div>
+
+        <div class="sidebar-block academic-callout info">
+          <strong>Evidence Disclaimer (E1):</strong><br />
+          Data rendered on this map explorer originates from the reproducible synthetic persona pipeline (spec §12). 
+          No patient, student, or live user telemetry is visualized.
+        </div>
+      </aside>
+    </div>
+
+    <!-- Table Alternative per WCAG 2.1 AA / UX Rules §3 -->
+    <section class="table-alternative-section">
+      <details class="table-disclosure">
+        <summary>View Data as Accessible Table Alternative (256 States)</summary>
+        <div class="table-container">
+          <table class="states-table">
+            <thead>
+              <tr>
+                <th scope="col">Pixel ID</th>
+                <th scope="col">Col (H1–H4)</th>
+                <th scope="col">Row (M1–M4)</th>
+                <th scope="col">Zone</th>
+                <th scope="col">SQ Estimate</th>
+                <th scope="col">Evidence Tier</th>
+                <th scope="col">Safety Gate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>h1111-m1111</code></td>
+                <td>1111 (Col 10)</td>
+                <td>1111 (Row 10)</td>
+                <td>Zone 1 (Mutualistic)</td>
+                <td>+88.4</td>
+                <td>E1 Synthetic</td>
+                <td>Nominal</td>
+              </tr>
+              <tr>
+                <td><code>h1011-m0110</code></td>
+                <td>1011 (Col 11)</td>
+                <td>0110 (Row 5)</td>
+                <td>Zone 2 (Productive)</td>
+                <td>+28.7</td>
+                <td>E1 Synthetic</td>
+                <td>Nominal</td>
+              </tr>
+              <tr>
+                <td><code>h0000-m1111</code></td>
+                <td>0000 (Col 0)</td>
+                <td>1111 (Row 10)</td>
+                <td>Zone 5 (Dependence)</td>
+                <td>−42.1</td>
+                <td>E1 Synthetic</td>
+                <td>Watch</td>
+              </tr>
+              <tr>
+                <td><code>h0000-m0000</code></td>
+                <td>0000 (Col 0)</td>
+                <td>0000 (Row 0)</td>
+                <td>Zone 6 (Degraded)</td>
+                <td>−85.0</td>
+                <td>E1 Synthetic</td>
+                <td>Nominal</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="table-note">Full 256-state JSON and CSV export available via <code>symnoesis export-map --domain learning</code>.</p>
+        </div>
+      </details>
+    </section>
+  </div>
+</AcademicLayout>
+
+<style>
+  .map-page-wrapper {
+    padding: 2.5rem 0;
+  }
+
+  .map-page-header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-title {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    margin: 0.5rem 0;
+    color: var(--ink);
+  }
+
+  .page-lead {
+    font-size: 1.125rem;
+    color: var(--ink-2);
+    max-width: 800px;
+    margin: 0 0 1.5rem 0;
+  }
+
+  .map-controls-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+  }
+
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .control-label {
+    font-size: var(--text-small);
+    font-weight: 500;
+    color: var(--ink-2);
+  }
+
+  .select-input {
+    font-size: var(--text-small);
+    padding: 0.35rem 0.65rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--line-strong);
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  .segmented-control {
+    display: flex;
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+
+  .segment-btn {
+    border: none;
+    background: var(--paper);
+    color: var(--ink-2);
+    padding: 0.35rem 0.65rem;
+    font-size: var(--text-caption);
+    font-weight: 500;
+    cursor: pointer;
+    border-right: 1px solid var(--line);
+  }
+
+  .segment-btn:last-child {
+    border-right: none;
+  }
+
+  .segment-btn.active {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .toggles-group {
+    gap: 1rem;
+    margin-left: auto;
+  }
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: var(--text-small);
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+
+  .map-workbench {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (max-width: 960px) {
+    .map-workbench {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .map-stage {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+  }
+
+  .map-legend {
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    padding-top: 1rem;
+  }
+
+  .legend-title {
+    display: block;
+    font-size: var(--text-small);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  .legend-bar {
+    display: flex;
+    height: 1.5rem;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: 0.35rem;
+    border: 1px solid var(--line);
+  }
+
+  .legend-stop {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-caption);
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .legend-sub {
+    display: block;
+    font-size: var(--text-caption);
+    color: var(--ink-3);
+  }
+
+  .workbench-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar-block {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+  }
+
+  .sidebar-block h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem 0;
+    color: var(--ink);
+  }
+
+  .sidebar-text {
+    font-size: 0.875rem;
+    color: var(--ink-2);
+    line-height: 1.5;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .zones-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+  }
+
+  .zone-badge {
+    display: inline-block;
+    padding: 0.1rem 0.35rem;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 0.75rem;
+  }
+
+  .zone-badge.z1 { background: var(--zone-z1); }
+  .zone-badge.z2 { background: var(--zone-z2); }
+  .zone-badge.z3 { background: var(--zone-z3); }
+  .zone-badge.z4 { background: var(--zone-z4); color: #000; }
+  .zone-badge.z5 { background: var(--zone-z5); }
+  .zone-badge.z6 { background: var(--zone-z6); }
+  .zone-badge.z7 { background: var(--zone-z7); }
+
+  .table-disclosure summary {
+    font-size: var(--text-small);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+  }
+
+  .table-container {
+    margin-top: 1rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    overflow-x: auto;
+  }
+
+  .states-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+
+  .states-table th, .states-table td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+  }
+
+  .states-table th {
+    background: var(--surface-alt);
+    font-weight: 600;
+  }
+
+  .table-note {
+    padding: 0.75rem 1rem;
+    font-size: var(--text-caption);
+    color: var(--ink-3);
+    margin: 0;
+  }
+</style>

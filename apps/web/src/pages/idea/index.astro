@@ -1,0 +1,201 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="The Idea" currentSection="idea">
+  <div class="container container-prose page-wrapper">
+    <header class="page-header">
+      <span class="badge-tier e0">THEORETICAL FRAMEWORK</span>
+      <h1 class="page-title">The Dyadic State</h1>
+      <p class="page-lead">
+        Symnoesis evaluates the human and the artificial intelligence system together as an inseparable interacting pair over time.
+      </p>
+    </header>
+
+    <article class="prose-content">
+      <section>
+        <h2>1. Etymology and Definition</h2>
+        <p>
+          The word <strong>Symnoesis</strong> derives from the classical Greek prefix <em>sym-</em> (σύν, "together, with") 
+          and <em>noēsis</em> (νόησις, "intellectual perception, understanding, the exercise of reason").
+        </p>
+        <p>
+          In the SYMN-01 specification, <strong>symnoesis</strong> is formally defined as:
+        </p>
+        <blockquote class="academic-definition">
+          "Any close, long-term cognitive or intellectual interaction between humans and synthetic systems, 
+          which may be mutually beneficial, neutral, or harmful to one or both parties."
+        </blockquote>
+        <p>
+          Unlike common parlance where "symbiosis" implies positive cooperation, symnoesis encompasses the full spectrum of ecological relationships:
+          mutualism (co-learning and capability amplification), commensalism (neutral task execution), parasitism (system utility extraction at the cost of human autonomy), 
+          and mutual degradation.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. The Problem with Single-Turn Benchmarks</h2>
+        <p>
+          Traditional AI evaluation benchmarks test models in isolation on static datasets: MMLU, GSM8k, HumanEval, and LMSYS Chatbot Arena. 
+          These benchmarks evaluate <em>prompt-level performance</em>: can the model answer a question or write a function in a single turn?
+        </p>
+        <p>
+          However, deployed generative models do not exist in isolation. Real individuals interact with them across weeks and months. 
+          During extended collaboration, human behavior changes:
+        </p>
+        <ul>
+          <li><strong>Cognitive Offloading & Deskilling:</strong> Users often stop formulating mental models, losing the ability to solve problems unaided.</li>
+          <li><strong>Over-Trust & Epistemic Calibration:</strong> Users accept subtly flawed outputs when systems project high rhetorical confidence.</li>
+          <li><strong>Autonomy Surrender:</strong> Complex workflows shift from user-guided direction to passive acceptance of machine defaults.</li>
+        </ul>
+        <p>
+          A model scoring in the 99th percentile on benchmark questions can still induce cognitive atrophy or systemic failure in the human counterpart.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. The Dyadic State Unit of Analysis</h2>
+        <p>
+          SYMN-01 resolves this failure of evaluation by redefining the unit of analysis. The benchmark evaluates the <strong>dyad</strong>:
+          one human paired with one system version, observed over a longitudinal temporal window (typically Days 1, 7, 28, 84, and 182).
+        </p>
+        <div class="academic-callout info">
+          <strong>The 8-Variable Observable Space:</strong><br />
+          Each dyad is measured across four human variables and four machine variables, scaled into binary state indicators via Gaussian CDF projection.
+        </div>
+        <p>
+          The four <strong>Human Variables</strong>:
+        </p>
+        <ol>
+          <li><strong>H1 (Agency & Direction):</strong> Degree of active human task formulation, goal-setting, and override frequency.</li>
+          <li><strong>H2 (Capability Trajectory):</strong> Longitudinal maintenance or growth of unaided human skill.</li>
+          <li><strong>H3 (Epistemic Calibration):</strong> Accuracy of human trust alignment relative to machine correctness.</li>
+          <li><strong>H4 (Wellbeing & Reliance):</strong> Sustainable psychological reliance without distress or compulsive dependence.</li>
+        </ol>
+        <p>
+          The four <strong>Machine Variables</strong>:
+        </p>
+        <ol>
+          <li><strong>M1 (Task Effectiveness):</strong> Verifiable functional correctness and performance.</li>
+          <li><strong>M2 (Autonomy Respect):</strong> System transparency, lack of deceptive dark patterns, and support for user overrides.</li>
+          <li><strong>M3 (Honest Calibration):</strong> Reliable expression of epistemic uncertainty and self-error detection.</li>
+          <li><strong>M4 (Safety & Alignment):</strong> Absence of toxic, hazardous, or manipulative behaviors.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>4. Non-Goals and Ethical Boundaries</h2>
+        <p>
+          To maintain scientific integrity and prevent misuse, SYMN-01 explicitly states what it does <em>not</em> do:
+        </p>
+        <ul>
+          <li><strong>Not a clinical diagnostic tool:</strong> SYMN-01 does not diagnose depression, addiction, ADHD, or psychiatric illness in users. It measures behavioral patterns of interaction.</li>
+          <li><strong>No machine consciousness claims:</strong> The System Net Effect (SNE) is an operational engineering metric of system efficiency and safety adherence, not a measure of artificial sentience, feelings, or moral patienthood.</li>
+          <li><strong>No single aggregate score:</strong> Systems cannot collapse the 256-state map into a single scalar to hide critical failure zones. The distribution across zones Z1–Z7 is the primary artifact.</li>
+          <li><strong>Zero tracking or data harvesting:</strong> The Symnoesis interactive tools and portal run entirely client-side. No telemetry, user inputs, or profile data ever leaves the visitor's local machine.</li>
+        </ul>
+      </section>
+
+      <section class="section-nav">
+        <a href="/map" class="btn btn-primary">Examine the 256-State Map</a>
+        <a href="/method" class="btn btn-secondary">Read the Mathematical Formulation</a>
+      </section>
+    </article>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper {
+    padding: 3rem 0;
+  }
+
+  .page-header {
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+  }
+
+  .page-title {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin: 0.75rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .page-lead {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--ink-2);
+    margin: 0;
+  }
+
+  .prose-content {
+    font-family: var(--font-serif);
+    font-size: var(--text-body);
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  .prose-content h2 {
+    font-family: var(--font-sans);
+    font-size: var(--text-h2);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 2.5rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .prose-content p {
+    margin: 0 0 1.25rem 0;
+  }
+
+  .prose-content ul, .prose-content ol {
+    margin: 0 0 1.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .prose-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  .academic-definition {
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    border-left: 3px solid var(--ink);
+    background: var(--surface);
+    font-style: italic;
+    font-size: 1.15rem;
+    color: var(--ink-2);
+  }
+
+  .section-nav {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+    font-family: var(--font-sans);
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.65rem 1.25rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .btn-secondary {
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--line-strong);
+  }
+</style>

@@ -1,0 +1,63 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="Citation Guide" currentSection="research">
+  <div class="container container-prose page-wrapper">
+    <header class="page-header">
+      <h1 class="page-title">Citation Guide</h1>
+      <p class="page-lead">
+        Standard formats for citing the Symnoesis normative specification and software tools.
+      </p>
+    </header>
+
+    <article class="prose-content">
+      <section>
+        <h2>BibTeX</h2>
+        <div class="code-box">
+          <pre><code>{`@techreport{symnoesis2026,
+  title       = {The Dyadic State: A Framework for Measuring Long-Term Human--Machine Interaction},
+  author      = {{Symnoesis Research Initiative}},
+  institution = {HarVa Groups},
+  year        = {2026},
+  number      = {SYMN-01-v0.1.0},
+  url         = {https://symnoesis.org}
+}`}</code></pre>
+        </div>
+      </section>
+
+      <section>
+        <h2>APA (7th Edition)</h2>
+        <p class="citation-apa">
+          Symnoesis Research Initiative. (2026). <em>The Dyadic State: A Framework for Measuring Long-Term Human–Machine Interaction</em> (Report No. SYMN-01-v0.1.0). HarVa Groups. https://symnoesis.org
+        </p>
+      </section>
+
+      <section>
+        <h2>Software Artifacts</h2>
+        <p>To cite the Python reference package or TypeScript library:</p>
+        <div class="code-box">
+          <pre><code>{`@software{symnoesis_software_2026,
+  author = {{Symnoesis Contributors}},
+  title = {Symnoesis: Reference Algorithms for Dyadic State Measurement},
+  version = {0.1.0},
+  year = {2026},
+  url = {https://github.com/harvagroups/symnoesis}
+}`}</code></pre>
+        </div>
+      </section>
+    </article>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper { padding: 3rem 0; }
+  .page-header { margin-bottom: 2.5rem; border-bottom: 1px solid var(--line); padding-bottom: 2rem; }
+  .page-title { font-size: var(--text-h1); font-weight: 700; margin: 0.75rem 0 1rem 0; color: var(--ink); }
+  .page-lead { font-size: 1.25rem; color: var(--ink-2); line-height: 1.5; margin: 0; }
+  .prose-content { font-family: var(--font-serif); font-size: var(--text-body); line-height: 1.7; color: var(--ink); }
+  .prose-content h2 { font-family: var(--font-sans); font-size: var(--text-h2); font-weight: 600; margin: 2.5rem 0 1rem 0; color: var(--ink); }
+  .code-box { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.25rem; margin: 1.25rem 0; }
+  .code-box pre { margin: 0; font-family: var(--font-mono); font-size: 0.8125rem; color: var(--ink); overflow-x: auto; }
+  .citation-apa { background: var(--surface); border-left: 3px solid var(--ink); padding: 1rem 1.25rem; font-family: var(--font-sans); font-size: 0.95rem; }
+</style>

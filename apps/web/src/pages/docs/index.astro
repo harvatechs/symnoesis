@@ -1,0 +1,163 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="Documentation" currentSection="docs">
+  <div class="container page-wrapper">
+    <header class="page-header">
+      <span class="badge-tier e0">DIÁTAXIS FRAMEWORK</span>
+      <h1 class="page-title">Documentation Suite</h1>
+      <p class="page-lead">
+        Structured guides, tutorials, architectural explanations, and technical references for researchers and engineers.
+      </p>
+    </header>
+
+    <div class="diataxis-grid">
+      <!-- Tutorials -->
+      <section class="diataxis-quadrant">
+        <div class="quadrant-header">
+          <span class="quadrant-tag">LEARNING-ORIENTED</span>
+          <h2>Tutorials</h2>
+        </div>
+        <p class="quadrant-desc">Step-by-step lessons taking you from installation to your first empirical measurement sweep.</p>
+        <ul class="docs-list">
+          <li><a href="/docs/tutorials/first-sweep">Run your first synthetic sweep with <code>symnoesis</code> CLI</a></li>
+          <li><a href="/docs/tutorials/reading-a-card">How to interpret a Symnoesis Card</a></li>
+          <li><a href="/docs/tutorials/finding-your-pixel">Finding your pixel on the interactive map</a></li>
+        </ul>
+      </section>
+
+      <!-- How-to Guides -->
+      <section class="diataxis-quadrant">
+        <div class="quadrant-header">
+          <span class="quadrant-tag">TASK-ORIENTED</span>
+          <h2>How-to Guides</h2>
+        </div>
+        <p class="quadrant-desc">Practical recipes for solving specific engineering and research challenges.</p>
+        <ul class="docs-list">
+          <li><a href="/docs/how-to/add-domain">Register a custom interaction domain schema</a></li>
+          <li><a href="/docs/how-to/calibrate-judge">Calibrate an automated judge for variable H3</a></li>
+          <li><a href="/docs/how-to/build-card">Generate cryptographically signed Symnoesis Cards</a></li>
+          <li><a href="/docs/how-to/reproducibility-check">Verify pipeline run manifests and SHA-256 hashes</a></li>
+        </ul>
+      </section>
+
+      <!-- Reference -->
+      <section class="diataxis-quadrant">
+        <div class="quadrant-header">
+          <span class="quadrant-tag">INFORMATION-ORIENTED</span>
+          <h2>Reference</h2>
+        </div>
+        <p class="quadrant-desc">Formal technical descriptions of APIs, schemas, formulas, and CLI parameters.</p>
+        <ul class="docs-list">
+          <li><a href="/docs/reference/cli">CLI Command Reference (<code>symnoesis --help</code>)</a></li>
+          <li><a href="/docs/reference/config-schema">Configuration YAML Schema (<code>symn-01.v0.1.yaml</code>)</a></li>
+          <li><a href="/docs/reference/zones">Governance Zones Z1–Z7 Action Matrix</a></li>
+          <li><a href="/docs/reference/chi-list">Critical Harm Incidents (CHI-1 to CHI-3) Taxonomy</a></li>
+        </ul>
+      </section>
+
+      <!-- Explanation -->
+      <section class="diataxis-quadrant">
+        <div class="quadrant-header">
+          <span class="quadrant-tag">UNDERSTANDING-ORIENTED</span>
+          <h2>Explanation</h2>
+        </div>
+        <p class="quadrant-desc">Discussions of key concepts, architectural rationale, and historical context.</p>
+        <ul class="docs-list">
+          <li><a href="/docs/explanation/why-gray-code">Why a Gray-Coded Map? Hypercubes in 2D space</a></li>
+          <li><a href="/docs/explanation/non-compensation">The rationale behind the Non-Compensation Rule</a></li>
+          <li><a href="/docs/explanation/safety-gates">Why the Safety Gate is a Ceiling rather than a penalty</a></li>
+          <li><a href="/docs/explanation/privacy-by-construction">Privacy by Construction: Zero Telemetry Architecture</a></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper {
+    padding: 3rem 0;
+  }
+
+  .page-header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .page-title {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    margin: 0.75rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .page-lead {
+    font-size: 1.15rem;
+    color: var(--ink-2);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .diataxis-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .diataxis-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .diataxis-quadrant {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+  }
+
+  .quadrant-tag {
+    font-size: var(--text-caption);
+    font-family: var(--font-mono);
+    color: var(--ink-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .diataxis-quadrant h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0.25rem 0 0.5rem 0;
+    color: var(--ink);
+  }
+
+  .quadrant-desc {
+    font-size: 0.875rem;
+    color: var(--ink-2);
+    margin: 0 0 1.25rem 0;
+    line-height: 1.5;
+  }
+
+  .docs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-size: 0.9375rem;
+  }
+
+  .docs-list a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .docs-list a:hover {
+    text-decoration: underline;
+  }
+</style>

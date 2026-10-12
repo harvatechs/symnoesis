@@ -1,0 +1,299 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="Symnoesis Index" currentSection="index">
+  <div class="container page-wrapper">
+    <header class="page-header">
+      <span class="badge-tier e1">EDITION 0 METHODOLOGY PREVIEW (FICTIONAL FIXTURES)</span>
+      <h1 class="page-title">The Symnoesis Index</h1>
+      <p class="page-lead">
+        The Symnoesis Index groups AI system evaluations into statistically honest tiers rather than arbitrary 1-rankings. 
+        Critical harm incidents are displayed separately and prominently.
+      </p>
+    </header>
+
+    <div class="academic-callout warning">
+      <strong>Notice Regarding Edition 0:</strong><br />
+      Edition 0 is a methodology preview built entirely from fictional fixture systems and synthetic E1 evidence sweeps. 
+      It demonstrates the index presentation format and statistical clustering rules. No real commercial products are evaluated.
+    </div>
+
+    <section class="index-section">
+      <div class="tier-group">
+        <div class="tier-header">
+          <span class="tier-title">Tier 1: High Agency & Balanced Capability Amplification</span>
+          <span class="tier-stat-note">Systems within this tier are not statistically distinguishable (p &gt; 0.05).</span>
+        </div>
+
+        <div class="systems-grid">
+          <article class="system-card">
+            <div class="card-top">
+              <h2 class="system-name">Aetheria-70B (Synthetic Fixture)</h2>
+              <span class="badge-tier e1">E1 SYNTHETIC</span>
+            </div>
+            <p class="system-meta">Domain: Software Engineering | Protocol: SYMN-01 v0.1.0 | 500 Dyad-Windows</p>
+            
+            <div class="zone-bar-wrapper">
+              <span class="bar-label">Zone Distribution:</span>
+              <div class="zone-bar">
+                <div class="bar-seg z1" style="width: 58%" title="Zone 1 (58%)">58%</div>
+                <div class="bar-seg z2" style="width: 28%" title="Zone 2 (28%)">28%</div>
+                <div class="bar-seg z3" style="width: 10%" title="Zone 3 (10%)">10%</div>
+                <div class="bar-seg z5" style="width: 4%" title="Zone 5 (4%)">4%</div>
+              </div>
+            </div>
+
+            <div class="card-metrics">
+              <div>
+                <span class="metric-label">Mean SQ:</span>
+                <span class="metric-val">+54.2</span>
+              </div>
+              <div>
+                <span class="metric-label">Critical Incidents (CHI):</span>
+                <span class="metric-val zero">0 Confirmed</span>
+              </div>
+              <div>
+                <span class="metric-label">Symnoesis Card:</span>
+                <a href="#card-view" class="card-link">View Card (JSON/PDF)</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="system-card">
+            <div class="card-top">
+              <h2 class="system-name">Boreas-Instruct (Synthetic Fixture)</h2>
+              <span class="badge-tier e1">E1 SYNTHETIC</span>
+            </div>
+            <p class="system-meta">Domain: Learning & Education | Protocol: SYMN-01 v0.1.0 | 500 Dyad-Windows</p>
+            
+            <div class="zone-bar-wrapper">
+              <span class="bar-label">Zone Distribution:</span>
+              <div class="zone-bar">
+                <div class="bar-seg z1" style="width: 52%" title="Zone 1 (52%)">52%</div>
+                <div class="bar-seg z2" style="width: 32%" title="Zone 2 (32%)">32%</div>
+                <div class="bar-seg z3" style="width: 11%" title="Zone 3 (11%)">11%</div>
+                <div class="bar-seg z5" style="width: 5%" title="Zone 5 (5%)">5%</div>
+              </div>
+            </div>
+
+            <div class="card-metrics">
+              <div>
+                <span class="metric-label">Mean SQ:</span>
+                <span class="metric-val">+49.8</span>
+              </div>
+              <div>
+                <span class="metric-label">Critical Incidents (CHI):</span>
+                <span class="metric-val zero">0 Confirmed</span>
+              </div>
+              <div>
+                <span class="metric-label">Symnoesis Card:</span>
+                <a href="#card-view" class="card-link">View Card (JSON/PDF)</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tier-group">
+        <div class="tier-header">
+          <span class="tier-title">Tier 2: Moderate Capability with Emergent Dependence Risk</span>
+          <span class="tier-stat-note">Systems within this tier are not statistically distinguishable.</span>
+        </div>
+
+        <div class="systems-grid">
+          <article class="system-card">
+            <div class="card-top">
+              <h2 class="system-name">Cygnus-Code (Synthetic Fixture)</h2>
+              <span class="badge-tier e1">E1 SYNTHETIC</span>
+            </div>
+            <p class="system-meta">Domain: Software Engineering | Protocol: SYMN-01 v0.1.0 | 500 Dyad-Windows</p>
+            
+            <div class="zone-bar-wrapper">
+              <span class="bar-label">Zone Distribution:</span>
+              <div class="zone-bar">
+                <div class="bar-seg z1" style="width: 22%">22%</div>
+                <div class="bar-seg z2" style="width: 38%">38%</div>
+                <div class="bar-seg z4" style="width: 24%">24%</div>
+                <div class="bar-seg z5" style="width: 16%">16%</div>
+              </div>
+            </div>
+
+            <div class="card-metrics">
+              <div>
+                <span class="metric-label">Mean SQ:</span>
+                <span class="metric-val">+14.6</span>
+              </div>
+              <div>
+                <span class="metric-label">Critical Incidents (CHI):</span>
+                <span class="metric-val non-zero">1 CHI-2 (Gated)</span>
+              </div>
+              <div>
+                <span class="metric-label">Symnoesis Card:</span>
+                <a href="#card-view" class="card-link">View Card (JSON/PDF)</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper {
+    padding: 3rem 0;
+  }
+
+  .page-header {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-title {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    margin: 0.75rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .page-lead {
+    font-size: 1.15rem;
+    color: var(--ink-2);
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .tier-group {
+    margin-bottom: 3rem;
+  }
+
+  .tier-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid var(--line-strong);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tier-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .tier-stat-note {
+    font-size: var(--text-caption);
+    color: var(--ink-3);
+    font-style: italic;
+  }
+
+  .systems-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .system-card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+  }
+
+  .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+  }
+
+  .system-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--ink);
+  }
+
+  .system-meta {
+    font-size: var(--text-caption);
+    color: var(--ink-3);
+    font-family: var(--font-mono);
+    margin: 0 0 1.25rem 0;
+  }
+
+  .zone-bar-wrapper {
+    margin-bottom: 1.25rem;
+  }
+
+  .bar-label {
+    display: block;
+    font-size: var(--text-caption);
+    font-weight: 500;
+    color: var(--ink-2);
+    margin-bottom: 0.35rem;
+  }
+
+  .zone-bar {
+    display: flex;
+    height: 1.35rem;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .bar-seg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bar-seg.z1 { background: var(--zone-z1); }
+  .bar-seg.z2 { background: var(--zone-z2); }
+  .bar-seg.z3 { background: var(--zone-z3); }
+  .bar-seg.z4 { background: var(--zone-z4); color: #000000; }
+  .bar-seg.z5 { background: var(--zone-z5); }
+
+  .card-metrics {
+    display: flex;
+    gap: 2.5rem;
+    border-top: 1px solid var(--line);
+    padding-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .metric-label {
+    display: block;
+    font-size: var(--text-caption);
+    color: var(--ink-3);
+    margin-bottom: 0.2rem;
+  }
+
+  .metric-val {
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--ink);
+  }
+
+  .metric-val.zero {
+    color: #047857;
+  }
+
+  .metric-val.non-zero {
+    color: #b91c1c;
+  }
+
+  .card-link {
+    font-size: var(--text-small);
+    font-weight: 500;
+  }
+</style>

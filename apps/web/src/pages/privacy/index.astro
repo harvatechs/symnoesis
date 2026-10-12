@@ -1,0 +1,49 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+---
+
+<AcademicLayout title="Privacy by Construction" currentSection="about">
+  <div class="container container-prose page-wrapper">
+    <header class="page-header">
+      <h1 class="page-title">Privacy by Construction</h1>
+      <p class="page-lead">
+        Symnoesis is engineered with zero telemetry, zero surveillance, and complete local execution.
+      </p>
+    </header>
+
+    <article class="prose-content">
+      <section>
+        <h2>Architectural Guarantees</h2>
+        <p>
+          Unlike modern web services that harvest interaction telemetry, Symnoesis enforces strict client-side isolation:
+        </p>
+        <ul>
+          <li><strong>Zero Tracking Scripts:</strong> This site uses no Google Analytics, PostHog, Mixpanel, or telemetry beacons.</li>
+          <li><strong>No Third-Party CDNs:</strong> All fonts, scripts, stylesheets, and assets are self-hosted from this origin.</li>
+          <li><strong>Local Edge Execution:</strong> The Interactive Map Portal runs entirely within your browser's JavaScript engine. When you take the self-assessment, not a single byte of your responses leaves your computer.</li>
+          <li><strong>No Retention:</strong> No user database exists. We do not store, process, or sell any behavioral or interaction profiles.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Verification</h2>
+        <p>
+          You can verify these assertions by opening your browser's Network Inspector while navigating the site and using the portal. 
+          Zero outbound HTTP requests are generated during interactive use.
+        </p>
+      </section>
+    </article>
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper { padding: 3rem 0; }
+  .page-header { margin-bottom: 2.5rem; border-bottom: 1px solid var(--line); padding-bottom: 2rem; }
+  .page-title { font-size: var(--text-h1); font-weight: 700; margin: 0.75rem 0 1rem 0; color: var(--ink); }
+  .page-lead { font-size: 1.25rem; color: var(--ink-2); line-height: 1.5; margin: 0; }
+  .prose-content { font-family: var(--font-serif); font-size: var(--text-body); line-height: 1.7; color: var(--ink); }
+  .prose-content h2 { font-family: var(--font-sans); font-size: var(--text-h2); font-weight: 600; margin: 2.5rem 0 1rem 0; color: var(--ink); }
+  .prose-content p { margin: 0 0 1.25rem 0; }
+  .prose-content ul { margin: 0 0 1.5rem 0; padding-left: 1.5rem; }
+  .prose-content li { margin-bottom: 0.5rem; }
+</style>

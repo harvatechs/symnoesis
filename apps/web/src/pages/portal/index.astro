@@ -1,0 +1,45 @@
+---
+import AcademicLayout from "../../layouts/AcademicLayout.astro";
+import InteractivePortal from "../../components/InteractivePortal.svelte";
+---
+
+<AcademicLayout title="Interactive Portal" currentSection="portal">
+  <div class="container page-wrapper">
+    <header class="page-header">
+      <span class="badge-tier e0">CLIENT-SIDE EDGE INSTRUMENT</span>
+      <h1 class="page-title">Interactive Map Portal</h1>
+      <p class="page-lead">
+        Evaluate your personal interaction patterns with AI tools. The portal runs entirely inside your browser 
+        and estimates your most likely state on the 256-state map without transmitting any data over the network.
+      </p>
+    </header>
+
+    <InteractivePortal client:load />
+  </div>
+</AcademicLayout>
+
+<style>
+  .page-wrapper {
+    padding: 3rem 0;
+  }
+
+  .page-header {
+    max-width: 720px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+  }
+
+  .page-title {
+    font-size: var(--text-h1);
+    font-weight: 700;
+    margin: 0.75rem 0 1rem 0;
+    color: var(--ink);
+  }
+
+  .page-lead {
+    font-size: 1.15rem;
+    color: var(--ink-2);
+    line-height: 1.6;
+    margin: 0;
+  }
+</style>
