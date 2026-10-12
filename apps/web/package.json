@@ -1,0 +1,23 @@
+{
+  "name": "@symnoesis/web",
+  "version": "0.1.0-dev.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@symnoesis/core": "workspace:*",
+    "astro": "^4.16.18",
+    "svelte": "^4.2.19",
+    "@astrojs/svelte": "^5.7.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}

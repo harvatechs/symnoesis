@@ -82,7 +82,8 @@ build: ## Build packages
 
 .PHONY: e2e
 e2e: ## Run E2E tests
-	@echo "E2E tests will be fully wired in Milestone 7 & 8."
+	@echo "==> Running E2E test battery (4 tiers, 299 tests)..."
+	$(PYTHON) pytest ../../tests/e2e/
 
 .PHONY: a11y
 a11y: ## Run accessibility audit
