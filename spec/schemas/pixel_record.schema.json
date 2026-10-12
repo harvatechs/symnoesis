@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PixelRecord",
+  "type": "object",
+  "required": [
+    "pixel_id",
+    "grid",
+    "bits",
+    "n_eff",
+    "n_dyads",
+    "sq",
+    "hne",
+    "sne",
+    "stability",
+    "symbiosis_class",
+    "zone",
+    "trajectory",
+    "gate",
+    "evidence_tier",
+    "operator_blind",
+    "outcome_available",
+    "suppressed"
+  ],
+  "properties": {
+    "pixel_id": {
+      "type": "string"
+    },
+    "grid": {
+      "type": "object",
+      "required": [
+        "col",
+        "row"
+      ],
+      "properties": {
+        "col": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "row": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 15
+        }
+      }
+    },
+    "bits": {
+      "type": "object",
+      "required": [
+        "H",
+        "M"
+      ],
+      "properties": {
+        "H": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "M": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        }
+      }
+    },
+    "n_eff": {
+      "type": "number"
+    },
+    "n_dyads": {
+      "type": "integer"
+    },
+    "sq": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "ci95": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "hne": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "sne": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "stability": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "symbiosis_class": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "zone": {
+      "type": "object",
+      "required": [
+        "primary",
+        "secondary_tags"
+      ],
+      "properties": {
+        "primary": {
+          "type": "string"
+        },
+        "secondary_tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "trajectory": {
+      "type": "string"
+    },
+    "dominant_failure": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "variable": {
+          "type": "string"
+        },
+        "delta_sq": {
+          "type": "number"
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "observed",
+            "modeled"
+          ]
+        }
+      }
+    },
+    "gate": {
+      "type": "string",
+      "enum": [
+        "safe",
+        "watch",
+        "critical",
+        "unknown"
+      ]
+    },
+    "evidence_tier": {
+      "type": "string",
+      "enum": [
+        "E0",
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "operator_blind": {
+      "type": "boolean"
+    },
+    "outcome_available": {
+      "type": "boolean"
+    },
+    "suppressed": {
+      "type": "boolean"
+    }
+  }
+}

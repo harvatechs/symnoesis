@@ -1,3 +1,150 @@
-"""Symnoesis (SYMN-01) Python Reference Package."""
-
 __version__ = "0.1.0.dev0"
+
+from symnoesis.assign import compute_dyad_window_masses, get_modal_pixel
+from symnoesis.classes import SymbiosisClassResult, classify_symbiosis, compute_sign3
+from symnoesis.config import SymnoesisConfig
+from symnoesis.counterfactual import (
+    ContinuousRepairResult,
+    ContinuousState,
+    CounterfactualDiagnosticResult,
+    FlipDiagnostic,
+    RidgeBitModel,
+    compute_counterfactual_repair,
+    compute_single_flip_diagnostics,
+    fit_ridge_additive_model,
+)
+from symnoesis.cover import (
+    VARIABLE_NAMES,
+    CellInput,
+    CoverRule,
+    MinimalFailureCoverResult,
+    compute_harm_mass,
+    compute_rule_purity,
+    evaluate_subcube,
+    format_rule_string,
+    generate_subcubes,
+    quine_mccluskey,
+    quine_mccluskey_boolean,
+    solve_mfc_milp,
+)
+from symnoesis.evidence import EvidenceTier, is_eligible_for_certification, minimum_evidence_tier
+from symnoesis.gates import GateStatus, evaluate_safety_gate
+from symnoesis.gray import (
+    bits_to_int,
+    gray_to_int,
+    hamming_distance,
+    int_to_bits,
+    int_to_gray,
+    is_adjacent_on_torus,
+)
+from symnoesis.grid import (
+    PixelCoord,
+    coord_to_pixel_id,
+    get_all_single_flip_neighbors,
+    get_grid_neighbors,
+    parse_pixel_id,
+    pixel_coord_to_id,
+    pixel_id_from_bits,
+    pixel_id_to_coord,
+)
+from symnoesis.net_effects import (
+    apply_non_compensation,
+    compute_composite_c,
+    compute_hne,
+    compute_sne,
+)
+from symnoesis.sq import bootstrap_dyad_sq_ci, compute_sq
+from symnoesis.stability import (
+    compute_effective_stability,
+    compute_sample_std,
+    compute_stability_factor,
+)
+from symnoesis.temporal import (
+    TrajectoryResult,
+    compute_interval_deltas,
+    compute_mdc,
+    compute_sem,
+    evaluate_trajectory,
+    is_baseline_frame,
+    is_trajectory_negative,
+)
+from symnoesis.variables import (
+    compute_all_marginal_probabilities,
+    compute_h2_threshold,
+    compute_marginal_probability,
+    effect_to_score,
+    normal_cdf,
+)
+from symnoesis.zones import ZoneResult, evaluate_zones
+
+__all__ = [
+    "CellInput",
+    "ContinuousRepairResult",
+    "ContinuousState",
+    "CounterfactualDiagnosticResult",
+    "CoverRule",
+    "EvidenceTier",
+    "FlipDiagnostic",
+    "GateStatus",
+    "MinimalFailureCoverResult",
+    "PixelCoord",
+    "RidgeBitModel",
+    "SymbiosisClassResult",
+    "SymnoesisConfig",
+    "TrajectoryResult",
+    "VARIABLE_NAMES",
+    "ZoneResult",
+    "__version__",
+    "apply_non_compensation",
+    "bits_to_int",
+    "bootstrap_dyad_sq_ci",
+    "classify_symbiosis",
+    "compute_all_marginal_probabilities",
+    "compute_composite_c",
+    "compute_counterfactual_repair",
+    "compute_dyad_window_masses",
+    "compute_effective_stability",
+    "compute_h2_threshold",
+    "compute_harm_mass",
+    "compute_hne",
+    "compute_interval_deltas",
+    "compute_marginal_probability",
+    "compute_mdc",
+    "compute_rule_purity",
+    "compute_sample_std",
+    "compute_sem",
+    "compute_sign3",
+    "compute_single_flip_diagnostics",
+    "compute_sne",
+    "compute_sq",
+    "compute_stability_factor",
+    "coord_to_pixel_id",
+    "effect_to_score",
+    "evaluate_safety_gate",
+    "evaluate_subcube",
+    "evaluate_trajectory",
+    "evaluate_zones",
+    "fit_ridge_additive_model",
+    "format_rule_string",
+    "generate_subcubes",
+    "get_all_single_flip_neighbors",
+    "get_grid_neighbors",
+    "get_modal_pixel",
+    "gray_to_int",
+    "hamming_distance",
+    "int_to_bits",
+    "int_to_gray",
+    "is_adjacent_on_torus",
+    "is_baseline_frame",
+    "is_eligible_for_certification",
+    "is_trajectory_negative",
+    "minimum_evidence_tier",
+    "normal_cdf",
+    "parse_pixel_id",
+    "pixel_coord_to_id",
+    "pixel_id_from_bits",
+    "pixel_id_to_coord",
+    "quine_mccluskey",
+    "quine_mccluskey_boolean",
+    "solve_mfc_milp",
+]

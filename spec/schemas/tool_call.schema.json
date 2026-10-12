@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ToolCall",
+  "type": "object",
+  "required": [
+    "call_id",
+    "session_id",
+    "tool_name",
+    "status"
+  ],
+  "properties": {
+    "call_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "tool_name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

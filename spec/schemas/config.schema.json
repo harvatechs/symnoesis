@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SymnoesisConfig",
+  "type": "object",
+  "required": [
+    "spec_version",
+    "domains",
+    "variables",
+    "assignment",
+    "layout",
+    "net_effects",
+    "sq",
+    "classes",
+    "zones",
+    "temporal",
+    "cover",
+    "privacy",
+    "reliability",
+    "evidence"
+  ],
+  "properties": {
+    "spec_version": {
+      "type": "string"
+    },
+    "domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "variables": {
+      "type": "object"
+    },
+    "assignment": {
+      "type": "object"
+    },
+    "layout": {
+      "type": "object"
+    },
+    "net_effects": {
+      "type": "object"
+    },
+    "sq": {
+      "type": "object"
+    },
+    "classes": {
+      "type": "object"
+    },
+    "zones": {
+      "type": "object"
+    },
+    "temporal": {
+      "type": "object"
+    },
+    "cover": {
+      "type": "object"
+    },
+    "privacy": {
+      "type": "object"
+    },
+    "reliability": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "object"
+    }
+  }
+}

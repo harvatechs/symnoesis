@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SymnoesisCard",
+  "type": "object",
+  "required": [
+    "card_id",
+    "system_id",
+    "domain",
+    "spec_version",
+    "evidence_tier",
+    "overall_sq",
+    "zone_distribution",
+    "gate_status",
+    "run_manifest"
+  ],
+  "properties": {
+    "card_id": {
+      "type": "string"
+    },
+    "system_id": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "spec_version": {
+      "type": "string"
+    },
+    "evidence_tier": {
+      "type": "string",
+      "enum": [
+        "E0",
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "overall_sq": {
+      "type": "number"
+    },
+    "zone_distribution": {
+      "type": "object"
+    },
+    "gate_status": {
+      "type": "string"
+    },
+    "run_manifest": {
+      "type": "object"
+    }
+  }
+}

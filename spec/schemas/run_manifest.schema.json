@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RunManifest",
+  "type": "object",
+  "required": [
+    "manifest_id",
+    "spec_version",
+    "config_hash",
+    "code_git_sha",
+    "dependency_lock_hash",
+    "judge_models",
+    "random_seeds",
+    "dataset_hashes",
+    "signature_ed25519"
+  ],
+  "properties": {
+    "manifest_id": {
+      "type": "string"
+    },
+    "spec_version": {
+      "type": "string"
+    },
+    "config_hash": {
+      "type": "string"
+    },
+    "code_git_sha": {
+      "type": "string"
+    },
+    "dependency_lock_hash": {
+      "type": "string"
+    },
+    "judge_models": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "random_seeds": {
+      "type": "object"
+    },
+    "dataset_hashes": {
+      "type": "object"
+    },
+    "signature_ed25519": {
+      "type": "string"
+    }
+  }
+}

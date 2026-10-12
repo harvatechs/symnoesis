@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "https://symnoesis.org/schemas/v0.1/gv-sq-001.json",
+  "description": "Golden reference vector GV-SQ-001 (Mutualism, Zone Z2)",
+  "vector_id": "GV-SQ-001",
+  "spec_version": "0.1.0",
+  "input": {
+    "s_H": [0.8, 0.6, 0.4, 0.7],
+    "outcome_deltas": null,
+    "integrity": 0.5,
+    "reliability": 0.6,
+    "operator": 0.2,
+    "sigma_C": 0.1,
+    "confirmed_chi": null,
+    "operator_blind": false
+  },
+  "expected": {
+    "hne_state": 0.25,
+    "hne": 0.25,
+    "sne": 0.48,
+    "sne_prime": 0.48,
+    "C": 0.319,
+    "S": 0.9,
+    "S_eff": 0.9,
+    "sq_raw": 28.71,
+    "gate_triggered": false,
+    "gate_ceiling": null,
+    "sq": 28.71,
+    "symbiosis_class": "mutualism",
+    "symbiosis_class_public": "Mutual benefit",
+    "zone": "Z2"
+  }
+}

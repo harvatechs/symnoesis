@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "mismatches_count": 0,
+  "total_corner_cases": 286,
+  "max_sigma_diff": 2.938735877055719e-39,
+  "max_delta_diff": 0.0,
+  "h2_threshold_diff": 0.0,
+  "h2_threshold_val": 0.42074029056089696,
+  "mismatches": []
+}

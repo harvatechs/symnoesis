@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "https://symnoesis.org/schemas/v0.1/gray-code-16.json",
+  "description": "Standard 4-bit Gray code sequence for the 16 grid axis positions (SPEC §4)",
+  "spec_version": "0.1.0",
+  "bit_width": 4,
+  "elements": [
+    { "index": 0, "code_int": 0, "code_binary": "0000", "bits": [0, 0, 0, 0] },
+    { "index": 1, "code_int": 1, "code_binary": "0001", "bits": [0, 0, 0, 1] },
+    { "index": 2, "code_int": 3, "code_binary": "0011", "bits": [0, 0, 1, 1] },
+    { "index": 3, "code_int": 2, "code_binary": "0010", "bits": [0, 0, 1, 0] },
+    { "index": 4, "code_int": 6, "code_binary": "0110", "bits": [0, 1, 1, 0] },
+    { "index": 5, "code_int": 7, "code_binary": "0111", "bits": [0, 1, 1, 1] },
+    { "index": 6, "code_int": 5, "code_binary": "0101", "bits": [0, 1, 0, 1] },
+    { "index": 7, "code_int": 4, "code_binary": "0100", "bits": [0, 1, 0, 0] },
+    { "index": 8, "code_int": 12, "code_binary": "1100", "bits": [1, 1, 0, 0] },
+    { "index": 9, "code_int": 13, "code_binary": "1101", "bits": [1, 1, 0, 1] },
+    { "index": 10, "code_int": 15, "code_binary": "1111", "bits": [1, 1, 1, 1] },
+    { "index": 11, "code_int": 14, "code_binary": "1110", "bits": [1, 1, 1, 0] },
+    { "index": 12, "code_int": 10, "code_binary": "1010", "bits": [1, 0, 1, 0] },
+    { "index": 13, "code_int": 11, "code_binary": "1011", "bits": [1, 0, 1, 1] },
+    { "index": 14, "code_int": 9, "code_binary": "1001", "bits": [1, 0, 0, 1] },
+    { "index": 15, "code_int": 8, "code_binary": "1000", "bits": [1, 0, 0, 0] }
+  ]
+}

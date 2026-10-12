@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MapFrame",
+  "type": "object",
+  "required": [
+    "frame_id",
+    "day",
+    "resolution",
+    "pixels",
+    "global_sq",
+    "manifest_hash"
+  ],
+  "properties": {
+    "frame_id": {
+      "type": "string"
+    },
+    "day": {
+      "type": "integer"
+    },
+    "resolution": {
+      "type": "integer",
+      "enum": [
+        4,
+        8,
+        16
+      ]
+    },
+    "pixels": {
+      "type": "array",
+      "items": {
+        "": "pixel_record.schema.json"
+      }
+    },
+    "global_sq": {
+      "type": "number"
+    },
+    "manifest_hash": {
+      "type": "string"
+    }
+  }
+}

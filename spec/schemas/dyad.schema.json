@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dyad",
+  "type": "object",
+  "required": [
+    "dyad_id",
+    "human_id_pseudonym",
+    "system_id",
+    "domain",
+    "created_at"
+  ],
+  "properties": {
+    "dyad_id": {
+      "type": "string"
+    },
+    "human_id_pseudonym": {
+      "type": "string"
+    },
+    "system_id": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    }
+  }
+}

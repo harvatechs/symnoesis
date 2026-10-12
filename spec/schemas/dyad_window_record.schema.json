@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DyadWindowRecord",
+  "type": "object",
+  "required": [
+    "dyad_id",
+    "window_id",
+    "modal_pixel",
+    "pixel_masses",
+    "sq",
+    "hne",
+    "sne",
+    "evidence_tier"
+  ],
+  "properties": {
+    "dyad_id": {
+      "type": "string"
+    },
+    "window_id": {
+      "type": "string"
+    },
+    "modal_pixel": {
+      "type": "string"
+    },
+    "pixel_masses": {
+      "type": "object"
+    },
+    "sq": {
+      "type": "number"
+    },
+    "hne": {
+      "type": "number"
+    },
+    "sne": {
+      "type": "number"
+    },
+    "evidence_tier": {
+      "type": "string",
+      "enum": [
+        "E0",
+        "E1",
+        "E2",
+        "E3"
+      ]
+    }
+  }
+}

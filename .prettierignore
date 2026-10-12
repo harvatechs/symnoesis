@@ -10,3 +10,7 @@ uv.lock
 **/*.md
 spec/config/**
 spec/vectors/**
+.agents/**
+scripts/**
+*.json
+**/*.json

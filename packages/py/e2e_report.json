@@ -1,0 +1,14 @@
+{
+  "passed": 299,
+  "failed": 0,
+  "skipped": 0,
+  "exit_code": 0,
+  "duration_seconds": 2.1584956645965576,
+  "tiers_executed": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "features_mapped": 42
+}

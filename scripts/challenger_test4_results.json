@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "gray_tested": 65536,
+  "gray_mismatches": 0,
+  "grid_tested": 256,
+  "grid_mismatches": 0,
+  "schema_count": 16,
+  "schema_errors": []
+}

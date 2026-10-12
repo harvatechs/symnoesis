@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "https://symnoesis.org/schemas/v0.1/gv-sq-002.json",
+  "description": "Golden reference vector GV-SQ-002 (Parasitism, Non-compensation rule, Zone Z6)",
+  "vector_id": "GV-SQ-002",
+  "spec_version": "0.1.0",
+  "input": {
+    "hne": -0.4,
+    "sne": 0.5,
+    "sigma_C": 0.0,
+    "confirmed_chi": null,
+    "operator_blind": false
+  },
+  "expected": {
+    "hne": -0.4,
+    "sne": 0.5,
+    "sne_prime": 0.0,
+    "C": -0.28,
+    "S_eff": 1.0,
+    "sq_raw": -28.0,
+    "gate_triggered": false,
+    "sq": -28.0,
+    "symbiosis_class": "parasitism",
+    "symbiosis_class_public": "Human harmed at system gain",
+    "zone": "Z6"
+  }
+}

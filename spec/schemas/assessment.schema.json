@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Assessment",
+  "type": "object",
+  "required": [
+    "assessment_id",
+    "dyad_id",
+    "instrument_id",
+    "score",
+    "evidence_tier"
+  ],
+  "properties": {
+    "assessment_id": {
+      "type": "string"
+    },
+    "dyad_id": {
+      "type": "string"
+    },
+    "instrument_id": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number"
+    },
+    "evidence_tier": {
+      "type": "string",
+      "enum": [
+        "E0",
+        "E1",
+        "E2",
+        "E3"
+      ]
+    }
+  }
+}

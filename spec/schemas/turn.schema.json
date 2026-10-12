@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Turn",
+  "type": "object",
+  "required": [
+    "turn_id",
+    "session_id",
+    "turn_index",
+    "features"
+  ],
+  "properties": {
+    "turn_id": {
+      "type": "string"
+    },
+    "session_id": {
+      "type": "string"
+    },
+    "turn_index": {
+      "type": "integer"
+    },
+    "features": {
+      "type": "object"
+    }
+  }
+}
