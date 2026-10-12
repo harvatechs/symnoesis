@@ -1,4 +1,4 @@
-# BRIEFING — 2026-10-12T05:51:00Z
+# BRIEFING — 2026-10-12T06:01:30Z
 
 ## Mission
 Replacement Implementation Worker for Milestone M2: Minimal Failure Cover & Longitudinal Diagnostics (R2) in Python and TypeScript.
@@ -27,7 +27,7 @@ Replacement Implementation Worker for Milestone M2: Minimal Failure Cover & Long
 
 ## Current Parent
 - Conversation ID: abfd9134-810e-49b4-885c-c4bd5beb1700
-- Updated: 2026-10-12T05:51:00Z
+- Updated: 2026-10-12T06:01:30Z
 
 ## Task Summary
 - **What to build**:
@@ -39,22 +39,38 @@ Replacement Implementation Worker for Milestone M2: Minimal Failure Cover & Long
 - **Code layout**: packages/py/ and packages/ts/
 
 ## Key Decisions Made
-- [TBD]
+- Added parity aliases (snake_case and MILP names) in TS modules to provide seamless parity across Python and TypeScript test suites.
+- Created standalone vitest test suites in `packages/ts/tests/` (`cover.test.ts`, `counterfactual.test.ts`, `temporal.test.ts`) matching the Python test coverage.
+- Validated that all 73 pytest tests, 47 vitest tests, and 299 e2e tests pass cleanly with zero failures.
 
 ## Artifact Index
 - DISPATCH.md — dispatch instructions
 - progress.md — liveness heartbeat
 - BRIEFING.md — situational awareness
+- handoff.md — 5-component self-contained handoff report
 
 ## Change Tracker
-- **Files modified**: none yet
-- **Build status**: pending
-- **Pending issues**: none
+- **Files modified**:
+  - `packages/ts/src/cover.ts`: added parity aliases matching Python API (`solveMfcMilp`, `quine_mccluskey`, etc.)
+  - `packages/ts/src/counterfactual.ts`: added parity aliases (`compute_counterfactual_repair`, etc.)
+  - `packages/ts/src/temporal.ts`: added parity aliases (`compute_sem`, `compute_mdc`, `is_trajectory_negative`, etc.)
+  - `packages/ts/tests/cover.test.ts`: created comprehensive test suite (12 tests)
+  - `packages/ts/tests/counterfactual.test.ts`: created comprehensive test suite (9 tests)
+  - `packages/ts/tests/temporal.test.ts`: created comprehensive test suite (10 tests)
+- **Build status**: PASS across all test suites, typechecks, linters, and e2e runners
+- **Pending issues**: None
 
 ## Quality Status
-- **Build/test result**: pending
-- **Lint status**: pending
-- **Tests added/modified**: pending
+- **Build/test result**:
+  - Pytest: 73 passed (coverage 98%, all files >= 95%)
+  - Mypy: 0 errors in 30 source files
+  - Ruff: clean
+  - TS typecheck: clean (`tsc --noEmit`)
+  - TS vitest: 47 passed across 9 test files
+  - TS build: clean (`tsc`)
+  - E2E runner: 299/299 passed across Tiers 1-4
+- **Lint status**: 0 violations
+- **Tests added/modified**: `cover.test.ts`, `counterfactual.test.ts`, `temporal.test.ts`
 
 ## Loaded Skills
 - None

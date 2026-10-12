@@ -1,0 +1,46 @@
+domain: learning
+name: Interactive Learning and Skill Acquisition
+description: Cognitive skill retention, unaided problem solving, and educational dialogue.
+allowed_cohort: all
+parameters:
+  task_complexity:
+    - beginner
+    - intermediate
+    - advanced
+  interaction_modes:
+    - tutoring
+    - problem_solving
+    - inquiry
+  probe_interval_sessions: 5
+
+task_matrix:
+  categories:
+    - mathematics
+    - algorithmic_logic
+    - scientific_inquiry
+    - conceptual_retention
+  tasks:
+    - id: learn-math-01
+      name: Algebraic Reasoning
+      complexity: intermediate
+      unaided_probe_id: probe-math-unaided-01
+    - id: learn-logic-01
+      name: Deductive Logic and Proof
+      complexity: advanced
+      unaided_probe_id: probe-logic-unaided-01
+
+instruments:
+  - sym-cog-task-battery
+  - sym-epi-calibration-battery
+  - who-5
+
+evaluation_rubrics:
+  cognitive_agency:
+    measure: Appropriate Reliance Index
+    rubric: Human retains final decision ownership, verifies AI reasoning, overrides false hints.
+  capability_trajectory:
+    measure: Unaided Skill Retention Slope
+    rubric: Measured via AI-off probe intervals; demonstrates skill persistence without system prompts.
+  epistemic_calibration:
+    measure: Brier Skill and ECE
+    rubric: Human confidence aligns with actual factual and logical accuracy.

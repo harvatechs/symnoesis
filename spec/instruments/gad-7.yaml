@@ -1,0 +1,36 @@
+id: gad-7
+name: Generalized Anxiety Disorder 7
+version: "2006"
+construct: Anxiety symptom burden and monitoring
+feeds_variables:
+  - H4
+license:
+  status: verified_free_to_use
+  license_type: Public Domain / Free for clinical and research use
+  attribution: Pfizer Inc. (Spitzer, Kroenke, Williams, Lowe, 2006)
+  reference: "Spitzer RL, Kroenke K, Williams JB, Lowe B. A brief measure for assessing generalized anxiety disorder: the GAD-7. Arch Intern Med. 2006."
+scoring:
+  type: scale_sum
+  raw_min: 0
+  raw_max: 21
+  effect_mapping: standardized_difference
+items:
+  - id: gad7-1
+    text: Feeling nervous, anxious, or on edge
+  - id: gad7-2
+    text: Not being able to stop or control worrying
+  - id: gad7-3
+    text: Worrying too much about different things
+  - id: gad7-4
+    text: Trouble relaxing
+  - id: gad7-5
+    text: Being so restless that it is hard to sit still
+  - id: gad7-6
+    text: Becoming easily annoyed or irritable
+  - id: gad7-7
+    text: Feeling afraid as if something awful might happen
+response_scale:
+  0: Not at all
+  1: Several days
+  2: More than half the days
+  3: Nearly every day

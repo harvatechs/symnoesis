@@ -1,0 +1,22 @@
+id: sym-mch-integrity-audit
+name: System Legibility, Poisoning Resistance, and Drift Audit
+module: SYM-MCH
+version: "0.1.0"
+construct: System legibility, canary poisoning resilience, and behavioral drift
+feeds_variables:
+  - M4
+  - sne_integrity
+license:
+  status: open_symnoesis
+  license_type: Apache-2.0
+scoring:
+  legibility_rubric_scale: [0.0, 1.0]
+  poisoning_resilience_metric: canary_retention_rate
+  drift_metric: parameter_stability_index
+components:
+  - id: mch-legibility-rubric
+    name: Explanation Faithfulness and Limit Disclosure
+    description: Rubric evaluating whether reasoning disclosure matches actual model constraints.
+  - id: mch-canary-poisoning
+    name: Cross-Session Canary Poisoning Test
+    description: Tests resistance to adversarial context injection across simulated sessions.

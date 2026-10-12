@@ -1,16 +1,19 @@
 # Progress — worker_m2_2
 
-Last visited: 2026-10-12T05:51:30Z
+Last visited: 2026-10-12T06:01:00Z
 
 ## Status
-Starting investigation of M2 requirements, spec, configs, existing code, and prior worker work.
+All tasks for Milestone M2 (Minimal Failure Cover & Longitudinal Diagnostics R2) completed, verified, and passing across Python and TypeScript.
 
 ## Tasks
-- [ ] Investigate existing codebase, spec, configs, and prior worker attempts
-- [ ] Understand exact definitions and formulas for cover, counterfactual, and temporal
-- [ ] Implement Python modules (cover.py, counterfactual.py, temporal.py, __init__.py)
-- [ ] Write Python unit tests and verify coverage >= 95%, mypy strict, ruff
-- [ ] Implement TypeScript modules (cover.ts, counterfactual.ts, temporal.ts, index.ts)
-- [ ] Write TypeScript unit & parity tests and verify tsc, vitest, build
-- [ ] Run full test suites & e2e runner
-- [ ] Write handoff.md and send completion message
+- [x] Investigate existing codebase, spec, configs, and prior worker attempts
+- [x] Verify exact definitions and formulas for cover, counterfactual, and temporal in Python
+- [x] Verify Python unit tests, mypy strict, ruff, and test coverage (98% overall, >= 95% per file)
+- [x] Enhance TypeScript modules (cover.ts, counterfactual.ts, temporal.ts, index.ts) with full parity aliases and exports
+- [x] Create comprehensive TypeScript unit and parity test suites:
+  - `packages/ts/tests/cover.test.ts` (12 tests)
+  - `packages/ts/tests/counterfactual.test.ts` (9 tests)
+  - `packages/ts/tests/temporal.test.ts` (10 tests)
+- [x] Verify TypeScript typecheck (`pnpm -r run typecheck`), vitest (`pnpm -r run test` - 47 tests passing), and build (`pnpm -r run build`)
+- [x] Run full dual-track verification and 4-tier E2E runner (`runner.py --all` - 299/299 passed)
+- [x] Update BRIEFING.md and write comprehensive handoff.md

@@ -60,8 +60,8 @@ The repository architecture consists of:
 | # | Name | Scope | Dependencies | Status |
 |---|------|-------|-------------|--------|
 | M1 | Math Reference Core & Parity | Python math fixes, Schema repair, TypeScript core port, golden vectors parity | none | DONE |
-| M2 | MFC & Longitudinal Diagnostics | HiGHS MILP, Quine-McCluskey strict mode, counterfactual repair, temporal engine | M1 | IN_PROGRESS |
-| M3 | Synthetic Evidence & Privacy | 4 domains, persona simulator, judge panel ($\alpha \ge 0.80$), k-anonymity, DP | M1 | PLANNED |
+| M2 | MFC & Longitudinal Diagnostics | HiGHS MILP, Quine-McCluskey strict mode, counterfactual repair, temporal engine | M1 | DONE |
+| M3 | Synthetic Evidence & Privacy | 4 domains, persona simulator, judge panel ($\alpha \ge 0.80$), k-anonymity, DP | M1 | IN_PROGRESS |
 | M4 | Card, Index, CLI & Web Portal | Ed25519 signing, Card/Index tooling, Typer CLI, Astro site, Interactive Map | M1, M2 | PLANNED |
 | M5 | Governance & Release Eng | Whitepaper, Diátaxis docs, Makefile targets, package builds, `make verify` | M1, M2, M3, M4 | PLANNED |
 | M_E2E | E2E Testing Track | Independent opaque-box test suite (Tiers 1-4), harness, `TEST_READY.md` | none | DONE |

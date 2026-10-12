@@ -1,0 +1,15 @@
+{
+  "total_cases": 278,
+  "py_success": 278,
+  "ts_success": 278,
+  "sympy_success": 278,
+  "functional_equivalence_py_vs_sympy": 278,
+  "functional_equivalence_ts_vs_sympy": 278,
+  "cross_language_functional_parity": 269,
+  "cross_language_exact_string_parity": 230,
+  "minimality_holds_py": 278,
+  "minimality_holds_ts": 278,
+  "exact_string_match_py_vs_sympy": 54,
+  "alternate_minimal_covers_count": 218,
+  "failures": []
+}

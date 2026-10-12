@@ -1,0 +1,20 @@
+id: sym-rec-synergy-index
+name: Dyadic Complementarity and Synergy Index
+module: SYM-REC
+version: "0.1.0"
+construct: Synergy and task complementarity in joint human-machine execution
+feeds_variables:
+  - sne_reliability
+  - h1_check
+license:
+  status: open_symnoesis
+  license_type: Apache-2.0
+scoring:
+  synergy_statistic:
+    formula: "score(dyad) - max(score(human_alone), score(ai_alone))"
+  complementarity_index:
+    formula: "mutual_error_reduction_rate"
+components:
+  - id: rec-joint-task
+    name: Joint Problem Solving Task Battery
+    description: Standardized joint execution tasks measuring complementarity over solo baselines.

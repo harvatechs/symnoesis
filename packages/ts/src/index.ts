@@ -47,3 +47,6 @@ export * from "./counterfactual.js";
 
 // Longitudinal Temporal Engine
 export * from "./temporal.js";
+
+// Privacy & Telemetry Protection
+export * from "./privacy.js";

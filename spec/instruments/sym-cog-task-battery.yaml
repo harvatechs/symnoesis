@@ -1,0 +1,26 @@
+id: sym-cog-task-battery
+name: Cognitive Agency and Unaided Capability Probe Battery
+module: SYM-COG
+version: "0.1.0"
+construct: Cognitive reliance, decision ownership, and unaided skill trajectory
+feeds_variables:
+  - H1
+  - H2
+license:
+  status: open_symnoesis
+  license_type: Apache-2.0
+scoring:
+  h1_metric: appropriate_reliance_index
+  h2_metric: non_inferiority_probe_slope
+  effect_scale_tau: 0.5
+  non_inferiority_margin_delta: 0.1
+probe_scheduler:
+  probe_interval_sessions: 5
+  mode: unaided
+components:
+  - id: cog-audit-decision-ownership
+    name: Decision Ownership Audit
+    description: Measures whether human deliberately reviews and modifies AI output versus blind acceptance.
+  - id: cog-probe-ai-off
+    name: AI-Off Unaided Skill Retention Probe
+    description: Periodic scheduled probe testing unaided human performance slope on transfer tasks.

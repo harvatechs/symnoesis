@@ -1,0 +1,6937 @@
+[
+  {
+    "id": "tc_001",
+    "desc": "2-var exhaustive mask 0",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [],
+    "dontcares": []
+  },
+  {
+    "id": "tc_002",
+    "desc": "2-var exhaustive mask 1",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_003",
+    "desc": "2-var exhaustive mask 2",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      1
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_004",
+    "desc": "2-var exhaustive mask 3",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      1
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_005",
+    "desc": "2-var exhaustive mask 4",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      2
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_006",
+    "desc": "2-var exhaustive mask 5",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      2
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_007",
+    "desc": "2-var exhaustive mask 6",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      1,
+      2
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_008",
+    "desc": "2-var exhaustive mask 7",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      1,
+      2
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_009",
+    "desc": "2-var exhaustive mask 8",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_010",
+    "desc": "2-var exhaustive mask 9",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_011",
+    "desc": "2-var exhaustive mask 10",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      1,
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_012",
+    "desc": "2-var exhaustive mask 11",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      1,
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_013",
+    "desc": "2-var exhaustive mask 12",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      2,
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_014",
+    "desc": "2-var exhaustive mask 13",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      2,
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_015",
+    "desc": "2-var exhaustive mask 14",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      1,
+      2,
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_016",
+    "desc": "2-var exhaustive mask 15",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_017",
+    "desc": "2-var with DC [0] / [1]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0
+    ],
+    "dontcares": [
+      1
+    ]
+  },
+  {
+    "id": "tc_018",
+    "desc": "2-var with DC [0] / [1, 2]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0
+    ],
+    "dontcares": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tc_019",
+    "desc": "2-var with DC [1] / [0]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      1
+    ],
+    "dontcares": [
+      0
+    ]
+  },
+  {
+    "id": "tc_020",
+    "desc": "2-var with DC [1] / [0, 2]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      1
+    ],
+    "dontcares": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "tc_021",
+    "desc": "2-var with DC [0, 2] / [1]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      2
+    ],
+    "dontcares": [
+      1
+    ]
+  },
+  {
+    "id": "tc_022",
+    "desc": "2-var with DC [0, 2] / [1, 3]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      2
+    ],
+    "dontcares": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "tc_023",
+    "desc": "2-var with DC [1, 3] / [0]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      1,
+      3
+    ],
+    "dontcares": [
+      0
+    ]
+  },
+  {
+    "id": "tc_024",
+    "desc": "2-var with DC [1, 3] / [0, 2]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      1,
+      3
+    ],
+    "dontcares": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "tc_025",
+    "desc": "2-var with DC [0, 3] / [1]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      3
+    ],
+    "dontcares": [
+      1
+    ]
+  },
+  {
+    "id": "tc_026",
+    "desc": "2-var with DC [0, 3] / [1, 2]",
+    "num_vars": 2,
+    "variables": [
+      "a",
+      "b"
+    ],
+    "minterms": [
+      0,
+      3
+    ],
+    "dontcares": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tc_027",
+    "desc": "3-var empty",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [],
+    "dontcares": []
+  },
+  {
+    "id": "tc_028",
+    "desc": "3-var all minterms",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_029",
+    "desc": "3-var odd parity (XOR)",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      1,
+      2,
+      4,
+      7
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_030",
+    "desc": "3-var even parity (XNOR)",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0,
+      3,
+      5,
+      6
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_031",
+    "desc": "3-var majority function",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      3,
+      5,
+      6,
+      7
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_032",
+    "desc": "3-var singleton minterm 0",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_033",
+    "desc": "3-var singleton minterm 1",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      1
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_034",
+    "desc": "3-var singleton minterm 2",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      2
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_035",
+    "desc": "3-var singleton minterm 3",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_036",
+    "desc": "3-var singleton minterm 4",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      4
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_037",
+    "desc": "3-var singleton minterm 5",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      5
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_038",
+    "desc": "3-var singleton minterm 6",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      6
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_039",
+    "desc": "3-var singleton minterm 7",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      7
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_040",
+    "desc": "3-var random 2m/4dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0,
+      1
+    ],
+    "dontcares": [
+      2,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "id": "tc_041",
+    "desc": "3-var random 4m/2dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "dontcares": [
+      0,
+      2
+    ]
+  },
+  {
+    "id": "tc_042",
+    "desc": "3-var random 1m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_043",
+    "desc": "3-var random 1m/1dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      3
+    ],
+    "dontcares": [
+      4
+    ]
+  },
+  {
+    "id": "tc_044",
+    "desc": "3-var random 2m/3dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      3,
+      5
+    ],
+    "dontcares": [
+      4,
+      6,
+      7
+    ]
+  },
+  {
+    "id": "tc_045",
+    "desc": "3-var random 4m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0,
+      1,
+      4,
+      6
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_046",
+    "desc": "3-var random 2m/1dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      1,
+      4
+    ],
+    "dontcares": [
+      6
+    ]
+  },
+  {
+    "id": "tc_047",
+    "desc": "3-var random 1m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      1
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_048",
+    "desc": "3-var random 1m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      5
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_049",
+    "desc": "3-var random 4m/1dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0,
+      3,
+      4,
+      6
+    ],
+    "dontcares": [
+      5
+    ]
+  },
+  {
+    "id": "tc_050",
+    "desc": "3-var random 1m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      4
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_051",
+    "desc": "3-var random 3m/2dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0,
+      3,
+      5
+    ],
+    "dontcares": [
+      1,
+      6
+    ]
+  },
+  {
+    "id": "tc_052",
+    "desc": "3-var random 1m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      3
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_053",
+    "desc": "3-var random 2m/2dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      3,
+      4
+    ],
+    "dontcares": [
+      2,
+      5
+    ]
+  },
+  {
+    "id": "tc_054",
+    "desc": "3-var random 2m/1dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      1,
+      5
+    ],
+    "dontcares": [
+      7
+    ]
+  },
+  {
+    "id": "tc_055",
+    "desc": "3-var random 4m/2dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      1,
+      4,
+      5,
+      7
+    ],
+    "dontcares": [
+      0,
+      6
+    ]
+  },
+  {
+    "id": "tc_056",
+    "desc": "3-var random 2m/2dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      4,
+      5
+    ],
+    "dontcares": [
+      6,
+      7
+    ]
+  },
+  {
+    "id": "tc_057",
+    "desc": "3-var random 4m/2dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0,
+      1,
+      5,
+      6
+    ],
+    "dontcares": [
+      4,
+      7
+    ]
+  },
+  {
+    "id": "tc_058",
+    "desc": "3-var random 3m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      1,
+      4,
+      7
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_059",
+    "desc": "3-var random 2m/1dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      3,
+      5
+    ],
+    "dontcares": [
+      7
+    ]
+  },
+  {
+    "id": "tc_060",
+    "desc": "3-var random 5m/1dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      1,
+      2,
+      4,
+      6,
+      7
+    ],
+    "dontcares": [
+      5
+    ]
+  },
+  {
+    "id": "tc_061",
+    "desc": "3-var random 3m/2dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      4,
+      5,
+      7
+    ],
+    "dontcares": [
+      3,
+      6
+    ]
+  },
+  {
+    "id": "tc_062",
+    "desc": "3-var random 2m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      2,
+      4
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_063",
+    "desc": "3-var random 1m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      0
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_064",
+    "desc": "3-var random 2m/0dc",
+    "num_vars": 3,
+    "variables": [
+      "a",
+      "b",
+      "c"
+    ],
+    "minterms": [
+      2,
+      6
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_065",
+    "desc": "4-var Petrick cyclic core 1",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      4,
+      5,
+      7,
+      8,
+      11,
+      12,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_066",
+    "desc": "4-var Petrick cyclic core 2",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      2,
+      5,
+      7,
+      8,
+      10,
+      13,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_067",
+    "desc": "4-var cyclic core 3",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      5,
+      6,
+      7
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_068",
+    "desc": "4-var parity",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      4,
+      7,
+      8,
+      11,
+      13,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_069",
+    "desc": "4-var majority",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      7,
+      11,
+      13,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_070",
+    "desc": "4-var primes",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_071",
+    "desc": "4-var don't cares expansion",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      2,
+      8,
+      10
+    ],
+    "dontcares": [
+      4,
+      6,
+      12,
+      14
+    ]
+  },
+  {
+    "id": "tc_072",
+    "desc": "4-var mixed DCs",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      3,
+      7,
+      11,
+      15
+    ],
+    "dontcares": [
+      0,
+      2,
+      5
+    ]
+  },
+  {
+    "id": "tc_073",
+    "desc": "4-var diagonal vertices",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      5,
+      10,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_074",
+    "desc": "4-var random 10m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_075",
+    "desc": "4-var random 10m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      10,
+      12,
+      14
+    ],
+    "dontcares": [
+      8
+    ]
+  },
+  {
+    "id": "tc_076",
+    "desc": "4-var random 9m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      8,
+      10,
+      12,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_077",
+    "desc": "4-var random 9m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      7,
+      9,
+      13,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_078",
+    "desc": "4-var random 13m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": "tc_079",
+    "desc": "4-var random 11m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_080",
+    "desc": "4-var random 10m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      3,
+      6,
+      7,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_081",
+    "desc": "4-var random 7m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      8,
+      10,
+      11,
+      12,
+      15
+    ],
+    "dontcares": [
+      4,
+      7
+    ]
+  },
+  {
+    "id": "tc_082",
+    "desc": "4-var random 2m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      6,
+      10
+    ],
+    "dontcares": [
+      1,
+      3
+    ]
+  },
+  {
+    "id": "tc_083",
+    "desc": "4-var random 5m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      10,
+      11,
+      15
+    ],
+    "dontcares": [
+      13,
+      14
+    ]
+  },
+  {
+    "id": "tc_084",
+    "desc": "4-var random 10m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      3,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13,
+      14,
+      15
+    ],
+    "dontcares": [
+      10,
+      12
+    ]
+  },
+  {
+    "id": "tc_085",
+    "desc": "4-var random 4m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      7,
+      8,
+      12
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_086",
+    "desc": "4-var random 11m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_087",
+    "desc": "4-var random 7m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      4,
+      6,
+      7,
+      12,
+      13,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_088",
+    "desc": "4-var random 2m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      15
+    ],
+    "dontcares": [
+      3,
+      9
+    ]
+  },
+  {
+    "id": "tc_089",
+    "desc": "4-var random 1m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      10
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_090",
+    "desc": "4-var random 10m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_091",
+    "desc": "4-var random 7m/4dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      3,
+      5,
+      10,
+      11,
+      12,
+      13
+    ],
+    "dontcares": [
+      1,
+      6,
+      7,
+      9
+    ]
+  },
+  {
+    "id": "tc_092",
+    "desc": "4-var random 8m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      3,
+      4,
+      5,
+      6,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": [
+      10
+    ]
+  },
+  {
+    "id": "tc_093",
+    "desc": "4-var random 8m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      7,
+      9,
+      10,
+      12,
+      13,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_094",
+    "desc": "4-var random 3m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      5
+    ],
+    "dontcares": [
+      8
+    ]
+  },
+  {
+    "id": "tc_095",
+    "desc": "4-var random 4m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      7,
+      8,
+      11,
+      13
+    ],
+    "dontcares": [
+      5
+    ]
+  },
+  {
+    "id": "tc_096",
+    "desc": "4-var random 12m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15
+    ],
+    "dontcares": [
+      0
+    ]
+  },
+  {
+    "id": "tc_097",
+    "desc": "4-var random 10m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_098",
+    "desc": "4-var random 9m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      9,
+      10,
+      12,
+      14
+    ],
+    "dontcares": [
+      13,
+      15
+    ]
+  },
+  {
+    "id": "tc_099",
+    "desc": "4-var random 9m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      5,
+      8,
+      11,
+      12,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_100",
+    "desc": "4-var random 1m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      9
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_101",
+    "desc": "4-var random 15m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_102",
+    "desc": "4-var random 2m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      6,
+      12
+    ],
+    "dontcares": [
+      10
+    ]
+  },
+  {
+    "id": "tc_103",
+    "desc": "4-var random 1m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      13
+    ],
+    "dontcares": [
+      3,
+      6
+    ]
+  },
+  {
+    "id": "tc_104",
+    "desc": "4-var random 4m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      5,
+      6,
+      7,
+      13
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_105",
+    "desc": "4-var random 3m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      3,
+      6,
+      10
+    ],
+    "dontcares": [
+      0
+    ]
+  },
+  {
+    "id": "tc_106",
+    "desc": "4-var random 14m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_107",
+    "desc": "4-var random 0m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [],
+    "dontcares": [
+      5,
+      13
+    ]
+  },
+  {
+    "id": "tc_108",
+    "desc": "4-var random 10m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      9,
+      10,
+      12,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_109",
+    "desc": "4-var random 10m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      12,
+      15
+    ],
+    "dontcares": [
+      10
+    ]
+  },
+  {
+    "id": "tc_110",
+    "desc": "4-var random 9m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      4,
+      6,
+      10,
+      11,
+      12,
+      13,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_111",
+    "desc": "4-var random 4m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      3,
+      6,
+      12,
+      15
+    ],
+    "dontcares": [
+      9
+    ]
+  },
+  {
+    "id": "tc_112",
+    "desc": "4-var random 6m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      8,
+      10,
+      15
+    ],
+    "dontcares": [
+      7,
+      14
+    ]
+  },
+  {
+    "id": "tc_113",
+    "desc": "4-var random 11m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      3,
+      4,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_114",
+    "desc": "4-var random 8m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      6,
+      7,
+      9,
+      10,
+      13,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_115",
+    "desc": "4-var random 1m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      12
+    ],
+    "dontcares": [
+      0,
+      14
+    ]
+  },
+  {
+    "id": "tc_116",
+    "desc": "4-var random 4m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      5,
+      8,
+      11,
+      12
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_117",
+    "desc": "4-var random 6m/3dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      5,
+      8,
+      11,
+      15
+    ],
+    "dontcares": [
+      7,
+      13,
+      14
+    ]
+  },
+  {
+    "id": "tc_118",
+    "desc": "4-var random 13m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15
+    ],
+    "dontcares": [
+      13
+    ]
+  },
+  {
+    "id": "tc_119",
+    "desc": "4-var random 8m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      4,
+      5,
+      8,
+      10,
+      11,
+      13
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_120",
+    "desc": "4-var random 3m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      6,
+      7,
+      11
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_121",
+    "desc": "4-var random 1m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      6
+    ],
+    "dontcares": [
+      13
+    ]
+  },
+  {
+    "id": "tc_122",
+    "desc": "4-var random 8m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      3,
+      6,
+      9,
+      11,
+      12,
+      13,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_123",
+    "desc": "4-var random 4m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      6,
+      8,
+      11,
+      13
+    ],
+    "dontcares": [
+      9,
+      12
+    ]
+  },
+  {
+    "id": "tc_124",
+    "desc": "4-var random 3m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      6,
+      7
+    ],
+    "dontcares": [
+      8
+    ]
+  },
+  {
+    "id": "tc_125",
+    "desc": "4-var random 11m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_126",
+    "desc": "4-var random 2m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      13
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_127",
+    "desc": "4-var random 0m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [],
+    "dontcares": [
+      8
+    ]
+  },
+  {
+    "id": "tc_128",
+    "desc": "4-var random 3m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      5,
+      12,
+      15
+    ],
+    "dontcares": [
+      14
+    ]
+  },
+  {
+    "id": "tc_129",
+    "desc": "4-var random 13m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_130",
+    "desc": "4-var random 4m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      6,
+      9,
+      13
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_131",
+    "desc": "4-var random 1m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1
+    ],
+    "dontcares": [
+      10,
+      15
+    ]
+  },
+  {
+    "id": "tc_132",
+    "desc": "4-var random 10m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      14
+    ],
+    "dontcares": [
+      8,
+      12
+    ]
+  },
+  {
+    "id": "tc_133",
+    "desc": "4-var random 11m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      3,
+      4,
+      5,
+      6,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_134",
+    "desc": "4-var random 12m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": [
+      1
+    ]
+  },
+  {
+    "id": "tc_135",
+    "desc": "4-var random 6m/5dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      3,
+      4,
+      7,
+      8,
+      10,
+      12
+    ],
+    "dontcares": [
+      2,
+      6,
+      11,
+      13,
+      14
+    ]
+  },
+  {
+    "id": "tc_136",
+    "desc": "4-var random 5m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      3,
+      4,
+      10,
+      13
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_137",
+    "desc": "4-var random 12m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      15
+    ],
+    "dontcares": [
+      14
+    ]
+  },
+  {
+    "id": "tc_138",
+    "desc": "4-var random 6m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      4,
+      8,
+      9,
+      11,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_139",
+    "desc": "4-var random 3m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      3,
+      6,
+      11
+    ],
+    "dontcares": [
+      2
+    ]
+  },
+  {
+    "id": "tc_140",
+    "desc": "4-var random 11m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": [
+      7,
+      11
+    ]
+  },
+  {
+    "id": "tc_141",
+    "desc": "4-var random 5m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      5,
+      6,
+      8,
+      13,
+      14
+    ],
+    "dontcares": [
+      15
+    ]
+  },
+  {
+    "id": "tc_142",
+    "desc": "4-var random 12m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_143",
+    "desc": "4-var random 11m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      11,
+      12,
+      13,
+      14
+    ],
+    "dontcares": [
+      15
+    ]
+  },
+  {
+    "id": "tc_144",
+    "desc": "4-var random 1m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      4
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_145",
+    "desc": "4-var random 0m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [],
+    "dontcares": [
+      9
+    ]
+  },
+  {
+    "id": "tc_146",
+    "desc": "4-var random 0m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [],
+    "dontcares": [
+      0,
+      9
+    ]
+  },
+  {
+    "id": "tc_147",
+    "desc": "4-var random 6m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      4,
+      7,
+      9
+    ],
+    "dontcares": [
+      5,
+      14
+    ]
+  },
+  {
+    "id": "tc_148",
+    "desc": "4-var random 2m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_149",
+    "desc": "4-var random 3m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      6,
+      8
+    ],
+    "dontcares": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "tc_150",
+    "desc": "4-var random 13m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_151",
+    "desc": "4-var random 9m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "dontcares": [
+      4,
+      6
+    ]
+  },
+  {
+    "id": "tc_152",
+    "desc": "4-var random 12m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      10,
+      11,
+      12,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_153",
+    "desc": "4-var random 7m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      4,
+      8,
+      10,
+      11,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_154",
+    "desc": "4-var random 1m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      11
+    ],
+    "dontcares": [
+      9,
+      15
+    ]
+  },
+  {
+    "id": "tc_155",
+    "desc": "4-var random 0m/2dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [],
+    "dontcares": [
+      11,
+      14
+    ]
+  },
+  {
+    "id": "tc_156",
+    "desc": "4-var random 4m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      7,
+      9
+    ],
+    "dontcares": [
+      15
+    ]
+  },
+  {
+    "id": "tc_157",
+    "desc": "4-var random 10m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      3,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_158",
+    "desc": "4-var random 7m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      9,
+      15
+    ],
+    "dontcares": [
+      14
+    ]
+  },
+  {
+    "id": "tc_159",
+    "desc": "4-var random 6m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      5,
+      6,
+      14,
+      15
+    ],
+    "dontcares": [
+      10
+    ]
+  },
+  {
+    "id": "tc_160",
+    "desc": "4-var random 8m/3dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      11
+    ],
+    "dontcares": [
+      12,
+      13,
+      15
+    ]
+  },
+  {
+    "id": "tc_161",
+    "desc": "4-var random 10m/4dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      12,
+      14,
+      15
+    ],
+    "dontcares": [
+      0,
+      8,
+      10,
+      13
+    ]
+  },
+  {
+    "id": "tc_162",
+    "desc": "4-var random 3m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      7,
+      9,
+      11
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_163",
+    "desc": "4-var random 0m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [],
+    "dontcares": [
+      7
+    ]
+  },
+  {
+    "id": "tc_164",
+    "desc": "4-var random 8m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      10,
+      12
+    ],
+    "dontcares": [
+      0
+    ]
+  },
+  {
+    "id": "tc_165",
+    "desc": "4-var random 9m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      6,
+      7,
+      8,
+      11,
+      12,
+      13,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_166",
+    "desc": "4-var random 14m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": [
+      4
+    ]
+  },
+  {
+    "id": "tc_167",
+    "desc": "4-var random 6m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      3,
+      5,
+      7,
+      11,
+      12,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_168",
+    "desc": "4-var random 14m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_169",
+    "desc": "4-var random 8m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      6,
+      7,
+      10,
+      11,
+      12
+    ],
+    "dontcares": [
+      14
+    ]
+  },
+  {
+    "id": "tc_170",
+    "desc": "4-var random 10m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      14,
+      15
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_171",
+    "desc": "4-var random 10m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10,
+      13,
+      14
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_172",
+    "desc": "4-var random 7m/1dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      0,
+      4,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "dontcares": [
+      5
+    ]
+  },
+  {
+    "id": "tc_173",
+    "desc": "4-var random 7m/0dc",
+    "num_vars": 4,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "minterms": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_174",
+    "desc": "5-var random 1m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      9
+    ],
+    "dontcares": [
+      15,
+      24,
+      31
+    ]
+  },
+  {
+    "id": "tc_175",
+    "desc": "5-var random 22m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      13,
+      14,
+      16,
+      17,
+      21,
+      24,
+      25,
+      26,
+      28,
+      29,
+      30,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_176",
+    "desc": "5-var random 8m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      9,
+      11,
+      18,
+      21,
+      22,
+      27,
+      30
+    ],
+    "dontcares": [
+      24
+    ]
+  },
+  {
+    "id": "tc_177",
+    "desc": "5-var random 2m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      3,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_178",
+    "desc": "5-var random 20m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      11,
+      14,
+      17,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24,
+      25,
+      31
+    ],
+    "dontcares": [
+      22
+    ]
+  },
+  {
+    "id": "tc_179",
+    "desc": "5-var random 11m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      4,
+      5,
+      6,
+      8,
+      11,
+      16,
+      17,
+      22,
+      24,
+      25,
+      30
+    ],
+    "dontcares": [
+      26
+    ]
+  },
+  {
+    "id": "tc_180",
+    "desc": "5-var random 25m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      14,
+      15,
+      17,
+      19,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      30,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_181",
+    "desc": "5-var random 14m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      2,
+      3,
+      4,
+      7,
+      9,
+      10,
+      13,
+      14,
+      16,
+      17,
+      20,
+      24,
+      30,
+      31
+    ],
+    "dontcares": [
+      1,
+      19,
+      28
+    ]
+  },
+  {
+    "id": "tc_182",
+    "desc": "5-var random 4m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      8,
+      15,
+      24,
+      29
+    ],
+    "dontcares": [
+      6
+    ]
+  },
+  {
+    "id": "tc_183",
+    "desc": "5-var random 14m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      3,
+      6,
+      8,
+      11,
+      13,
+      14,
+      15,
+      18,
+      19,
+      20,
+      26,
+      28,
+      29
+    ],
+    "dontcares": [
+      9
+    ]
+  },
+  {
+    "id": "tc_184",
+    "desc": "5-var random 5m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      3,
+      17,
+      22,
+      23,
+      25
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_185",
+    "desc": "5-var random 16m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6,
+      7,
+      10,
+      17,
+      18,
+      19,
+      20,
+      21,
+      26,
+      28,
+      29
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_186",
+    "desc": "5-var random 9m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      4,
+      8,
+      19,
+      21,
+      24,
+      25,
+      29,
+      30
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_187",
+    "desc": "5-var random 5m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      1,
+      8,
+      15,
+      22
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_188",
+    "desc": "5-var random 7m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      3,
+      4,
+      13,
+      16,
+      23,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_189",
+    "desc": "5-var random 14m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      1,
+      3,
+      7,
+      9,
+      14,
+      15,
+      16,
+      18,
+      19,
+      21,
+      25,
+      30,
+      31
+    ],
+    "dontcares": [
+      11,
+      24,
+      28
+    ]
+  },
+  {
+    "id": "tc_190",
+    "desc": "5-var random 23m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_191",
+    "desc": "5-var random 24m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      10,
+      12,
+      13,
+      14,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_192",
+    "desc": "5-var random 4m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      5,
+      6,
+      23,
+      27
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_193",
+    "desc": "5-var random 0m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [],
+    "dontcares": [
+      7,
+      21,
+      26
+    ]
+  },
+  {
+    "id": "tc_194",
+    "desc": "5-var random 25m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      24,
+      25,
+      26,
+      27,
+      29,
+      30,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_195",
+    "desc": "5-var random 7m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      9,
+      10,
+      11,
+      17,
+      22,
+      24
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_196",
+    "desc": "5-var random 16m/4dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      20,
+      21,
+      24,
+      28,
+      30
+    ],
+    "dontcares": [
+      2,
+      4,
+      23,
+      25
+    ]
+  },
+  {
+    "id": "tc_197",
+    "desc": "5-var random 1m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      5
+    ],
+    "dontcares": [
+      3,
+      9,
+      10
+    ]
+  },
+  {
+    "id": "tc_198",
+    "desc": "5-var random 22m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      3,
+      6,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      22,
+      23,
+      24,
+      25,
+      28,
+      29,
+      30,
+      31
+    ],
+    "dontcares": [
+      27
+    ]
+  },
+  {
+    "id": "tc_199",
+    "desc": "5-var random 5m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      3,
+      9,
+      10,
+      15
+    ],
+    "dontcares": [
+      8,
+      24,
+      31
+    ]
+  },
+  {
+    "id": "tc_200",
+    "desc": "5-var random 6m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      7,
+      12,
+      16,
+      17,
+      22,
+      29
+    ],
+    "dontcares": [
+      8
+    ]
+  },
+  {
+    "id": "tc_201",
+    "desc": "5-var random 4m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      2,
+      25,
+      27
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_202",
+    "desc": "5-var random 9m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      3,
+      5,
+      9,
+      10,
+      13,
+      20,
+      22,
+      29
+    ],
+    "dontcares": [
+      12,
+      18,
+      27
+    ]
+  },
+  {
+    "id": "tc_203",
+    "desc": "5-var random 23m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "dontcares": [
+      23
+    ]
+  },
+  {
+    "id": "tc_204",
+    "desc": "5-var random 20m/5dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      5,
+      6,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      23,
+      25,
+      28,
+      30,
+      31
+    ],
+    "dontcares": [
+      3,
+      4,
+      7,
+      8,
+      9
+    ]
+  },
+  {
+    "id": "tc_205",
+    "desc": "5-var random 3m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      2,
+      28,
+      29
+    ],
+    "dontcares": [
+      19
+    ]
+  },
+  {
+    "id": "tc_206",
+    "desc": "5-var random 8m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      2,
+      12,
+      14,
+      16,
+      18,
+      19,
+      26,
+      29
+    ],
+    "dontcares": [
+      4,
+      20,
+      27
+    ]
+  },
+  {
+    "id": "tc_207",
+    "desc": "5-var random 19m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      14,
+      15,
+      16,
+      19,
+      20,
+      24,
+      25,
+      27,
+      28,
+      30
+    ],
+    "dontcares": [
+      12
+    ]
+  },
+  {
+    "id": "tc_208",
+    "desc": "5-var random 13m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      2,
+      10,
+      12,
+      13,
+      18,
+      19,
+      20,
+      21,
+      23,
+      24,
+      26,
+      27
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_209",
+    "desc": "5-var random 20m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      2,
+      4,
+      5,
+      6,
+      10,
+      11,
+      12,
+      15,
+      16,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "dontcares": [
+      8,
+      9,
+      24
+    ]
+  },
+  {
+    "id": "tc_210",
+    "desc": "5-var random 16m/2dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      15,
+      20,
+      24,
+      25,
+      26,
+      28
+    ],
+    "dontcares": [
+      0,
+      23
+    ]
+  },
+  {
+    "id": "tc_211",
+    "desc": "5-var random 6m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      4,
+      5,
+      22,
+      24,
+      26,
+      29
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_212",
+    "desc": "5-var random 25m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      28,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_213",
+    "desc": "5-var random 21m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      8,
+      9,
+      11,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      26,
+      27,
+      29,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_214",
+    "desc": "5-var random 15m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      10,
+      11,
+      12,
+      13,
+      16,
+      23,
+      24,
+      26,
+      29,
+      30
+    ],
+    "dontcares": [
+      22
+    ]
+  },
+  {
+    "id": "tc_215",
+    "desc": "5-var random 3m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      15,
+      22,
+      26
+    ],
+    "dontcares": [
+      1,
+      8,
+      9
+    ]
+  },
+  {
+    "id": "tc_216",
+    "desc": "5-var random 16m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      13,
+      16,
+      17,
+      18,
+      19,
+      23,
+      28,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_217",
+    "desc": "5-var random 9m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      2,
+      3,
+      14,
+      15,
+      19,
+      20,
+      25,
+      26,
+      28
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_218",
+    "desc": "5-var random 17m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      2,
+      5,
+      6,
+      7,
+      9,
+      11,
+      13,
+      16,
+      18,
+      19,
+      21,
+      23,
+      24,
+      25,
+      26,
+      27
+    ],
+    "dontcares": [
+      4,
+      15,
+      22
+    ]
+  },
+  {
+    "id": "tc_219",
+    "desc": "5-var random 13m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      2,
+      3,
+      7,
+      11,
+      16,
+      18,
+      20,
+      21,
+      23,
+      25,
+      28,
+      30
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_220",
+    "desc": "5-var random 0m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [],
+    "dontcares": [
+      11,
+      21,
+      22
+    ]
+  },
+  {
+    "id": "tc_221",
+    "desc": "5-var random 21m/1dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      29
+    ],
+    "dontcares": [
+      11
+    ]
+  },
+  {
+    "id": "tc_222",
+    "desc": "5-var random 10m/3dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      8,
+      10,
+      11,
+      12,
+      13,
+      14,
+      22,
+      25,
+      28,
+      31
+    ],
+    "dontcares": [
+      3,
+      20,
+      27
+    ]
+  },
+  {
+    "id": "tc_223",
+    "desc": "5-var random 24m/0dc",
+    "num_vars": 5,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+    ],
+    "minterms": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      22,
+      23,
+      24,
+      25,
+      28,
+      29,
+      30,
+      31
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_224",
+    "desc": "6-var random 25m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      17,
+      22,
+      23,
+      25,
+      27,
+      28,
+      32,
+      38,
+      39,
+      40,
+      42,
+      43,
+      46,
+      50,
+      53,
+      55,
+      56,
+      61,
+      62
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_225",
+    "desc": "6-var random 3m/2dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      4,
+      19,
+      49
+    ],
+    "dontcares": [
+      30,
+      46
+    ]
+  },
+  {
+    "id": "tc_226",
+    "desc": "6-var random 13m/1dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      1,
+      4,
+      7,
+      8,
+      15,
+      17,
+      20,
+      23,
+      25,
+      33,
+      36,
+      41,
+      48
+    ],
+    "dontcares": [
+      56
+    ]
+  },
+  {
+    "id": "tc_227",
+    "desc": "6-var random 18m/1dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      4,
+      7,
+      8,
+      12,
+      13,
+      16,
+      18,
+      28,
+      31,
+      35,
+      39,
+      44,
+      45,
+      55,
+      58,
+      59,
+      60,
+      63
+    ],
+    "dontcares": [
+      49
+    ]
+  },
+  {
+    "id": "tc_228",
+    "desc": "6-var random 5m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      8,
+      37,
+      38,
+      40,
+      44
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_229",
+    "desc": "6-var random 28m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      1,
+      4,
+      5,
+      7,
+      8,
+      12,
+      14,
+      15,
+      19,
+      23,
+      25,
+      26,
+      29,
+      30,
+      31,
+      32,
+      33,
+      35,
+      36,
+      38,
+      39,
+      46,
+      50,
+      51,
+      52,
+      55,
+      57,
+      58
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_230",
+    "desc": "6-var random 13m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      8,
+      9,
+      22,
+      28,
+      29,
+      33,
+      35,
+      37,
+      40,
+      43,
+      49,
+      53,
+      56
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_231",
+    "desc": "6-var random 14m/2dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      5,
+      9,
+      10,
+      14,
+      16,
+      18,
+      19,
+      20,
+      22,
+      33,
+      45,
+      57,
+      60,
+      63
+    ],
+    "dontcares": [
+      7,
+      53
+    ]
+  },
+  {
+    "id": "tc_232",
+    "desc": "6-var random 7m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      5,
+      10,
+      32,
+      34,
+      38,
+      39,
+      41
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_233",
+    "desc": "6-var random 8m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      1,
+      2,
+      36,
+      43,
+      52,
+      53,
+      55,
+      59
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_234",
+    "desc": "6-var random 21m/2dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      1,
+      3,
+      4,
+      13,
+      15,
+      18,
+      19,
+      25,
+      26,
+      29,
+      30,
+      31,
+      34,
+      36,
+      39,
+      40,
+      43,
+      49,
+      56,
+      60,
+      62
+    ],
+    "dontcares": [
+      33,
+      41
+    ]
+  },
+  {
+    "id": "tc_235",
+    "desc": "6-var random 16m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      8,
+      9,
+      13,
+      20,
+      21,
+      22,
+      23,
+      25,
+      29,
+      38,
+      45,
+      46,
+      48,
+      55,
+      57,
+      61
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_236",
+    "desc": "6-var random 13m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      3,
+      6,
+      7,
+      9,
+      15,
+      17,
+      18,
+      24,
+      26,
+      28,
+      29,
+      30,
+      39
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_237",
+    "desc": "6-var random 29m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      1,
+      3,
+      5,
+      10,
+      12,
+      13,
+      15,
+      18,
+      19,
+      20,
+      22,
+      25,
+      29,
+      30,
+      31,
+      32,
+      36,
+      37,
+      38,
+      40,
+      41,
+      46,
+      48,
+      50,
+      52,
+      53,
+      54,
+      55,
+      59
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_238",
+    "desc": "6-var random 28m/2dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      12,
+      16,
+      17,
+      18,
+      23,
+      24,
+      25,
+      28,
+      32,
+      35,
+      36,
+      46,
+      47,
+      48,
+      49,
+      52,
+      54,
+      55,
+      56,
+      57,
+      58,
+      61
+    ],
+    "dontcares": [
+      13,
+      27
+    ]
+  },
+  {
+    "id": "tc_239",
+    "desc": "6-var random 22m/5dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      2,
+      8,
+      9,
+      10,
+      19,
+      20,
+      21,
+      29,
+      30,
+      33,
+      37,
+      39,
+      43,
+      45,
+      51,
+      54,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "dontcares": [
+      12,
+      18,
+      25,
+      32,
+      38
+    ]
+  },
+  {
+    "id": "tc_240",
+    "desc": "6-var random 25m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      1,
+      3,
+      7,
+      14,
+      16,
+      19,
+      21,
+      23,
+      26,
+      30,
+      36,
+      37,
+      38,
+      40,
+      41,
+      43,
+      44,
+      46,
+      50,
+      52,
+      54,
+      57,
+      60,
+      62,
+      63
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_241",
+    "desc": "6-var random 15m/4dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      1,
+      2,
+      7,
+      12,
+      13,
+      15,
+      20,
+      26,
+      28,
+      36,
+      44,
+      50,
+      56,
+      62,
+      63
+    ],
+    "dontcares": [
+      9,
+      43,
+      48,
+      52
+    ]
+  },
+  {
+    "id": "tc_242",
+    "desc": "6-var random 28m/2dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      8,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      24,
+      29,
+      30,
+      33,
+      34,
+      35,
+      39,
+      41,
+      42,
+      43,
+      49,
+      55,
+      57,
+      58,
+      60,
+      62
+    ],
+    "dontcares": [
+      7,
+      45
+    ]
+  },
+  {
+    "id": "tc_243",
+    "desc": "6-var random 23m/2dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      2,
+      5,
+      7,
+      9,
+      17,
+      18,
+      20,
+      22,
+      24,
+      25,
+      30,
+      31,
+      34,
+      35,
+      36,
+      43,
+      45,
+      46,
+      49,
+      50,
+      52,
+      57,
+      61
+    ],
+    "dontcares": [
+      26,
+      44
+    ]
+  },
+  {
+    "id": "tc_244",
+    "desc": "6-var random 26m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      3,
+      6,
+      8,
+      12,
+      13,
+      14,
+      15,
+      17,
+      21,
+      26,
+      33,
+      34,
+      35,
+      37,
+      39,
+      40,
+      42,
+      44,
+      47,
+      49,
+      51,
+      52,
+      53,
+      56,
+      58,
+      61
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_245",
+    "desc": "6-var random 22m/2dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      2,
+      3,
+      5,
+      10,
+      12,
+      14,
+      18,
+      20,
+      26,
+      30,
+      34,
+      35,
+      36,
+      41,
+      47,
+      48,
+      50,
+      53,
+      55,
+      56,
+      59,
+      61
+    ],
+    "dontcares": [
+      0,
+      17
+    ]
+  },
+  {
+    "id": "tc_246",
+    "desc": "6-var random 27m/2dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      0,
+      2,
+      6,
+      8,
+      11,
+      12,
+      17,
+      18,
+      19,
+      21,
+      25,
+      29,
+      31,
+      32,
+      33,
+      34,
+      36,
+      38,
+      41,
+      44,
+      47,
+      50,
+      53,
+      56,
+      58,
+      60,
+      62
+    ],
+    "dontcares": [
+      22,
+      59
+    ]
+  },
+  {
+    "id": "tc_247",
+    "desc": "6-var random 8m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      0,
+      11,
+      16,
+      21,
+      41,
+      45,
+      47,
+      58
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_248",
+    "desc": "6-var random 8m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      5,
+      20,
+      25,
+      27,
+      32,
+      42,
+      51,
+      52
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_249",
+    "desc": "6-var random 7m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      0,
+      15,
+      16,
+      20,
+      24,
+      59,
+      61
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_250",
+    "desc": "6-var random 27m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      0,
+      3,
+      7,
+      10,
+      14,
+      15,
+      16,
+      18,
+      19,
+      21,
+      23,
+      25,
+      29,
+      32,
+      34,
+      36,
+      37,
+      41,
+      42,
+      43,
+      44,
+      46,
+      48,
+      53,
+      58,
+      60,
+      61
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_251",
+    "desc": "6-var random 18m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      13,
+      15,
+      19,
+      23,
+      26,
+      29,
+      30,
+      34,
+      35,
+      38,
+      42,
+      43,
+      44,
+      47,
+      48,
+      51,
+      54,
+      60
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_252",
+    "desc": "6-var random 19m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      3,
+      4,
+      7,
+      9,
+      10,
+      12,
+      20,
+      23,
+      32,
+      33,
+      34,
+      35,
+      36,
+      45,
+      53,
+      57,
+      58,
+      62,
+      63
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_253",
+    "desc": "6-var random 24m/0dc",
+    "num_vars": 6,
+    "variables": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "minterms": [
+      1,
+      3,
+      5,
+      8,
+      16,
+      19,
+      25,
+      26,
+      28,
+      29,
+      31,
+      32,
+      35,
+      36,
+      37,
+      43,
+      45,
+      49,
+      51,
+      53,
+      54,
+      57,
+      58,
+      63
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_254",
+    "desc": "8-var SPEC scale 7m/1dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      16,
+      30,
+      32,
+      35,
+      176,
+      216,
+      241
+    ],
+    "dontcares": [
+      23
+    ]
+  },
+  {
+    "id": "tc_255",
+    "desc": "8-var SPEC scale 15m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      41,
+      60,
+      65,
+      68,
+      69,
+      91,
+      114,
+      178,
+      191,
+      192,
+      193,
+      195,
+      201,
+      215,
+      229
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_256",
+    "desc": "8-var SPEC scale 23m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      8,
+      28,
+      39,
+      48,
+      58,
+      63,
+      70,
+      88,
+      97,
+      108,
+      117,
+      136,
+      139,
+      169,
+      172,
+      184,
+      185,
+      195,
+      207,
+      210,
+      224,
+      237,
+      239
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_257",
+    "desc": "8-var SPEC scale 19m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      17,
+      22,
+      24,
+      28,
+      34,
+      51,
+      71,
+      105,
+      111,
+      119,
+      121,
+      125,
+      148,
+      154,
+      163,
+      164,
+      205,
+      224,
+      228
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_258",
+    "desc": "8-var SPEC scale 30m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      12,
+      15,
+      38,
+      44,
+      47,
+      70,
+      76,
+      81,
+      88,
+      96,
+      97,
+      104,
+      106,
+      109,
+      126,
+      134,
+      142,
+      151,
+      153,
+      160,
+      164,
+      171,
+      173,
+      178,
+      188,
+      201,
+      225,
+      233,
+      242,
+      252
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_259",
+    "desc": "8-var SPEC scale 16m/2dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      26,
+      29,
+      40,
+      47,
+      68,
+      97,
+      104,
+      124,
+      130,
+      169,
+      189,
+      198,
+      211,
+      213,
+      230,
+      237
+    ],
+    "dontcares": [
+      73,
+      153
+    ]
+  },
+  {
+    "id": "tc_260",
+    "desc": "8-var SPEC scale 6m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      37,
+      96,
+      106,
+      111,
+      170,
+      245
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_261",
+    "desc": "8-var SPEC scale 15m/2dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      50,
+      104,
+      122,
+      124,
+      133,
+      144,
+      157,
+      164,
+      183,
+      184,
+      194,
+      203,
+      238,
+      245,
+      254
+    ],
+    "dontcares": [
+      60,
+      97
+    ]
+  },
+  {
+    "id": "tc_262",
+    "desc": "8-var SPEC scale 15m/2dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      8,
+      23,
+      74,
+      78,
+      100,
+      113,
+      117,
+      125,
+      133,
+      151,
+      168,
+      194,
+      211,
+      213,
+      255
+    ],
+    "dontcares": [
+      160,
+      189
+    ]
+  },
+  {
+    "id": "tc_263",
+    "desc": "8-var SPEC scale 20m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      3,
+      4,
+      17,
+      24,
+      30,
+      34,
+      38,
+      70,
+      71,
+      77,
+      86,
+      94,
+      111,
+      118,
+      180,
+      211,
+      233,
+      235,
+      250,
+      251
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_264",
+    "desc": "8-var SPEC scale 34m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      1,
+      3,
+      4,
+      24,
+      27,
+      38,
+      45,
+      49,
+      61,
+      64,
+      68,
+      70,
+      73,
+      90,
+      105,
+      110,
+      128,
+      134,
+      135,
+      136,
+      137,
+      141,
+      158,
+      172,
+      178,
+      184,
+      206,
+      208,
+      231,
+      232,
+      240,
+      248,
+      249,
+      254
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_265",
+    "desc": "8-var SPEC scale 27m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      2,
+      8,
+      14,
+      20,
+      23,
+      43,
+      57,
+      62,
+      76,
+      96,
+      97,
+      103,
+      117,
+      121,
+      141,
+      144,
+      163,
+      166,
+      167,
+      175,
+      178,
+      179,
+      194,
+      207,
+      211,
+      217,
+      219
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_266",
+    "desc": "8-var SPEC scale 31m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      8,
+      10,
+      11,
+      19,
+      24,
+      45,
+      54,
+      58,
+      69,
+      71,
+      80,
+      121,
+      135,
+      139,
+      144,
+      145,
+      168,
+      169,
+      175,
+      177,
+      217,
+      219,
+      222,
+      227,
+      229,
+      230,
+      235,
+      243,
+      249,
+      250,
+      254
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_267",
+    "desc": "8-var SPEC scale 13m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      27,
+      39,
+      40,
+      50,
+      71,
+      83,
+      123,
+      153,
+      169,
+      177,
+      196,
+      199,
+      203
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_268",
+    "desc": "8-var SPEC scale 7m/1dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      15,
+      116,
+      139,
+      167,
+      203,
+      230,
+      251
+    ],
+    "dontcares": [
+      174
+    ]
+  },
+  {
+    "id": "tc_269",
+    "desc": "8-var SPEC scale 31m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      1,
+      18,
+      21,
+      23,
+      27,
+      39,
+      63,
+      68,
+      75,
+      78,
+      81,
+      92,
+      95,
+      97,
+      99,
+      113,
+      149,
+      158,
+      162,
+      169,
+      174,
+      182,
+      189,
+      197,
+      200,
+      204,
+      231,
+      240,
+      244,
+      250,
+      251
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_270",
+    "desc": "8-var SPEC scale 10m/2dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      13,
+      45,
+      47,
+      52,
+      166,
+      181,
+      197,
+      208,
+      220,
+      229
+    ],
+    "dontcares": [
+      44,
+      95
+    ]
+  },
+  {
+    "id": "tc_271",
+    "desc": "8-var SPEC scale 30m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      16,
+      19,
+      21,
+      35,
+      37,
+      42,
+      43,
+      62,
+      68,
+      70,
+      76,
+      77,
+      92,
+      97,
+      107,
+      111,
+      123,
+      126,
+      133,
+      143,
+      146,
+      175,
+      185,
+      198,
+      199,
+      200,
+      230,
+      231,
+      240,
+      245
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_272",
+    "desc": "8-var SPEC scale 35m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      1,
+      27,
+      34,
+      45,
+      51,
+      74,
+      76,
+      77,
+      80,
+      81,
+      82,
+      84,
+      85,
+      97,
+      100,
+      101,
+      110,
+      112,
+      117,
+      122,
+      152,
+      154,
+      158,
+      166,
+      177,
+      205,
+      208,
+      210,
+      215,
+      220,
+      242,
+      247,
+      248,
+      249,
+      252
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_273",
+    "desc": "8-var SPEC scale 24m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      6,
+      29,
+      46,
+      51,
+      53,
+      71,
+      74,
+      93,
+      100,
+      112,
+      118,
+      139,
+      140,
+      144,
+      151,
+      174,
+      181,
+      186,
+      192,
+      196,
+      201,
+      204,
+      209,
+      238
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_274",
+    "desc": "8-var SPEC scale 30m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      9,
+      18,
+      35,
+      39,
+      61,
+      64,
+      77,
+      92,
+      96,
+      102,
+      107,
+      108,
+      114,
+      122,
+      129,
+      136,
+      139,
+      149,
+      153,
+      162,
+      168,
+      177,
+      179,
+      183,
+      202,
+      207,
+      222,
+      235,
+      245,
+      255
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_275",
+    "desc": "8-var SPEC scale 17m/2dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      5,
+      12,
+      22,
+      50,
+      54,
+      77,
+      113,
+      132,
+      169,
+      176,
+      191,
+      200,
+      204,
+      220,
+      228,
+      237,
+      247
+    ],
+    "dontcares": [
+      85,
+      181
+    ]
+  },
+  {
+    "id": "tc_276",
+    "desc": "8-var SPEC scale 30m/0dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      5,
+      11,
+      17,
+      24,
+      29,
+      36,
+      43,
+      52,
+      76,
+      79,
+      81,
+      87,
+      89,
+      112,
+      115,
+      116,
+      121,
+      123,
+      133,
+      178,
+      181,
+      184,
+      186,
+      200,
+      207,
+      212,
+      217,
+      240,
+      249,
+      254
+    ],
+    "dontcares": []
+  },
+  {
+    "id": "tc_277",
+    "desc": "8-var SPEC scale 11m/3dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      14,
+      94,
+      95,
+      101,
+      118,
+      169,
+      202,
+      207,
+      218,
+      221,
+      236
+    ],
+    "dontcares": [
+      81,
+      89,
+      124
+    ]
+  },
+  {
+    "id": "tc_278",
+    "desc": "8-var SPEC scale 22m/6dc",
+    "num_vars": 8,
+    "variables": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "M1",
+      "M2",
+      "M3",
+      "M4"
+    ],
+    "minterms": [
+      16,
+      26,
+      29,
+      47,
+      50,
+      67,
+      80,
+      83,
+      93,
+      117,
+      125,
+      135,
+      137,
+      147,
+      163,
+      171,
+      203,
+      204,
+      207,
+      220,
+      223,
+      254
+    ],
+    "dontcares": [
+      2,
+      52,
+      54,
+      71,
+      180,
+      192
+    ]
+  }
+]

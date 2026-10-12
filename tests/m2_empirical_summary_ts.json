@@ -1,0 +1,39 @@
+{
+  "temporal": {
+    "total": 530,
+    "passed": 530,
+    "failed": 0,
+    "suites": {
+      "suite_a_single_drop": {
+        "total": 160,
+        "passed": 160,
+        "failed": 0,
+        "failures": []
+      },
+      "suite_b_consecutive_drops": {
+        "total": 160,
+        "passed": 160,
+        "failed": 0,
+        "failures": []
+      },
+      "suite_c_boundary_oscillations": {
+        "total": 105,
+        "passed": 105,
+        "failed": 0,
+        "failures": []
+      },
+      "suite_d_baseline_uncalibrated": {
+        "total": 105,
+        "passed": 105,
+        "failed": 0,
+        "failures": []
+      }
+    }
+  },
+  "counterfactual_ts": {
+    "total": 220,
+    "passed": 220,
+    "failed": 0,
+    "failures": []
+  }
+}

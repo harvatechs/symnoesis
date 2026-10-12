@@ -1,0 +1,17 @@
+{
+  "total_scenarios": 65,
+  "py_success": 65,
+  "ts_success": 65,
+  "py_coverage_met": 65,
+  "ts_coverage_met": 65,
+  "py_purity_met": 65,
+  "ts_purity_met": 65,
+  "py_support_met": 65,
+  "ts_support_met": 65,
+  "py_minimality_proven": 65,
+  "cross_language_parity_status": 65,
+  "cross_language_harm_mass_parity": 65,
+  "cross_language_rule_count_parity": 65,
+  "cross_language_coverage_parity": 65,
+  "violations": []
+}

@@ -201,3 +201,11 @@ export function isTrajectoryNegative(
 ): boolean {
   return evaluateTrajectory(scores, undefined, mdc, config).is_negative;
 }
+
+// Parity aliases matching Python reference API
+export const compute_sem = computeSem;
+export const compute_mdc = computeMdc;
+export const is_baseline_frame = isBaselineFrame;
+export const compute_interval_deltas = computeIntervalDeltas;
+export const evaluate_trajectory = evaluateTrajectory;
+export const is_trajectory_negative = isTrajectoryNegative;

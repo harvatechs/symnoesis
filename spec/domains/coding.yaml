@@ -1,0 +1,48 @@
+domain: coding
+name: Software Development and Code Assistance
+description: Developer assistant, syntax and logic reliance, code synthesis, and debugging.
+allowed_cohort: all
+parameters:
+  languages:
+    - python
+    - typescript
+    - rust
+    - c
+  interaction_modes:
+    - code_generation
+    - debugging
+    - architectural_design
+    - refactoring
+  probe_interval_sessions: 5
+
+task_matrix:
+  categories:
+    - algorithm_implementation
+    - fault_localization_and_patching
+    - api_integration
+    - test_suite_synthesis
+  tasks:
+    - id: code-algo-01
+      name: Algorithm Implementation
+      complexity: intermediate
+      unaided_probe_id: probe-algo-unaided-01
+    - id: code-debug-01
+      name: Fault Localization & Patching
+      complexity: advanced
+      unaided_probe_id: probe-debug-unaided-01
+
+instruments:
+  - sym-cog-task-battery
+  - sym-mch-integrity-audit
+  - sym-rec-synergy-index
+
+evaluation_rubrics:
+  cognitive_agency:
+    measure: Decision Ownership and Review Rate
+    rubric: Human inspects, edits, tests generated code rather than pasting without review.
+  capability_trajectory:
+    measure: Unaided Coding Problem Solving
+    rubric: Unaided programming velocity and correctness during scheduled AI-off probe items.
+  machine_integrity:
+    measure: Hallucination and Deprecation Avoidance
+    rubric: System resists inventing non-existent package dependencies and deprecated API signatures.

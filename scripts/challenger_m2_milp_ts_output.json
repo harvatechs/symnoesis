@@ -1,0 +1,2043 @@
+[
+  {
+    "id": "milp_001",
+    "success": true,
+    "solver_status": "zero_harm",
+    "total_harm_mass": 0,
+    "covered_harm_mass": 0,
+    "total_coverage": 1,
+    "rules_count": 0,
+    "rules": []
+  },
+  {
+    "id": "milp_002",
+    "success": true,
+    "solver_status": "zero_harm",
+    "total_harm_mass": 0,
+    "covered_harm_mass": 0,
+    "total_coverage": 1,
+    "rules_count": 0,
+    "rules": []
+  },
+  {
+    "id": "milp_003",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 320,
+    "covered_harm_mass": 320,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND H2=0",
+        "literals": {
+          "H1": 1,
+          "H2": 0
+        },
+        "purity": 1,
+        "coverage": 1,
+        "harm_mass_covered": 320,
+        "n_eff": 1280,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_004",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 256,
+    "covered_harm_mass": 256,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=1",
+        "literals": {
+          "H1": 1
+        },
+        "purity": 1,
+        "coverage": 1,
+        "harm_mass_covered": 256,
+        "n_eff": 640,
+        "unobserved_covered": 64
+      }
+    ]
+  },
+  {
+    "id": "milp_005",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1152,
+    "covered_harm_mass": 1152,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=1",
+        "literals": {
+          "H1": 1
+        },
+        "purity": 1,
+        "coverage": 1,
+        "harm_mass_covered": 1152,
+        "n_eff": 2560,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_006",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 576,
+    "covered_harm_mass": 576,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND H2=0",
+        "literals": {
+          "H1": 1,
+          "H2": 0
+        },
+        "purity": 1,
+        "coverage": 1,
+        "harm_mass_covered": 576,
+        "n_eff": 1280,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_007",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 288,
+    "covered_harm_mass": 288,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND H2=0 AND H3=1",
+        "literals": {
+          "H1": 1,
+          "H2": 0,
+          "H3": 1
+        },
+        "purity": 1,
+        "coverage": 1,
+        "harm_mass_covered": 288,
+        "n_eff": 640,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_008",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 144,
+    "covered_harm_mass": 144,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND H2=0 AND H3=1 AND H4=0",
+        "literals": {
+          "H1": 1,
+          "H2": 0,
+          "H3": 1,
+          "H4": 0
+        },
+        "purity": 1,
+        "coverage": 1,
+        "harm_mass_covered": 144,
+        "n_eff": 320,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_009",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 72,
+    "covered_harm_mass": 72,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND H2=0 AND H3=1 AND H4=0 AND M1=1",
+        "literals": {
+          "H1": 1,
+          "H2": 0,
+          "H3": 1,
+          "H4": 0,
+          "M1": 1
+        },
+        "purity": 1,
+        "coverage": 1,
+        "harm_mass_covered": 72,
+        "n_eff": 160,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_010",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 736,
+    "covered_harm_mass": 736,
+    "total_coverage": 1,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H2=0",
+        "literals": {
+          "H1": 0,
+          "H2": 0
+        },
+        "purity": 1,
+        "coverage": 0.6521739130434783,
+        "harm_mass_covered": 480,
+        "n_eff": 960,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H2=1 AND M1=0",
+        "literals": {
+          "H1": 1,
+          "H2": 1,
+          "M1": 0
+        },
+        "purity": 1,
+        "coverage": 0.34782608695652173,
+        "harm_mass_covered": 256,
+        "n_eff": 640,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_011",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 864,
+    "covered_harm_mass": 864,
+    "total_coverage": 1,
+    "rules_count": 3,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H2=0 AND H3=0",
+        "literals": {
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "purity": 1,
+        "coverage": 0.3333333333333333,
+        "harm_mass_covered": 288,
+        "n_eff": 640,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=0 AND H2=1 AND H3=1",
+        "literals": {
+          "H1": 0,
+          "H2": 1,
+          "H3": 1
+        },
+        "purity": 1,
+        "coverage": 0.3333333333333333,
+        "harm_mass_covered": 288,
+        "n_eff": 640,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H2=1 AND H3=0",
+        "literals": {
+          "H1": 1,
+          "H2": 1,
+          "H3": 0
+        },
+        "purity": 1,
+        "coverage": 0.3333333333333333,
+        "harm_mass_covered": 288,
+        "n_eff": 640,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_012",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 540,
+    "covered_harm_mass": 540,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H3=0 AND H4=0",
+        "literals": {
+          "H3": 0,
+          "H4": 0
+        },
+        "purity": 0.84375,
+        "coverage": 1,
+        "harm_mass_covered": 540,
+        "n_eff": 1280,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_013",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 500,
+    "covered_harm_mass": 480,
+    "total_coverage": 0.96,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H3=0 AND H4=0",
+        "literals": {
+          "H1": 0,
+          "H3": 0,
+          "H4": 0
+        },
+        "purity": 1,
+        "coverage": 0.64,
+        "harm_mass_covered": 320,
+        "n_eff": 640,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=0 AND H3=0 AND H4=0",
+        "literals": {
+          "H2": 0,
+          "H3": 0,
+          "H4": 0
+        },
+        "purity": 1,
+        "coverage": 0.64,
+        "harm_mass_covered": 320,
+        "n_eff": 640,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_014",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 400,
+    "covered_harm_mass": 400,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H3=0 AND H4=0",
+        "literals": {
+          "H3": 0,
+          "H4": 0
+        },
+        "purity": 0.8,
+        "coverage": 1,
+        "harm_mass_covered": 400,
+        "n_eff": 1000,
+        "unobserved_covered": 14
+      }
+    ]
+  },
+  {
+    "id": "milp_015",
+    "success": true,
+    "solver_status": "no_admissible_rules",
+    "total_harm_mass": 12.5,
+    "covered_harm_mass": 0,
+    "total_coverage": 0,
+    "rules_count": 0,
+    "rules": []
+  },
+  {
+    "id": "milp_016",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 716.5960436301267,
+    "covered_harm_mass": 716.5960436301267,
+    "total_coverage": 1,
+    "rules_count": 3,
+    "rules": [
+      {
+        "rule_str": "H4=1 AND M2=1 AND M3=0",
+        "literals": {
+          "H4": 1,
+          "M2": 1,
+          "M3": 0
+        },
+        "purity": 0.922955418834336,
+        "coverage": 0.5533077437361188,
+        "harm_mass_covered": 396.4981400712148,
+        "n_eff": 802.414098164967,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H3=0 AND M1=1 AND M3=1",
+        "literals": {
+          "H1": 1,
+          "H3": 0,
+          "M1": 1,
+          "M3": 1
+        },
+        "purity": 0.9236380209629019,
+        "coverage": 0.27267992221256104,
+        "harm_mass_covered": 195.40135343489194,
+        "n_eff": 436.7274572188053,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=1 AND M1=1 AND M2=1 AND M3=1",
+        "literals": {
+          "H2": 1,
+          "M1": 1,
+          "M2": 1,
+          "M3": 1
+        },
+        "purity": 0.8461853232979498,
+        "coverage": 0.26756737780266915,
+        "harm_mass_covered": 191.7377243378801,
+        "n_eff": 401.0228947807112,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_017",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 326.7437475303985,
+    "covered_harm_mass": 326.7437475303985,
+    "total_coverage": 1,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND M2=0 AND M3=1 AND M4=0",
+        "literals": {
+          "H1": 1,
+          "M2": 0,
+          "M3": 1,
+          "M4": 0
+        },
+        "purity": 0.8636818595140301,
+        "coverage": 0.46224608721913296,
+        "harm_mass_covered": 151.03601881924294,
+        "n_eff": 387.53049428914403,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=1 AND H4=0 AND M2=0 AND M4=0",
+        "literals": {
+          "H3": 1,
+          "H4": 0,
+          "M2": 0,
+          "M4": 0
+        },
+        "purity": 0.9172517840182712,
+        "coverage": 0.6011941018185597,
+        "harm_mass_covered": 196.43641382136815,
+        "n_eff": 404.9085707929703,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_018",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1265.3491846561471,
+    "covered_harm_mass": 1222.8777841455328,
+    "total_coverage": 0.9664350354624398,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND M4=1",
+        "literals": {
+          "H1": 1,
+          "M4": 1
+        },
+        "purity": 0.9302345153243821,
+        "coverage": 0.6739594123208433,
+        "harm_mass_covered": 852.7939928715152,
+        "n_eff": 1595.6500121845418,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=0 AND M4=1",
+        "literals": {
+          "H3": 0,
+          "M4": 1
+        },
+        "purity": 0.9059255605880291,
+        "coverage": 0.6163217548464096,
+        "harm_mass_covered": 779.8622299807502,
+        "n_eff": 1558.2239343089086,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_019",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1176.1707334888115,
+    "covered_harm_mass": 1055.0352848055174,
+    "total_coverage": 0.8970086185328073,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H3=0 AND M4=1",
+        "literals": {
+          "H3": 0,
+          "M4": 1
+        },
+        "purity": 0.894536082673136,
+        "coverage": 0.616872803415243,
+        "harm_mass_covered": 725.5477376622058,
+        "n_eff": 1612.0891875091856,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND M1=1 AND M3=0",
+        "literals": {
+          "H1": 1,
+          "M1": 1,
+          "M3": 0
+        },
+        "purity": 0.9452629715215829,
+        "coverage": 0.3740502246580497,
+        "harm_mass_covered": 439.94692709771306,
+        "n_eff": 881.956982442024,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_020",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1065.396835350527,
+    "covered_harm_mass": 1065.396835350527,
+    "total_coverage": 1,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND M2=1",
+        "literals": {
+          "H1": 1,
+          "M2": 1
+        },
+        "purity": 0.9443045236473896,
+        "coverage": 0.772155685225432,
+        "harm_mass_covered": 822.652223437093,
+        "n_eff": 1650.160656735311,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=0 AND M1=0 AND M3=0",
+        "literals": {
+          "H3": 0,
+          "M1": 0,
+          "M3": 0
+        },
+        "purity": 0.9186696160604577,
+        "coverage": 0.3492503066340959,
+        "harm_mass_covered": 372.0901714331669,
+        "n_eff": 787.3324360932924,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_021",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 175.02880460783442,
+    "covered_harm_mass": 175.02880460783442,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "M1=1 AND M2=0 AND M3=1 AND M4=0",
+        "literals": {
+          "M1": 1,
+          "M2": 0,
+          "M3": 1,
+          "M4": 0
+        },
+        "purity": 0.8659529258481449,
+        "coverage": 1,
+        "harm_mass_covered": 175.02880460783442,
+        "n_eff": 401.05410798232134,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_022",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1470.7019045606125,
+    "covered_harm_mass": 1470.7019045606123,
+    "total_coverage": 0.9999999999999999,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND M3=0",
+        "literals": {
+          "H1": 1,
+          "M3": 0
+        },
+        "purity": 0.9757928831176054,
+        "coverage": 0.566702365623787,
+        "harm_mass_covered": 833.4502484419081,
+        "n_eff": 1686.026927989316,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H4=1 AND M4=0",
+        "literals": {
+          "H4": 1,
+          "M4": 0
+        },
+        "purity": 0.9337087150507825,
+        "coverage": 0.6098855333306012,
+        "harm_mass_covered": 896.9598154332803,
+        "n_eff": 1802.1216959008777,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_023",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1454.9236449650305,
+    "covered_harm_mass": 1381.234562870084,
+    "total_coverage": 0.9493519248587663,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H2=1",
+        "literals": {
+          "H1": 0,
+          "H2": 1
+        },
+        "purity": 0.9376524635668435,
+        "coverage": 0.5792361989764978,
+        "harm_mass_covered": 842.7444419105758,
+        "n_eff": 1695.8467720275949,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=1 AND M3=0",
+        "literals": {
+          "H3": 1,
+          "M3": 0
+        },
+        "purity": 0.8989921759185601,
+        "coverage": 0.5245236196612315,
+        "harm_mass_covered": 763.1418165877702,
+        "n_eff": 1714.0550435961507,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_024",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1233.6085342919566,
+    "covered_harm_mass": 1233.6085342919566,
+    "total_coverage": 1,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H2=1 AND H4=1",
+        "literals": {
+          "H2": 1,
+          "H4": 1
+        },
+        "purity": 0.8990743665667364,
+        "coverage": 0.5748686368108676,
+        "harm_mass_covered": 709.1628564666696,
+        "n_eff": 1494.6613409681413,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=0 AND M1=1",
+        "literals": {
+          "H3": 0,
+          "M1": 1
+        },
+        "purity": 0.8919081834338247,
+        "coverage": 0.5634685984672174,
+        "harm_mass_covered": 695.0996718746871,
+        "n_eff": 1497.4879184202878,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_025",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1026.4699547136452,
+    "covered_harm_mass": 1026.4699547136456,
+    "total_coverage": 1.0000000000000004,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H2=0 AND M2=0",
+        "literals": {
+          "H2": 0,
+          "M2": 0
+        },
+        "purity": 0.9232177358654753,
+        "coverage": 0.6974963802505416,
+        "harm_mass_covered": 715.9590778487049,
+        "n_eff": 1490.821847243436,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=1 AND H4=0 AND M3=1",
+        "literals": {
+          "H3": 1,
+          "H4": 0,
+          "M3": 1
+        },
+        "purity": 0.9146647865683023,
+        "coverage": 0.38185002027325143,
+        "harm_mass_covered": 391.9575730172889,
+        "n_eff": 815.7003241828504,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_026",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1366.5099949099563,
+    "covered_harm_mass": 1366.5099949099563,
+    "total_coverage": 1,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND M1=0",
+        "literals": {
+          "H1": 0,
+          "M1": 0
+        },
+        "purity": 0.9707242754971954,
+        "coverage": 0.616981458835247,
+        "harm_mass_covered": 843.1113301724909,
+        "n_eff": 1686.1606845209265,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=1 AND H4=0",
+        "literals": {
+          "H2": 1,
+          "H4": 0
+        },
+        "purity": 0.9560781724316757,
+        "coverage": 0.539517959503087,
+        "harm_mass_covered": 737.2566840943934,
+        "n_eff": 1552.8282543879843,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_027",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1020.1846820260095,
+    "covered_harm_mass": 892.7091456898359,
+    "total_coverage": 0.8750466081464614,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND M4=0",
+        "literals": {
+          "H1": 1,
+          "M4": 0
+        },
+        "purity": 0.9169353046675861,
+        "coverage": 0.7532916037215549,
+        "harm_mass_covered": 768.4965552155372,
+        "n_eff": 1550.9848056866026,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H2=1 AND M2=0",
+        "literals": {
+          "H1": 1,
+          "H2": 1,
+          "M2": 0
+        },
+        "purity": 0.8227648680158017,
+        "coverage": 0.32716999195115143,
+        "harm_mass_covered": 333.7738142071375,
+        "n_eff": 726.6720457674046,
+        "unobserved_covered": 2
+      }
+    ]
+  },
+  {
+    "id": "milp_028",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 203.57250546849218,
+    "covered_harm_mass": 203.57250546849218,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND H3=1 AND H4=1 AND M2=1",
+        "literals": {
+          "H1": 1,
+          "H3": 1,
+          "H4": 1,
+          "M2": 1
+        },
+        "purity": 0.9296864976724393,
+        "coverage": 1,
+        "harm_mass_covered": 203.57250546849218,
+        "n_eff": 366.91859393813866,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_029",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1470.5172557902886,
+    "covered_harm_mass": 1306.7227496962948,
+    "total_coverage": 0.8886143597097969,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H2=0 AND M3=1",
+        "literals": {
+          "H2": 0,
+          "M3": 1
+        },
+        "purity": 0.9142928493247123,
+        "coverage": 0.5032508106814975,
+        "harm_mass_covered": 740.0390010975938,
+        "n_eff": 1506.4765333423638,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=1 AND M4=1",
+        "literals": {
+          "H3": 1,
+          "M4": 1
+        },
+        "purity": 0.9011664257847645,
+        "coverage": 0.47808356621652287,
+        "harm_mass_covered": 703.0301338311559,
+        "n_eff": 1574.4762682478874,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_030",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1077.3912033839895,
+    "covered_harm_mass": 1077.391203383989,
+    "total_coverage": 0.9999999999999996,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND M4=0",
+        "literals": {
+          "H1": 0,
+          "M4": 0
+        },
+        "purity": 0.9096330081746938,
+        "coverage": 0.7125070036159544,
+        "harm_mass_covered": 767.6487780453136,
+        "n_eff": 1653.4369092686952,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=1 AND M1=0 AND M2=0",
+        "literals": {
+          "H3": 1,
+          "M1": 0,
+          "M2": 0
+        },
+        "purity": 0.9446622523277599,
+        "coverage": 0.3822918311543608,
+        "harm_mass_covered": 411.8778560112657,
+        "n_eff": 808.8614585805252,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_031",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1420.0921385557801,
+    "covered_harm_mass": 1420.0921385557801,
+    "total_coverage": 1,
+    "rules_count": 3,
+    "rules": [
+      {
+        "rule_str": "H2=0 AND H3=0",
+        "literals": {
+          "H2": 0,
+          "H3": 0
+        },
+        "purity": 0.8296904043216774,
+        "coverage": 0.47410204501765496,
+        "harm_mass_covered": 673.2685870027904,
+        "n_eff": 1531.268386187134,
+        "unobserved_covered": 5
+      },
+      {
+        "rule_str": "H2=0 AND H4=1",
+        "literals": {
+          "H2": 0,
+          "H4": 1
+        },
+        "purity": 0.9776497799184896,
+        "coverage": 0.6207101046951663,
+        "harm_mass_covered": 881.4655399997409,
+        "n_eff": 1693.9243499881159,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H3=1 AND M2=0",
+        "literals": {
+          "H1": 1,
+          "H3": 1,
+          "M2": 0
+        },
+        "purity": 0.9604572061524358,
+        "coverage": 0.30704924429539737,
+        "harm_mass_covered": 436.038217973387,
+        "n_eff": 808.2455127218071,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_032",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1683.6223061339142,
+    "covered_harm_mass": 1460.8115633528691,
+    "total_coverage": 0.867659900935452,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H3=0",
+        "literals": {
+          "H1": 0,
+          "H3": 0
+        },
+        "purity": 0.9639222908715296,
+        "coverage": 0.5075992318786825,
+        "harm_mass_covered": 854.6053893673909,
+        "n_eff": 1681.20874452501,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "M2=0 AND M4=1",
+        "literals": {
+          "M2": 0,
+          "M4": 1
+        },
+        "purity": 0.9259301931497145,
+        "coverage": 0.48124175556229126,
+        "harm_mass_covered": 810.2293543077183,
+        "n_eff": 1663.1405683527923,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_033",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 882.0932145697852,
+    "covered_harm_mass": 809.9703860460044,
+    "total_coverage": 0.9182367267625376,
+    "rules_count": 3,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND H4=0 AND M4=0",
+        "literals": {
+          "H1": 1,
+          "H4": 0,
+          "M4": 0
+        },
+        "purity": 0.9609344520770139,
+        "coverage": 0.4327068323678476,
+        "harm_mass_covered": 381.6877607296639,
+        "n_eff": 810.0819075020343,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=0 AND H3=1 AND M2=0",
+        "literals": {
+          "H2": 0,
+          "H3": 1,
+          "M2": 0
+        },
+        "purity": 0.9313664111691972,
+        "coverage": 0.465064997893305,
+        "harm_mass_covered": 410.2306789755958,
+        "n_eff": 806.0149622724672,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=1 AND H4=0 AND M4=0",
+        "literals": {
+          "H3": 1,
+          "H4": 0,
+          "M4": 0
+        },
+        "purity": 0.8038470771328342,
+        "coverage": 0.4031693104785448,
+        "harm_mass_covered": 355.6329130959034,
+        "n_eff": 821.0425335634355,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_034",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 212.9861810440686,
+    "covered_harm_mass": 212.9861810440686,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H2=1 AND H3=1 AND H4=0 AND M4=0",
+        "literals": {
+          "H2": 1,
+          "H3": 1,
+          "H4": 0,
+          "M4": 0
+        },
+        "purity": 1,
+        "coverage": 1,
+        "harm_mass_covered": 212.9861810440686,
+        "n_eff": 432.02208142390714,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_035",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 862.3573965193135,
+    "covered_harm_mass": 862.3573965193135,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H2=0 AND M3=1",
+        "literals": {
+          "H2": 0,
+          "M3": 1
+        },
+        "purity": 0.9748538380075752,
+        "coverage": 1,
+        "harm_mass_covered": 862.3573965193135,
+        "n_eff": 1678.9658559280363,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_036",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 980.8111340019419,
+    "covered_harm_mass": 980.811134001942,
+    "total_coverage": 1.0000000000000002,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H3=0 AND M3=1",
+        "literals": {
+          "H3": 0,
+          "M3": 1
+        },
+        "purity": 0.9297487159532579,
+        "coverage": 0.7521804642385954,
+        "harm_mass_covered": 737.7469741039639,
+        "n_eff": 1601.4044868034684,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H4=0 AND M2=1 AND M4=0",
+        "literals": {
+          "H4": 0,
+          "M2": 1,
+          "M4": 0
+        },
+        "purity": 0.907642816726938,
+        "coverage": 0.3270428701892278,
+        "harm_mass_covered": 320.7672883775464,
+        "n_eff": 741.0679423567644,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_037",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 160.59680003198207,
+    "covered_harm_mass": 160.59680003198207,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H2=1 AND H4=0 AND M1=0 AND M2=1",
+        "literals": {
+          "H2": 1,
+          "H4": 0,
+          "M1": 0,
+          "M2": 1
+        },
+        "purity": 0.9396699606706556,
+        "coverage": 1,
+        "harm_mass_covered": 160.59680003198207,
+        "n_eff": 381.55588543593575,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_038",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 986.4467428409869,
+    "covered_harm_mass": 986.4467428409872,
+    "total_coverage": 1.0000000000000004,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "M2=1 AND M3=0",
+        "literals": {
+          "M2": 1,
+          "M3": 0
+        },
+        "purity": 0.8677109027480969,
+        "coverage": 0.6518362319959992,
+        "harm_mass_covered": 643.0017279181952,
+        "n_eff": 1465.9063423547047,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=0 AND M1=0 AND M4=0",
+        "literals": {
+          "H2": 0,
+          "M1": 0,
+          "M4": 0
+        },
+        "purity": 1,
+        "coverage": 0.4540903129400751,
+        "harm_mass_covered": 447.9359101553815,
+        "n_eff": 865.564813582154,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_039",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1326.4780288491613,
+    "covered_harm_mass": 1216.0359835778306,
+    "total_coverage": 0.9167403885557388,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "M1=0 AND M3=1",
+        "literals": {
+          "M1": 0,
+          "M3": 1
+        },
+        "purity": 0.9127389023976471,
+        "coverage": 0.6366479009599375,
+        "harm_mass_covered": 844.499452736294,
+        "n_eff": 1651.7358787074324,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=1 AND M1=1 AND M3=0",
+        "literals": {
+          "H2": 1,
+          "M1": 1,
+          "M3": 0
+        },
+        "purity": 1,
+        "coverage": 0.280092487595801,
+        "harm_mass_covered": 371.5365308415363,
+        "n_eff": 770.9517295971254,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_040",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1149.9678220629046,
+    "covered_harm_mass": 1149.9678220629041,
+    "total_coverage": 0.9999999999999996,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "M1=0 AND M2=1",
+        "literals": {
+          "M1": 0,
+          "M2": 1
+        },
+        "purity": 0.972560721280578,
+        "coverage": 0.7520979039118255,
+        "harm_mass_covered": 864.8883885395577,
+        "n_eff": 1720.4250303183655,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H2=0 AND M4=0",
+        "literals": {
+          "H1": 1,
+          "H2": 0,
+          "M4": 0
+        },
+        "purity": 0.9476650390296473,
+        "coverage": 0.3310369866904728,
+        "harm_mass_covered": 380.68188260670973,
+        "n_eff": 779.9057869699755,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_041",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 778.3949783584264,
+    "covered_harm_mass": 778.3949783584264,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND M4=0",
+        "literals": {
+          "H1": 0,
+          "M4": 0
+        },
+        "purity": 0.9631615470915824,
+        "coverage": 1,
+        "harm_mass_covered": 778.3949783584264,
+        "n_eff": 1599.3855023815477,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_042",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1661.9202064692245,
+    "covered_harm_mass": 1563.5277332215003,
+    "total_coverage": 0.9407959101377312,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H2=1 AND M4=0",
+        "literals": {
+          "H2": 1,
+          "M4": 0
+        },
+        "purity": 0.9478999077436299,
+        "coverage": 0.4726252175743057,
+        "harm_mass_covered": 785.4653991736523,
+        "n_eff": 1654.034872859818,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "M2=1 AND M4=1",
+        "literals": {
+          "M2": 1,
+          "M4": 1
+        },
+        "purity": 0.9498590074737433,
+        "coverage": 0.4681706925634256,
+        "harm_mass_covered": 778.062334047848,
+        "n_eff": 1645.3300462071784,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_043",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1163.0220598487458,
+    "covered_harm_mass": 1011.7034244138513,
+    "total_coverage": 0.8698918613335899,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND H4=1",
+        "literals": {
+          "H1": 1,
+          "H4": 1
+        },
+        "purity": 0.933208999806871,
+        "coverage": 0.7218349740319872,
+        "harm_mass_covered": 839.5099983695476,
+        "n_eff": 1601.642111355205,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=1 AND H3=0 AND M1=0 AND M3=0",
+        "literals": {
+          "H2": 1,
+          "H3": 0,
+          "M1": 0,
+          "M3": 0
+        },
+        "purity": 0.9539632253060657,
+        "coverage": 0.19391226951184765,
+        "harm_mass_covered": 225.5242471176142,
+        "n_eff": 444.72945103907267,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_044",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1053.019077741778,
+    "covered_harm_mass": 974.1907658947116,
+    "total_coverage": 0.9251406612536258,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H4=1",
+        "literals": {
+          "H1": 0,
+          "H4": 1
+        },
+        "purity": 0.8931955157769093,
+        "coverage": 0.6613778446929585,
+        "harm_mass_covered": 696.4434880574239,
+        "n_eff": 1554.9650698833416,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=1 AND M1=1 AND M3=1",
+        "literals": {
+          "H3": 1,
+          "M1": 1,
+          "M3": 1
+        },
+        "purity": 0.8998515853098048,
+        "coverage": 0.36319234160845143,
+        "harm_mass_covered": 382.4484646034083,
+        "n_eff": 807.5183093430271,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_045",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 738.2583885561339,
+    "covered_harm_mass": 738.2583885561339,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H4=1 AND M2=1",
+        "literals": {
+          "H4": 1,
+          "M2": 1
+        },
+        "purity": 0.8956810297114088,
+        "coverage": 1,
+        "harm_mass_covered": 738.2583885561339,
+        "n_eff": 1586.4598231780647,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_046",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1418.9472229210028,
+    "covered_harm_mass": 1418.9472229210028,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "M1=0",
+        "literals": {
+          "M1": 0
+        },
+        "purity": 0.9262822211085272,
+        "coverage": 1,
+        "harm_mass_covered": 1418.9472229210028,
+        "n_eff": 2911.5134365668864,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_047",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 218.02304441052044,
+    "covered_harm_mass": 218.02304441052044,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND M1=0 AND M2=1 AND M4=0",
+        "literals": {
+          "H1": 0,
+          "M1": 0,
+          "M2": 1,
+          "M4": 0
+        },
+        "purity": 0.903923904830006,
+        "coverage": 1,
+        "harm_mass_covered": 218.02304441052044,
+        "n_eff": 449.96795309027806,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_048",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 401.01843726984015,
+    "covered_harm_mass": 401.01843726984015,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H3=1 AND H4=1 AND M2=1",
+        "literals": {
+          "H3": 1,
+          "H4": 1,
+          "M2": 1
+        },
+        "purity": 0.9566947935059738,
+        "coverage": 1,
+        "harm_mass_covered": 401.01843726984015,
+        "n_eff": 828.484747202242,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_049",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 191.90997328359128,
+    "covered_harm_mass": 191.90997328359128,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H3=1 AND M1=0 AND M4=0",
+        "literals": {
+          "H1": 0,
+          "H3": 1,
+          "M1": 0,
+          "M4": 0
+        },
+        "purity": 0.9071154806184234,
+        "coverage": 1,
+        "harm_mass_covered": 191.90997328359128,
+        "n_eff": 410.46612387056666,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_050",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 953.6966673179935,
+    "covered_harm_mass": 814.2382188479736,
+    "total_coverage": 0.8537706450603335,
+    "rules_count": 3,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND M2=0 AND M4=1",
+        "literals": {
+          "H1": 0,
+          "M2": 0,
+          "M4": 1
+        },
+        "purity": 0.9447126047159957,
+        "coverage": 0.44634261292355165,
+        "harm_mass_covered": 425.6754624271964,
+        "n_eff": 853.0863510840278,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H2=0 AND H4=0",
+        "literals": {
+          "H1": 1,
+          "H2": 0,
+          "H4": 0
+        },
+        "purity": 0.8334546649606163,
+        "coverage": 0.35291936043582056,
+        "harm_mass_covered": 336.5780178796398,
+        "n_eff": 792.274910538423,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H4=0 AND M2=0 AND M4=1",
+        "literals": {
+          "H4": 0,
+          "M2": 0,
+          "M4": 1
+        },
+        "purity": 0.8259441445840653,
+        "coverage": 0.3373076066967872,
+        "harm_mass_covered": 321.68914036773447,
+        "n_eff": 751.4764212272574,
+        "unobserved_covered": 1
+      }
+    ]
+  },
+  {
+    "id": "milp_051",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 857.1690150392429,
+    "covered_harm_mass": 857.1690150392429,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H2=0 AND H4=1",
+        "literals": {
+          "H2": 0,
+          "H4": 1
+        },
+        "purity": 0.9389997420385701,
+        "coverage": 1,
+        "harm_mass_covered": 857.1690150392429,
+        "n_eff": 1682.7324167836034,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_052",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1673.5169067162071,
+    "covered_harm_mass": 1546.7655359103674,
+    "total_coverage": 0.924260477861229,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "M3=0",
+        "literals": {
+          "M3": 0
+        },
+        "purity": 0.9515186856007616,
+        "coverage": 0.924260477861229,
+        "harm_mass_covered": 1546.7655359103674,
+        "n_eff": 3098.7271218957785,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_053",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 564.7425689893159,
+    "covered_harm_mass": 564.742568989316,
+    "total_coverage": 1.0000000000000002,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND M3=1 AND M4=1",
+        "literals": {
+          "H1": 1,
+          "M3": 1,
+          "M4": 1
+        },
+        "purity": 0.9840233280656946,
+        "coverage": 0.6905273926091557,
+        "harm_mass_covered": 389.9702136595886,
+        "n_eff": 756.4381102774402,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=1 AND H4=0 AND M2=0 AND M4=0",
+        "literals": {
+          "H3": 1,
+          "H4": 0,
+          "M2": 0,
+          "M4": 0
+        },
+        "purity": 0.9070661331999866,
+        "coverage": 0.3094726073908444,
+        "harm_mass_covered": 174.77235532972745,
+        "n_eff": 361.3324512395967,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_054",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1225.1189519574725,
+    "covered_harm_mass": 1106.0002182366204,
+    "total_coverage": 0.9027696587906616,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND H2=1",
+        "literals": {
+          "H1": 1,
+          "H2": 1
+        },
+        "purity": 0.9161983175157546,
+        "coverage": 0.6213420531303151,
+        "harm_mass_covered": 761.2179249381159,
+        "n_eff": 1590.7736104703913,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=1 AND M3=0",
+        "literals": {
+          "H2": 1,
+          "M3": 0
+        },
+        "purity": 0.9016880974639363,
+        "coverage": 0.5697316180700593,
+        "harm_mass_covered": 697.9890028270261,
+        "n_eff": 1534.2136249400696,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_055",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1107.0281450328155,
+    "covered_harm_mass": 1107.0281450328155,
+    "total_coverage": 1,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H2=0 AND H4=0",
+        "literals": {
+          "H2": 0,
+          "H4": 0
+        },
+        "purity": 0.9285286637276238,
+        "coverage": 0.7654690368125067,
+        "harm_mass_covered": 847.3957679026051,
+        "n_eff": 1599.7621986247648,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H3=0 AND H4=0 AND M2=1",
+        "literals": {
+          "H3": 0,
+          "H4": 0,
+          "M2": 1
+        },
+        "purity": 0.9746631345897779,
+        "coverage": 0.4274657511435125,
+        "harm_mass_covered": 473.21661755346173,
+        "n_eff": 873.2025075392162,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_056",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1227.4887787106545,
+    "covered_harm_mass": 1175.715963810696,
+    "total_coverage": 0.9578221684809695,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H2=1 AND M3=1",
+        "literals": {
+          "H2": 1,
+          "M3": 1
+        },
+        "purity": 0.9185526154159498,
+        "coverage": 0.6658597601302683,
+        "harm_mass_covered": 817.3353837548724,
+        "n_eff": 1575.8928581165871,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H2=0 AND H3=0",
+        "literals": {
+          "H1": 1,
+          "H2": 0,
+          "H3": 0
+        },
+        "purity": 0.8760157894875563,
+        "coverage": 0.2919624083507014,
+        "harm_mass_covered": 358.3805800558239,
+        "n_eff": 747.4795965189511,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_057",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 848.0491102995442,
+    "covered_harm_mass": 848.0491102995442,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H3=0 AND M2=0",
+        "literals": {
+          "H3": 0,
+          "M2": 0
+        },
+        "purity": 0.9210043295320856,
+        "coverage": 1,
+        "harm_mass_covered": 848.0491102995442,
+        "n_eff": 1693.9470018421691,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_058",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 537.3596810917523,
+    "covered_harm_mass": 537.3596810917523,
+    "total_coverage": 1,
+    "rules_count": 3,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H2=0 AND H4=1 AND M3=0",
+        "literals": {
+          "H1": 0,
+          "H2": 0,
+          "H4": 1,
+          "M3": 0
+        },
+        "purity": 0.9280282521339563,
+        "coverage": 0.38361429180673223,
+        "harm_mass_covered": 206.13885350750405,
+        "n_eff": 413.2737527329233,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H2=0 AND M2=0 AND M3=0",
+        "literals": {
+          "H1": 1,
+          "H2": 0,
+          "M2": 0,
+          "M3": 0
+        },
+        "purity": 0.9674139869865775,
+        "coverage": 0.35529358375794645,
+        "harm_mass_covered": 190.9204468621159,
+        "n_eff": 360.8335574065104,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=0 AND H3=0 AND H4=1 AND M4=0",
+        "literals": {
+          "H2": 0,
+          "H3": 0,
+          "H4": 1,
+          "M4": 0
+        },
+        "purity": 0.9318384201583964,
+        "coverage": 0.409025058372864,
+        "harm_mass_covered": 219.7935749257776,
+        "n_eff": 415.26936288602985,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_059",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1060.7673710697345,
+    "covered_harm_mass": 1060.7673710697343,
+    "total_coverage": 0.9999999999999998,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H3=0 AND M2=0",
+        "literals": {
+          "H3": 0,
+          "M2": 0
+        },
+        "purity": 0.9593704534780755,
+        "coverage": 0.7500600233043734,
+        "harm_mass_covered": 795.639199065084,
+        "n_eff": 1516.021729929039,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H2=0 AND M4=1",
+        "literals": {
+          "H1": 1,
+          "H2": 0,
+          "M4": 1
+        },
+        "purity": 0.9096946657459676,
+        "coverage": 0.3500043722666428,
+        "harm_mass_covered": 371.2732178321994,
+        "n_eff": 819.6780855227199,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_060",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1625.406647386697,
+    "covered_harm_mass": 1532.4108488039174,
+    "total_coverage": 0.942786133714725,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H2=0 AND M3=0",
+        "literals": {
+          "H2": 0,
+          "M3": 0
+        },
+        "purity": 0.9275686676802926,
+        "coverage": 0.477308926266685,
+        "harm_mass_covered": 775.8211016108766,
+        "n_eff": 1629.2471535988957,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=1 AND M1=1",
+        "literals": {
+          "H2": 1,
+          "M1": 1
+        },
+        "purity": 0.9043805245953327,
+        "coverage": 0.46547720744804033,
+        "harm_mass_covered": 756.5897471930413,
+        "n_eff": 1632.6028362530367,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_061",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 614.8617187481154,
+    "covered_harm_mass": 614.8617187481154,
+    "total_coverage": 1,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H2=1 AND M1=1 AND M2=0",
+        "literals": {
+          "H2": 1,
+          "M1": 1,
+          "M2": 0
+        },
+        "purity": 0.8752524065589719,
+        "coverage": 0.6481883170798733,
+        "harm_mass_covered": 398.54618271217936,
+        "n_eff": 843.4792339707427,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H1=1 AND H2=0 AND H4=1 AND M2=0",
+        "literals": {
+          "H1": 1,
+          "H2": 0,
+          "H4": 1,
+          "M2": 0
+        },
+        "purity": 1,
+        "coverage": 0.35181168292012693,
+        "harm_mass_covered": 216.31553603593625,
+        "n_eff": 457.901139577666,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_062",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 711.7231618099067,
+    "covered_harm_mass": 711.7231618099067,
+    "total_coverage": 1,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H2=0 AND H3=0",
+        "literals": {
+          "H1": 0,
+          "H2": 0,
+          "H3": 0
+        },
+        "purity": 0.8873761008618428,
+        "coverage": 0.4889762986682472,
+        "harm_mass_covered": 348.0157573382702,
+        "n_eff": 809.007663829263,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "H2=0 AND M2=1 AND M3=0",
+        "literals": {
+          "H2": 0,
+          "M2": 1,
+          "M3": 0
+        },
+        "purity": 0.9718817121830585,
+        "coverage": 0.655065250822179,
+        "harm_mass_covered": 466.2251115069609,
+        "n_eff": 865.001691591911,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_063",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 408.5817766087795,
+    "covered_harm_mass": 408.5817766087795,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H1=0 AND H3=0 AND M2=1",
+        "literals": {
+          "H1": 0,
+          "H3": 0,
+          "M2": 1
+        },
+        "purity": 0.9129332596061815,
+        "coverage": 1,
+        "harm_mass_covered": 408.5817766087795,
+        "n_eff": 750.9016456342713,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_064",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 234.92987213540147,
+    "covered_harm_mass": 234.92987213540147,
+    "total_coverage": 1,
+    "rules_count": 1,
+    "rules": [
+      {
+        "rule_str": "H2=0 AND H3=1 AND M2=1 AND M3=0",
+        "literals": {
+          "H2": 0,
+          "H3": 1,
+          "M2": 1,
+          "M3": 0
+        },
+        "purity": 0.9216631204416729,
+        "coverage": 1,
+        "harm_mass_covered": 234.92987213540147,
+        "n_eff": 450.02616030780865,
+        "unobserved_covered": 0
+      }
+    ]
+  },
+  {
+    "id": "milp_065",
+    "success": true,
+    "solver_status": "optimal",
+    "total_harm_mass": 1120.8701433771407,
+    "covered_harm_mass": 1120.8701433771405,
+    "total_coverage": 0.9999999999999998,
+    "rules_count": 2,
+    "rules": [
+      {
+        "rule_str": "H1=1 AND M2=0",
+        "literals": {
+          "H1": 1,
+          "M2": 0
+        },
+        "purity": 0.9236090046933961,
+        "coverage": 0.6831781124018391,
+        "harm_mass_covered": 765.7539487999737,
+        "n_eff": 1543.2177957230822,
+        "unobserved_covered": 0
+      },
+      {
+        "rule_str": "M2=0 AND M3=1",
+        "literals": {
+          "M2": 0,
+          "M3": 1
+        },
+        "purity": 0.9134660829652622,
+        "coverage": 0.6550433841706664,
+        "harm_mass_covered": 734.2185719336223,
+        "n_eff": 1564.6472598407004,
+        "unobserved_covered": 0
+      }
+    ]
+  }
+]

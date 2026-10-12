@@ -1,4 +1,4 @@
-# BRIEFING — 2026-10-12T05:51:00Z
+# BRIEFING — 2026-10-12T07:03:00Z
 
 ## Mission
 Orchestrate, monitor, and audit the full release v0.1.0 build of the Symnoesis repository.
@@ -18,7 +18,7 @@ Orchestrate, monitor, and audit the full release v0.1.0 build of the Symnoesis r
 ## User Context
 - **Last user request**: Build the complete Symnoesis (SYMN-01) repository to release v0.1.0 across all milestones M1-M10.
 - **Pending clarifications**: none
-- **Delivered results**: Iterations 1-11 Progress Reports relayed to parent.
+- **Delivered results**: Iterations 1-21 Progress Reports relayed to parent.
 
 ## Routing Decision
 - **Route**: General -> teamwork_preview_orchestrator
@@ -30,16 +30,17 @@ Orchestrate, monitor, and audit the full release v0.1.0 build of the Symnoesis r
 - **Liveness Check Cron**: Task dbc2665e-00b0-439e-ac58-d2dd8d9cd476/task-17 (*/10 * * * *)
 
 ## Project Status
-- **Phase**: in progress (Milestone M1 CLOSED & VERIFIED; Milestone M2 code landed across Py & TS, worker_m2_2 finalizing tests)
+- **Phase**: in progress (Milestones M1 and M2 VERIFIED & CLOSED; Milestone M3 modules, fixtures, and unit test suites implemented; verification battery running)
 
 ## Milestone Gate Status
 - **M1 (Math Core & Parity)**: VERIFIED & CLOSED
 - **E2E Independent Testing Track**: VERIFIED & READY (299/299 tests pass)
-- **M2 (MFC & Longitudinal Diagnostics)**: Code complete in Py and TS (`cover`, `counterfactual`, `temporal`), replacement `worker_m2_2` active on tests and verification
+- **M2 (MFC & Longitudinal Diagnostics)**: VERIFIED & CLOSED
+- **M3 (Synthetic Evidence Pipeline)**: Modules implemented, 4 domain fixtures generated, unit tests authored (`test_simulator.py`, `test_privacy.py`, `test_judges.py`), verification battery active
 
 ## Liveness Audit Status
-- **Last Check**: 2026-10-12T05:50:00Z
-- **Verdict**: HEALTHY (orchestrator updated progress.md at 05:50:00Z, 0 min elapsed; fault-tolerance replacement active)
+- **Last Check**: 2026-10-12T07:00:00Z
+- **Verdict**: HEALTHY (orchestrator updated progress.md at 07:02:00Z, 0 min elapsed; worker_m3_1 running verification battery)
 
 ## Victory Audit Status
 - **Triggered**: no
@@ -52,10 +53,14 @@ Orchestrate, monitor, and audit the full release v0.1.0 build of the Symnoesis r
 - E:/Symnoesis/PROJECT.md — Normative project blueprint and 42-feature inventory
 - E:/Symnoesis/TEST_INFRA.md — 4-tier E2E testing framework specification (583 lines)
 - E:/Symnoesis/TEST_READY.md — E2E test ready scorecard (299/299 tests passing)
-- E:/Symnoesis/packages/py/src/symnoesis/cover.py — MILP HiGHS & Quine-McCluskey engine (700 lines)
-- E:/Symnoesis/packages/py/src/symnoesis/counterfactual.py — Counterfactual repair & ridge projection (469 lines)
-- E:/Symnoesis/packages/py/src/symnoesis/temporal.py — Multi-frame longitudinal trajectory engine (183 lines)
-- E:/Symnoesis/packages/ts/src/cover.ts — TypeScript Minimal Failure Cover engine (21.3 KB)
-- E:/Symnoesis/packages/ts/src/counterfactual.ts — TypeScript counterfactual repair engine (15.4 KB)
-- E:/Symnoesis/packages/ts/src/temporal.ts — TypeScript longitudinal temporal engine (5.5 KB)
+- E:/Symnoesis/packages/py/src/symnoesis/privacy.py — Privacy & k-anonymity engine (222 lines)
+- E:/Symnoesis/packages/py/src/symnoesis/judges/alpha.py — Krippendorff's alpha metric (203 lines)
+- E:/Symnoesis/packages/py/src/symnoesis/simulator/dyad.py — Dyadic simulation pipeline across 4 domains
+- E:/Symnoesis/data/fixtures/learning.json — Learning domain synthetic fixture
+- E:/Symnoesis/data/fixtures/coding.json — Coding domain synthetic fixture
+- E:/Symnoesis/data/fixtures/health-information.json — Health-information domain synthetic fixture
+- E:/Symnoesis/data/fixtures/advice-companionship.json — Advice-companionship domain synthetic fixture
+- E:/Symnoesis/packages/py/tests/unit/test_simulator.py — Simulator unit tests (239 lines)
+- E:/Symnoesis/packages/py/tests/unit/test_privacy.py — Privacy unit tests (176 lines)
+- E:/Symnoesis/packages/py/tests/unit/test_judges.py — Judges unit tests (243 lines)
 - E:/Symnoesis/.agents/teamwork/orchestrator_1/progress.md — Active orchestrator progress log

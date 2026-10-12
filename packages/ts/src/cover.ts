@@ -802,3 +802,20 @@ function formatSopTerm(
   });
   return literals.join(" & ");
 }
+
+// Parity aliases matching Python reference API
+export const solveMfcMilp = solveMfc;
+export const solve_mfc_milp = solveMfc;
+export const solve_mfc = solveMfc;
+export const quine_mccluskey_boolean = quineMccluskeyBoolean;
+export const quine_mccluskey = quineMccluskey;
+export const vertex_to_bits = vertexToBits;
+export const bits_to_vertex = bitsToVertex;
+export const vertex_to_pixel_id = vertexToPixelId;
+export const cell_id_to_vertex = cellIdToVertex;
+export const compute_harm_mass = computeHarmMass;
+export const compute_rule_purity = computeRulePurity;
+export const format_rule_string = formatRuleString;
+export const generate_subcubes = generateSubcubes;
+export const get_vertices_in_subcube = getVerticesInSubcube;
+export const evaluate_subcube = evaluateSubcube;

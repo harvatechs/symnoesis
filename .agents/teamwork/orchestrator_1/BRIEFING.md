@@ -65,17 +65,32 @@ Build the complete Symnoesis (SYMN-01) repository to release v0.1.0 across all m
 | challenger_m1_2 | teamwork_preview_challenger | M1: Challenge 2 — Invariant stress testing (mass, non-comp, gates) | completed | 5791d7ec-7045-400e-ab6a-9a1962c156ae |
 | auditor_m1_1 | teamwork_preview_auditor | M1: Forensic Integrity Audit (hardcoding, facades, cheats) | completed | c353d3d7-cb34-4016-8889-4800b54cf106 |
 | worker_m2_1 | teamwork_preview_worker | M2: MFC MILP optimization, counterfactual & temporal | failed | 99663c50-f973-46a3-b137-c5299f59a7c8 |
-| worker_m2_2 | teamwork_preview_worker | M2: Replacement MFC, counterfactual & temporal | in-progress | 04041105-e3c2-4c2a-bcc1-526a8480ebdc |
+| worker_m2_2 | teamwork_preview_worker | M2: Replacement MFC, counterfactual & temporal | completed | 04041105-e3c2-4c2a-bcc1-526a8480ebdc |
+| reviewer_m2_1 | teamwork_preview_reviewer | M2: Review 1 — tests, lint, MILP & temporal | in-progress | 92ae580c-55df-49ed-852b-9946f5e88709 |
+| reviewer_m2_2 | teamwork_preview_reviewer | M2: Review 2 — adversarial review, edge cases | in-progress | 2f3bac47-a266-4e38-9571-6ca4158046d8 |
+| challenger_m2_1 | teamwork_preview_challenger | M2: Challenge 1 — SOPform boolean equivalence & MILP | in-progress | babec79d-a7f1-4e48-a229-bdd1e359446f |
+| challenger_m2_2 | teamwork_preview_challenger | M2: Challenge 2 — Trajectory stress & counterfactual | in-progress | 233cb0fc-f50b-4720-9672-b7281cd7ccf0 |
+| auditor_m2_1 | teamwork_preview_auditor | M2: Forensic Integrity Audit (MILP, SOP, temporal) | completed | e87ee8fa-136a-48be-a483-104dba047665 |
+| worker_m2_3 | teamwork_preview_worker | M2 Iteration 2: Fix TS counterfactual S dampening | completed | f2171a7e-4b1d-4cd2-a622-b849439fa8dd |
+| reviewer_m2_3 | teamwork_preview_reviewer | M2 Iteration 2: Review counterfactual remediation | completed | 04bfc24a-c013-4597-9775-293439d5dd9f |
+| challenger_m2_3 | teamwork_preview_challenger | M2 Iteration 2: Challenge 220 empirical tests | completed | 6d9cca99-00de-443b-9783-80043df8007e |
+| auditor_m2_2 | teamwork_preview_auditor | M2 Iteration 2: Forensic audit of projection logic | completed | 2beaa0f8-f2aa-4475-9310-db103f20026a |
+| worker_m3_1 | teamwork_preview_worker | M3: Synthetic evidence pipeline, judges, privacy | completed | 8f777415-797f-410c-9896-3d958568b9a7 |
+| reviewer_m3_1 | teamwork_preview_reviewer | M3: Review 1 — tests, lint, specs, privacy | in-progress | 5155c925-4d98-408e-858f-9395f70fd3e5 |
+| reviewer_m3_2 | teamwork_preview_reviewer | M3: Review 2 — adversarial review, edge cases | in-progress | ba5aef5c-b7de-4e0f-b6ee-9c7914cf4ceb |
+| challenger_m3_1 | teamwork_preview_challenger | M3: Challenge 1 — Krippendorff's alpha stress testing | in-progress | 5e322665-0e62-4262-b9e4-66eeaf145a96 |
+| challenger_m3_2 | teamwork_preview_challenger | M3: Challenge 2 — Privacy & telemetry stress testing | in-progress | e7176d26-94a8-4998-b46e-ef7d9a134115 |
+| auditor_m3_1 | teamwork_preview_auditor | M3: Forensic integrity audit | in-progress | 98c8f66a-09c9-4af5-8e22-d22d3251d4ce |
 
 ## Succession Status
-- Succession required: no
-- Spawn count: 12 / 16
-- Pending subagents: 04041105-e3c2-4c2a-bcc1-526a8480ebdc
+- Succession required: no (single orchestrator lifecycle active, continuing in place)
+- Spawn count: 27
+- Pending subagents: 5155c925-4d98-408e-858f-9395f70fd3e5, ba5aef5c-b7de-4e0f-b6ee-9c7914cf4ceb, 5e322665-0e62-4262-b9e4-66eeaf145a96, e7176d26-94a8-4998-b46e-ef7d9a134115, 98c8f66a-09c9-4af5-8e22-d22d3251d4ce
 - Predecessor: none
-- Successor: not yet spawned
+- Successor: none (active in place)
 
 ## Active Timers
-- Heartbeat cron: not started
+- Heartbeat cron: abfd9134-810e-49b4-885c-c4bd5beb1700/task-257
 - Safety timer: none
 - On succession: kill all timers before spawning successor
 - On context truncation: run `manage_task(Action="list")` — re-create if missing

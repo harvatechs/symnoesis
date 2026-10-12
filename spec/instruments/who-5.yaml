@@ -1,0 +1,35 @@
+id: who-5
+name: WHO-5 Well-Being Index
+version: "1998"
+construct: Subjective psychological wellbeing
+feeds_variables:
+  - H4
+license:
+  status: verified_free_to_use
+  license_type: Public Domain / Open Use for research
+  attribution: World Health Organization Regional Office for Europe, Psychiatric Research Unit
+  reference: "Bech P, et al. (2003). Measuring well-being: mental health in health systems."
+scoring:
+  type: scale_sum
+  raw_min: 0
+  raw_max: 25
+  percentage_multiplier: 4
+  effect_mapping: standardized_difference
+items:
+  - id: who5-1
+    text: I have felt cheerful and in good spirits
+  - id: who5-2
+    text: I have felt calm and relaxed
+  - id: who5-3
+    text: I have felt active and vigorous
+  - id: who5-4
+    text: I woke up feeling fresh and rested
+  - id: who5-5
+    text: My daily life has been filled with things that interest me
+response_scale:
+  0: At no time
+  1: Some of the time
+  2: Less than half of the time
+  3: More than half of the time
+  4: Most of the time
+  5: All of the time

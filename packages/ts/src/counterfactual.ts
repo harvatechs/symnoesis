@@ -428,70 +428,245 @@ export function computeCounterfactualRepair(
 
   const targetThresh = cfg.classes.threshold + 0.005;
 
-  // Project H: sum(s_h) must be >= 2 * targetThresh + 2.0 = 2.41
-  const targetSumH = 2.0 * (targetThresh + 1.0);
-  const currentSumH = state.s_h.reduce((acc, v) => acc + v, 0);
-  const repH: [number, number, number, number] = [...state.s_h];
+  const wH = cfg.sq.weights.human;
+  const wS = cfg.sq.weights.system;
+  const wTotal = wH + wS;
+  const stateWeights = cfg.net_effects.hne.state_weights;
+  const wInt = cfg.net_effects.sne.integrity;
+  const wRel = cfg.net_effects.sne.reliability;
+  const wOp = cfg.net_effects.sne.operator;
 
-  if (currentSumH < targetSumH) {
-    let shortfall = targetSumH - currentSumH;
+  // 1. Project HNE >= targetThresh
+  const repH: [number, number, number, number] = [
+    state.s_h[0],
+    state.s_h[1],
+    state.s_h[2],
+    state.s_h[3],
+  ];
+  const [initialHne] = computeHne(repH, null, cfg);
+
+  if (initialHne < targetThresh) {
+    let shortfallHne = targetThresh - initialHne;
     if (norm === "l2") {
-      for (let iter = 0; iter < 10 && shortfall > 1e-6; iter++) {
-        const unfixed = repH
-          .map((v, i) => (v < 1.0 ? i : -1))
-          .filter((i) => i >= 0);
-        if (unfixed.length === 0) break;
-        const add = shortfall / unfixed.length;
-        let addedThisRound = 0.0;
-        for (const idx of unfixed) {
-          const currentVal = repH[idx] ?? 0;
-          const headroom = 1.0 - currentVal;
-          const alloc = Math.min(headroom, add);
-          repH[idx] = currentVal + alloc;
-          addedThisRound += alloc;
+      for (let iter = 0; iter < 10 && shortfallHne > 1e-9; iter++) {
+        const unfixed: number[] = [];
+        let gradSqSum = 0.0;
+        for (let i = 0; i < 4; i++) {
+          const v = repH[i] ?? 0;
+          const gH = 2.0 * (stateWeights[i] ?? 0);
+          if (v < 1.0 - 1e-9 && gH > 1e-9) {
+            unfixed.push(i);
+            gradSqSum += gH * gH;
+          }
         }
-        shortfall -= addedThisRound;
+        if (unfixed.length === 0 || gradSqSum < 1e-12) break;
+        const lambda = shortfallHne / gradSqSum;
+        let achievedHne = 0.0;
+        for (const idx of unfixed) {
+          const v = repH[idx] ?? 0;
+          const gH = 2.0 * (stateWeights[idx] ?? 0);
+          const headroom = 1.0 - v;
+          const alloc = Math.min(headroom, lambda * gH);
+          repH[idx] = v + alloc;
+          achievedHne += alloc * gH;
+        }
+        shortfallHne -= achievedHne;
       }
     } else {
-      for (let i = 0; i < 4 && shortfall > 1e-6; i++) {
-        const currentVal = repH[i] ?? 0;
-        const headroom = 1.0 - currentVal;
-        const alloc = Math.min(headroom, shortfall);
-        repH[i] = currentVal + alloc;
-        shortfall -= alloc;
+      const indicesH = [0, 1, 2, 3].sort(
+        (a, b) => 2.0 * (stateWeights[b] ?? 0) - 2.0 * (stateWeights[a] ?? 0),
+      );
+      for (const idx of indicesH) {
+        if (shortfallHne <= 1e-9) break;
+        const v = repH[idx] ?? 0;
+        const gH = 2.0 * (stateWeights[idx] ?? 0);
+        if (v < 1.0 && gH > 1e-9) {
+          const headroom = 1.0 - v;
+          const allocDeltaHne = Math.min(headroom * gH, shortfallHne);
+          const alloc = allocDeltaHne / gH;
+          repH[idx] = v + alloc;
+          shortfallHne -= allocDeltaHne;
+        }
       }
     }
   }
 
+  // 2. Project SNE >= targetThresh
   let repInt = state.integrity;
   let repRel = state.reliability;
   let repOp = state.operator;
+  const [initialSne] = computeSne(repInt, repRel, repOp, cfg);
 
-  const currentSne = 0.4 * repInt + 0.4 * repRel + 0.2 * repOp;
-  if (currentSne < targetThresh) {
-    let sneShortfall = targetThresh - currentSne;
+  if (initialSne < targetThresh) {
+    let shortfallSne = targetThresh - initialSne;
+    const sVars = [
+      {
+        get: () => repInt,
+        set: (v: number) => {
+          repInt = v;
+        },
+        g: wInt,
+      },
+      {
+        get: () => repRel,
+        set: (v: number) => {
+          repRel = v;
+        },
+        g: wRel,
+      },
+      {
+        get: () => repOp,
+        set: (v: number) => {
+          repOp = v;
+        },
+        g: wOp,
+      },
+    ];
+
     if (norm === "l2") {
-      const lambda = sneShortfall / 0.36;
-      repInt = Math.min(1.0, Math.max(-1.0, repInt + 0.4 * lambda));
-      repRel = Math.min(1.0, Math.max(-1.0, repRel + 0.4 * lambda));
-      repOp = Math.min(1.0, Math.max(-1.0, repOp + 0.2 * lambda));
-    } else {
-      const headroomInt = 1.0 - repInt;
-      const allocInt = Math.min(headroomInt, sneShortfall / 0.4);
-      repInt += allocInt;
-      sneShortfall -= 0.4 * allocInt;
-
-      if (sneShortfall > 1e-6) {
-        const headroomRel = 1.0 - repRel;
-        const allocRel = Math.min(headroomRel, sneShortfall / 0.4);
-        repRel += allocRel;
-        sneShortfall -= 0.4 * allocRel;
+      for (let iter = 0; iter < 10 && shortfallSne > 1e-9; iter++) {
+        const unfixed = sVars.filter(
+          (sv) => sv.get() < 1.0 - 1e-9 && sv.g > 1e-9,
+        );
+        if (unfixed.length === 0) break;
+        const gradSqSum = unfixed.reduce((acc, sv) => acc + sv.g * sv.g, 0.0);
+        if (gradSqSum < 1e-12) break;
+        const lambda = shortfallSne / gradSqSum;
+        let achievedSne = 0.0;
+        for (const sv of unfixed) {
+          const v = sv.get();
+          const headroom = 1.0 - v;
+          const alloc = Math.min(headroom, lambda * sv.g);
+          sv.set(v + alloc);
+          achievedSne += alloc * sv.g;
+        }
+        shortfallSne -= achievedSne;
       }
+    } else {
+      const sortedSVars = [...sVars].sort((a, b) => b.g - a.g);
+      for (const sv of sortedSVars) {
+        if (shortfallSne <= 1e-9) break;
+        const v = sv.get();
+        if (v < 1.0 && sv.g > 1e-9) {
+          const headroom = 1.0 - v;
+          const allocDeltaSne = Math.min(headroom * sv.g, shortfallSne);
+          const alloc = allocDeltaSne / sv.g;
+          sv.set(v + alloc);
+          shortfallSne -= allocDeltaSne;
+        }
+      }
+    }
+  }
 
-      if (sneShortfall > 1e-6) {
-        const headroomOp = 1.0 - repOp;
-        const allocOp = Math.min(headroomOp, sneShortfall / 0.2);
-        repOp += allocOp;
+  // 3. Project C >= C_target to account for stability dampening
+  const s = computeStabilityFactor(state.stability_std ?? 0.0, cfg);
+  const cTarget = Math.max(targetThresh, 20.005 / (100.0 * s));
+
+  const [curHne] = computeHne(repH, null, cfg);
+  const [curSne] = computeSne(repInt, repRel, repOp, cfg);
+  const curC = (wH * curHne + wS * curSne) / wTotal;
+
+  if (curC < cTarget) {
+    let shortfallC = cTarget - curC;
+
+    const allVars = [
+      {
+        get: () => repH[0] ?? 0,
+        set: (v: number) => {
+          repH[0] = v;
+        },
+        g: (wH / wTotal) * 2.0 * (stateWeights[0] ?? 0),
+      },
+      {
+        get: () => repH[1] ?? 0,
+        set: (v: number) => {
+          repH[1] = v;
+        },
+        g: (wH / wTotal) * 2.0 * (stateWeights[1] ?? 0),
+      },
+      {
+        get: () => repH[2] ?? 0,
+        set: (v: number) => {
+          repH[2] = v;
+        },
+        g: (wH / wTotal) * 2.0 * (stateWeights[2] ?? 0),
+      },
+      {
+        get: () => repH[3] ?? 0,
+        set: (v: number) => {
+          repH[3] = v;
+        },
+        g: (wH / wTotal) * 2.0 * (stateWeights[3] ?? 0),
+      },
+      {
+        get: () => repInt,
+        set: (v: number) => {
+          repInt = v;
+        },
+        g: (wS / wTotal) * wInt,
+      },
+      {
+        get: () => repRel,
+        set: (v: number) => {
+          repRel = v;
+        },
+        g: (wS / wTotal) * wRel,
+      },
+      {
+        get: () => repOp,
+        set: (v: number) => {
+          repOp = v;
+        },
+        g: (wS / wTotal) * wOp,
+      },
+    ];
+
+    if (norm === "l2") {
+      for (let iter = 0; iter < 10 && shortfallC > 1e-9; iter++) {
+        const unfixed = allVars.filter(
+          (v) => v.get() < 1.0 - 1e-9 && v.g > 1e-9,
+        );
+        if (unfixed.length === 0) break;
+        const gradSqSum = unfixed.reduce((acc, v) => acc + v.g * v.g, 0.0);
+        if (gradSqSum < 1e-12) break;
+        const lambda = shortfallC / gradSqSum;
+        let achievedC = 0.0;
+        for (const v of unfixed) {
+          const val = v.get();
+          const headroom = 1.0 - val;
+          const alloc = Math.min(headroom, lambda * v.g);
+          v.set(val + alloc);
+          achievedC += alloc * v.g;
+        }
+        shortfallC -= achievedC;
+      }
+    } else {
+      const sortedVars = [...allVars].sort((a, b) => b.g - a.g);
+      for (const v of sortedVars) {
+        if (shortfallC <= 1e-9) break;
+        const val = v.get();
+        if (val < 1.0 && v.g > 1e-9) {
+          const headroom = 1.0 - val;
+          const allocDeltaC = Math.min(headroom * v.g, shortfallC);
+          const alloc = allocDeltaC / v.g;
+          v.set(val + alloc);
+          shortfallC -= allocDeltaC;
+        }
+      }
+    }
+
+    // Safety margin check: ensure strict inequality due to floating-point rounding
+    const [finalHneCheck] = computeHne(repH, null, cfg);
+    const [finalSneCheck] = computeSne(repInt, repRel, repOp, cfg);
+    const finalCCheck = (wH * finalHneCheck + wS * finalSneCheck) / wTotal;
+    if (finalCCheck < cTarget) {
+      const remainingShortfall = cTarget - finalCCheck;
+      const targetVar = allVars.find((v) => v.get() < 1.0 && v.g > 1e-9);
+      if (targetVar) {
+        const val = targetVar.get();
+        targetVar.set(
+          Math.min(1.0, val + remainingShortfall / targetVar.g + 1e-6),
+        );
       }
     }
   }
@@ -535,3 +710,9 @@ export function computeCounterfactualRepair(
     repaired_class: repEval.technical_name,
   };
 }
+
+// Parity aliases matching Python reference API
+export const fit_ridge_additive_model = fitRidgeAdditiveModel;
+export const compute_single_flip_diagnostics = computeSingleFlipDiagnostics;
+export const evaluate_continuous_state = evaluateContinuousState;
+export const compute_counterfactual_repair = computeCounterfactualRepair;

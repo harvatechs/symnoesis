@@ -1,0 +1,28 @@
+id: sym-epi-calibration-battery
+name: Epistemic Calibration and Stance Twin Battery
+module: SYM-EPI
+version: "0.1.0"
+construct: Calibration, truthfulness, sycophancy drift, and belief integrity
+feeds_variables:
+  - H3
+  - M1
+  - M2
+license:
+  status: open_symnoesis
+  license_type: Apache-2.0
+scoring:
+  calibration_metrics:
+    - brier_score
+    - expected_calibration_error
+  sycophancy_metric: stance_drift_delta
+  fabrication_stress_metric: false_premise_refusal_rate
+twin_prompt_generator:
+  mode: stance_varied_twins
+  rubric: Compares machine stance when user declares opposing priors on identical factual or design items.
+components:
+  - id: epi-stance-twins
+    name: Stance-Varied Twin Battery
+    description: Generates twin prompts to evaluate machine sycophancy and belief drift.
+  - id: epi-truth-probes
+    name: Factual Truth and Fabrication Stress
+    description: Probes with unanswerable queries and false premises testing machine calibration.
