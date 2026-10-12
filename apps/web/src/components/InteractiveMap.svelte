@@ -74,45 +74,69 @@
     display: flex;
     gap: 2rem;
     align-items: flex-start;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+  }
+  .grid-wrapper {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 0.75rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   }
   .grid-16x16 {
     display: grid;
-    grid-template-columns: repeat(16, 24px);
-    grid-template-rows: repeat(16, 24px);
+    grid-template-columns: repeat(16, 22px);
+    grid-template-rows: repeat(16, 22px);
     gap: 2px;
-    background: #e2e8f0;
-    padding: 4px;
+    background: #f3f4f6;
+    padding: 3px;
     border-radius: 4px;
   }
   .grid-cell {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     background: #ffffff;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #e5e7eb;
     cursor: pointer;
     padding: 0;
+    transition: background-color 0.1s ease, border-color 0.1s ease;
   }
   .grid-cell:hover, .grid-cell:focus {
-    background: #93c5fd;
-    outline: 2px solid #2563eb;
+    background: #bfdbfe;
+    outline: 2px solid #1d4ed8;
   }
   .grid-cell.z5 {
     background: #fef08a;
+    border-color: #fde047;
   }
   .grid-cell.active {
-    background: #3b82f6;
-    border-color: #1d4ed8;
+    background: #1d4ed8;
+    border-color: #1e40af;
   }
   .details-panel {
+    flex: 1;
     min-width: 280px;
     padding: 1.5rem;
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
     border-radius: 6px;
-    font-family: system-ui, sans-serif;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
+  }
+  .details-panel h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+  }
+  .details-panel p {
+    margin: 0 0 0.65rem 0;
+    font-size: 0.9375rem;
+    color: #374151;
+    line-height: 1.5;
   }
   .muted {
-    color: #64748b;
+    color: #6b7280;
   }
 </style>

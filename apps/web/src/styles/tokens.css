@@ -1,16 +1,16 @@
 :root {
-  /* Base Palette - Light (Apple-inspired quiet, spacious, typographic) */
+  /* Primary Theme - Clean, Neat Pure White Palette */
   --paper: #ffffff;
-  --surface: #f8f9fa;
-  --surface-alt: #f1f3f5;
+  --surface: #f9fafb;
+  --surface-alt: #f3f4f6;
   --line: #e5e7eb;
   --line-strong: #d1d5db;
   --ink: #111827;
   --ink-2: #374151;
   --ink-3: #6b7280;
-  --accent: #2563eb;
-  --accent-muted: #dbeafe;
-  --accent-focus: #1d4ed8;
+  --accent: #1d4ed8;
+  --accent-muted: #eff6ff;
+  --accent-focus: #1e40af;
 
   /* Data Diverging Scale (OKLab based, SQ -100 to +100) */
   --sq-neg-100: #9e3410;
@@ -60,22 +60,6 @@
   --radius-sm: 3px;
   --radius-md: 6px;
   --radius-lg: 8px;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #0e0f11;
-    --surface: #17181b;
-    --surface-alt: #1f2125;
-    --line: #2a2c31;
-    --line-strong: #3f424a;
-    --ink: #f2f3f5;
-    --ink-2: #c5c8ce;
-    --ink-3: #9298a2;
-    --accent: #8ea2ff;
-    --accent-muted: #1e264f;
-    --accent-focus: #a8b8ff;
-  }
 }
 
 *, *::before, *::after {
